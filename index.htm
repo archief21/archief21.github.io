@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:locale" content="nl_BE">
+<meta property="og:title" content="Archief WZ">
+<meta property="og:description" content="mk21">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://archief.github.io/index.htm">
+<meta property="og:image" content="https://archief.github.io/images/archief.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpg">
+
+<title>Archief Web</title>
+
+<style>
+
+:root {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+}
+
+/* ===== BASIS =====    body: background: var(--bg) */
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background: #E5E5CD;
+  color: var(--text);
+ }
+
+/* ===== HEADER =====   background: var(--card); */
+
+.header {
+  padding: 2px 14px 1px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  background: #F6FEF6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header h1 { 
+  margin: 0; 
+  font-size: 17px;
+  font-weight: 400;
+  color: #2563eb; 
+  text-align:center; }
+
+.header p { 
+	margin: 10px 0 1px; 
+	text-align: center; 
+	font-size: 15px; 
+	color: var(--muted); }
+
+.header-top {
+    display: grid;
+    grid-template-columns: 90px 1fr 90px;
+    align-items: center;
+}    
+
+.header-text { text-align: center; margin-top: -10px; }
+
+.header-logo {
+    width: 60px;
+    height: auto;
+    justify-self: center;
+    margin-top: 12px;
+}
+
+/* ===== SEARCH ===== */
+
+.search {
+  width: 60%;
+  padding: 6px 8px;
+  font-size: 13px;
+  border-radius: 4px; 
+  display: block;
+  margin: 1px auto 5px;
+}
+
+/* ===== LAYOUT ===== */
+
+.container { max-width: 1000px; margin: 8px auto; padding: 0 10px; }
+
+/* ===== SECTION ===== */
+
+.section { margin-bottom: 12px; }
+.section-title { font-size: 15px; font-weight: 600; margin: 8px 2px 8px; }
+
+/* kleuraccent per sectie */
+
+.section.blue .section-title { color: #2563eb; }
+.section.green .section-title { color: #059669; }
+.section.purple .section-title { color: #7c3aed; }
+.section.bruin .section-title { color: #895129; }
+.section.grauw .section-title { color: #808000; }
+.section.rood .section-title { color: red; }
+
+/* ===== GRID ===== */
+
+.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));  gap: 12px; }
+
+/* ===== CARD ===== */
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 10px 12px; 
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: all 0.15s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(0,0,0,0.10); }
+
+/* ===== LINKS ===== */
+
+.link {
+  display: flex;
+  align-items: center;
+  max-width: 95%;
+  gap: 8px;
+  padding: 4px 6px;
+  padding: 6px 6px;     /* was 4px */
+  margin-bottom: 2px;   /* nieuw */
+  border-radius: 6px;
+  color: #2563eb; 
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(0,0,0,0.3);
+  transition: all 0.15s ease;
+ }
+
+ .link + .link { margin-top: 3px; }
+
+.link:hover {
+  color: #800080;
+  text-decoration-color: #2563eb;
+  background: rgba(37,99,235,0.06);
+}
+
+/* icoon */
+
+.link .icon {
+  font-size: 14px;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+/* ===== FOOTER ===== */
+
+.footer { text-align: center; font-size: 12px; color: var(--muted); padding: 6px 0 12px; }
+.footer a { color: #2563eb; text-decoration: none; }
+
+/* ===== DARK MODE ===== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+  }
+
+  .link:hover { background: rgba(96,165,250,0.15); color: #60a5fa; }
+
+  .header { border-bottom: 1px solid rgba(255,255,255,0.05); } }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+  <div class="header-top">
+
+    <img src="images/logo.jpg" alt="Logo" class="header-logo">
+
+    <div class="header-text">
+      <h1>Archief Web</h1>
+      <p>Hector - Geschiedenis Veurne</p>
+    </div>
+
+    <img src="images/logo.jpg" alt="Logo" class="header-logo">
+
+  </div>
+  </div>
+
+<div class="container">
+
+  <input class="search" id="search" placeholder="Zoek...">
+
+<!-- ===================== -->
+
+<div class="section purple">
+<div class="section-title">📚 Info</div>
+
+<div class="grid">
+
+<div class="card">
+<a class="link" href="hector.htm"><span class="icon">❤️</span>Geschiedenis van Hector</a>
+</div>
+
+<div class="card">
+<a class="link" href="veurne.htm"><span class="icon">🧬</span>Geschiedenis van Veurne</a>
+</div>
+
+</div>
+</div>
+
+<!-- ===================== -->
+
+<div class="section bruin">
+<div class="section-title">🧠 Sector 2</div>
+
+<div class="grid">
+
+<div class="card">
+
+</div>
+
+<div class="card">
+</div>
+
+</div>
+</div>
+
+<!-- ===================== -->
+
+<div class="footer">
+<a href="mailto:xyz21@skynet.be">E-postadres</a> |
+</div>
+
+</div>
+
+<script>
+
+/* ===== MINI SEARCH FILTER ===== */
+
+const search = document.getElementById("search");
+
+search.addEventListener("input", () => {
+  const term = search.value.toLowerCase();
+
+  document.querySelectorAll(".link").forEach(link => {
+    const text = link.textContent.toLowerCase();
+    link.style.display = text.includes(term) ? "flex" : "none";
+  });
+});
+
+/* open html in nieuw tab */
+
+document.querySelectorAll("a").forEach(link => {
+  const href = link.getAttribute("href");
+  if (!href) return;
+
+  if (href.endsWith(".htm") || href.endsWith(".html")) {
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener noreferrer");
+  }
+});
+
+</script>
+
+</body>
+</html>
