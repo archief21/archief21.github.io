@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://archief21.github.io/sitemap.xml
