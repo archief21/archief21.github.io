@@ -2,7 +2,20 @@
 <html lang="nl">
 
 <head>
+
 <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:locale" content="nl_BE">
+<meta property="og:title" content="Boekenlijst">
+<meta property="og:description" content="Bibliotheek kast">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://archief21.github.io/boeken.html">
+<meta property="og:image" content="https://archief21.github.io/images/boeken.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpg">
 
 <title>Boekenkast - Bibliotheek</title>
 
@@ -25,8 +38,6 @@ th{ background:#E8E0FF; color:#4A3270; }
 	margin-left:auto;
     margin-right:auto;
 }
-
-
 
 table{ border-collapse:collapse; width:100%; }
 
@@ -58,9 +69,7 @@ th:hover{ background:#d5d5d5; }
 
 <h2>Bibliotheek Kast</h2>
 
-<input type="text" id="zoek"
-       placeholder="Zoeken..."
-       onkeyup="toonBoeken()">
+<input type="text" id="zoek" placeholder="Zoeken..." onkeyup="toonBoeken()">
 
 <div id="teller"></div>
 
@@ -76,14 +85,13 @@ th:hover{ background:#d5d5d5; }
 </tr>
 </thead>
 
-<tbody id="boekenBody">
-</tbody>
+<tbody id="boekenBody"> </tbody>
 
 </table>
 
 <script>
 
-/* voeg hier uw overige boeken toe 
+/* voeg hier de boeken toe 
 
 {
  titel:"",
@@ -96,6 +104,158 @@ th:hover{ background:#d5d5d5; }
 */
 
 let boeken = [
+
+
+{
+ titel:"Nederlands woordenboek",
+ vnaam:"Ed.",
+ auteur:"van Dale",
+ jaar:"2015",
+ nota:""
+},
+
+{
+ titel:"Frans-Nederlands woordenboek",
+ vnaam:"Ed.",
+ auteur:"van Dale",
+ jaar:"2015",
+ nota:""
+},
+{
+ titel:"Engels-Nederlands woordenboek",
+ vnaam:"Ed.",
+ auteur:"van Dale",
+ jaar:"2015",
+ nota:""
+},
+
+
+{
+ titel:"Het complete werk van Cézanne",
+ vnaam:"Collect",
+ auteur:"Lecturama",
+ jaar:"1976",
+ nota:""
+},
+
+{
+ titel:"Het geheugen van sneeuw",
+ vnaam:"Koen",
+ auteur:"Broucke",
+ jaar:"2022",
+ nota:"V"
+},
+
+
+{
+ titel:"Het impressionisme",
+ vnaam:"Ingo E.",
+ auteur:"Walther",
+ jaar:"1992",
+ nota:"V"
+},
+
+
+{
+ titel:"Principles of internal medicine",
+ vnaam:"med",
+ auteur:"Harrison's",
+ jaar:"1991",
+ nota:"B"
+},
+
+
+{
+ titel:"De Westhoek",
+ vnaam:"Jan",
+ auteur:"Yperman",
+ jaar:"2009",
+ nota:"V"
+},
+
+{
+ titel:"Een halve eeuw Vlaams idealisme",
+ vnaam:"Clem",
+ auteur:"De Ridder",
+ jaar:"1977",
+ nota:"V"
+},
+
+
+{
+ titel:"De wetten van menselijke stupiditeit",
+ vnaam:"Carlo M.",
+ auteur:"Cipolla",
+ jaar:"1976",
+ nota:"B"
+},
+
+{
+ titel:"Leuven Vlaams",
+ vnaam:"Herman/Willy",
+ auteur:"Todts/Jonckheerre ",
+ jaar:"1979",
+ nota:"V"
+},
+
+
+{
+ titel:"Canon van Vlaanderen in 60 vensters",
+ vnaam:"Bart",
+ auteur:"De Wever",
+ jaar:"2023",
+ nota:"V"
+},
+
+
+{
+ titel:"Over identiteit",
+ vnaam:"Bart",
+ auteur:"Dewever",
+ jaar:"2019",
+ nota:"V"
+},
+
+{
+ titel:"Verzamelde gedichten | 1973 - 1986",
+ vnaam:"Gery",
+ auteur:"Florizoone",
+ jaar:"1986",
+ nota:"V"
+},
+
+{
+ titel:"Voorbij het onbehagen - Ressentiment",
+ vnaam:"Guido",
+ auteur:"Vanheeswijck",
+ jaar:"2002",
+ nota:"V"
+},
+
+{
+ titel:"Het proces irma Laplasse",
+ vnaam:"Willy",
+ auteur:"Moons",
+ jaar:"1996",
+ nota:"V"
+},
+
+{
+ titel:"De man die zijn haar kort liet knippen",
+ vnaam:"Johan",
+ auteur:"Daisne",
+ jaar:"1947",
+ nota:"V"
+},
+
+{
+ titel:"De laatste koloniaal",
+ vnaam:"Mark",
+ auteur:"Scheldeman",
+ jaar:"2003",
+ nota:""
+},
+
 
 {
  titel:"Borderline times",
@@ -325,9 +485,6 @@ let boeken = [
  jaar:"2019",
  nota:"B"
 },
-
-
-/* voeg hier uw overige boeken toe */
 
 ];
 
