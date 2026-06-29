@@ -85,6 +85,18 @@ h1 {
 
 .video:hover { background-color: #003f7d; }
 
+.video-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+}
+
 
 </style>
 </head>
@@ -94,14 +106,15 @@ h1 {
 <h1>
 Zie de gemeenteraadszitting van De Panne, 22 juni 2026.</h1> <br>
 
-<iframe
-    width="640"
-    height="360"
-    src="https://www.youtube.com/embed/62Qr4zQkn9o"
-    title="Gemeenteraad De Panne"
-    frameborder="0"
-    allowfullscreen>
-</iframe>
+<div class="video-container">
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/62Qr4zQkn9o"
+        title="Gemeenteraad De Panne"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
 
 <p> De beslissing om de gemeentelijke kinderopvang af te schaffen, is asociaal. In 2026 verwacht je dat een lokaal bestuur investeert in jonge gezinnen, niet dat het zich terugtrekt uit een kerntaak. Het voelt als een stap terug naar een tijd waarin werkende ouders het maar zelf moesten uitzoeken en opvang een gunst was in plaats van een basisvoorziening.</p> 
 
