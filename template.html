@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<meta content="nl-nl" http-equiv="Content-Language" />
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:title" content="Template">
+<meta property="og:description" content="Template txt, image, video, knoppen">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://archief21.github.io/template.html">
+<meta property="og:image" content="https://archief21.github.io/images/template1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpg">
+
+<title>Template</title>
+
+<style>
+
+body {
+  
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  color: #002850; 
+
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  
+  padding: 0px 10px 0px 20px;           /* Clockwise: top (0), right (10px), bottom (0), left (20px) */
+  line-height: 1.5;
+  
+  background-image: url('images/wzbakste.jpg');
+  background-attachment: fixed;
+  
+  text-align: justify;
+ }
+
+h1 { margin: 0; font-size: 16px; font-weight: 400; color: #2563eb; text-align:center; }
+
+/* Afbeelding */
+
+#foto {
+    width: 100%;
+    display: block;
+    margin: auto;
+    transform: scale(1);
+    transition: transform 0.05s linear;
+    cursor: zoom-in;    
+}
+.fotokader { text-align:center; margin-top:2px; }
+.hint { margin-top:1px; font-size:14px; color:#666;  font-style:italic; }
+
+/* Knop naar link */
+
+.knop {
+    display: table;
+    margin: 25px auto;
+
+    padding: 8px 18px;
+    background-color: #0055a4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: background-color .2s;
+}
+
+.knop:hover { background-color: #a0c260; }
+.knop:active { transform: translateY(1px); }
+
+.link { color: #502828; font-weight: 400; text-decoration: underline; }
+
+/* Embedded video */
+
+.video-container { max-width: 800px; margin: 20px auto; }
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1> Template</h1>
+
+<a class="knop"
+   href="https://sle.be/wat-doen-we/publicaties/het-rood-ras-van-west-vlaanderen"
+   target="_blank"
+   rel="noopener noreferrer"> Knop </a>
+
+<div class="video-container">
+    <iframe
+        src="https://www.youtube.com/embed/SE6VYK-I3FI"
+        title="Embedded video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<div class="fotokader"><img id="foto" src="images/veurne1600.jpg" alt=""></div>
+<div class="hint"> 🔍 Muiswiel = zoomen • Dubbelklik of Esc = normale grootte • + / - = zoomen </div>
+
+</div>
+
+<script>
+const foto = document.getElementById("foto");
+
+// Beginwaarde
+foto.dataset.scale = 1;
+
+// ====================================================
+// Muiswiel : in- en uitzoomen
+// ====================================================
+
+foto.addEventListener("wheel", function(e) {
+
+    e.preventDefault();
+
+    let scale = parseFloat(foto.dataset.scale);
+
+    scale *= (e.deltaY < 0) ? 1.05 : 0.95;
+    scale = Math.max(0.5, Math.min(2.0, scale));
+
+    foto.style.transform = `scale(${scale})`;
+    foto.dataset.scale = scale;
+
+}, { passive:false });
+
+
+// ====================================================
+// Dubbelklik : normale grootte
+// ====================================================
+
+// ====================================================
+// Eén klik : verklein naar 80%
+// ====================================================
+
+foto.addEventListener("click", function() {
+
+    foto.style.transform = "scale(0.8)";
+    foto.dataset.scale = 0.8;
+
+});
+
+foto.addEventListener("dblclick", function() {
+
+    foto.style.transform = "scale(1)";
+    foto.dataset.scale = 1;
+
+});
+
+
+// ====================================================
+// Toetsenbord
+// +   : vergroten
+// -   : verkleinen
+// Esc : normale grootte
+// ====================================================
+
+document.addEventListener("keydown", function(e) {
+
+    let scale = parseFloat(foto.dataset.scale);
+
+    if (e.key === "+" || e.key === "=") {
+        scale *= 1.05;
+    }
+
+    if (e.key === "-") {
+        scale *= 0.95;
+    }
+
+    if (e.key === "Escape") {
+        scale = 1;
+    }
+
+    scale = Math.max(0.5, Math.min(2.0, scale));
+
+    foto.style.transform = `scale(${scale})`;
+    foto.dataset.scale = scale;
+
+});
+
+</script>
+</body>
+</html>
