@@ -54,18 +54,20 @@ h1 {
 
 /* Afbeelding */
 
-.img-container { text-align: center; margin: 10px 20px 10px 10px; }
-
-.img-img {
+#foto {
     width: 100%;
-    max-width: 1000px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.25s ease;
-    cursor: zoom-in;
+    display: block;
+    margin: auto;
+    transform: scale(1);
+    transition: transform 0.05s linear;
+    cursor: grab;
+    user-select: none;
 }
 
-.img-img:hover { transform: scale(1.02); }
+#foto.dragging { cursor: grabbing; }
+
+.fotokader { text-align:center; margin-top:2px; }
+.hint { margin-top:1px; font-size:14px; color:#666;  font-style:italic; }
 
 .video {
     display: inline-block;
@@ -127,9 +129,89 @@ h1 {
 
 <p> P.S. Zelden heb ik een leidinggevende ambtenaar zo bereid gezien om publiek een beslissing te verdedigen die niet alleen haar eigen functie maar ook die van haar volledige team op de helling zet. Ook dat is opmerkelijk.</p>
 
-<div class="img-container">
-    <img src="images/veurne1200.jpg" alt="Beschrijving" class="img-img">
+<div class="fotokader"><img id="foto" src="images/depanne1200.jpg" alt=""></div>
+
 </div>
 
+<script>
+
+const foto = document.getElementById("foto");
+let isDragging = false;
+let startX = 0;
+let startY = 0;
+let posX = 0;
+let posY = 0;
+
+// Beginwaarde
+foto.dataset.scale = 1;
+
+// ====================================================
+// Muiswiel : in- en uitzoomen
+// ====================================================
+
+foto.addEventListener("wheel", function(e) {
+
+    e.preventDefault();
+
+    let scale = parseFloat(foto.dataset.scale);
+
+    scale *= (e.deltaY < 0) ? 1.05 : 0.95;
+    scale = Math.max(0.5, Math.min(2.0, scale));
+
+    foto.style.transform = `scale(${scale})`;
+    foto.dataset.scale = scale;
+
+}, { passive:false });
+
+// ====================================================
+// Dubbelklik : normale grootte
+// Eén klik : verklein naar 80%
+// ====================================================
+
+foto.addEventListener("click", function() {
+
+    foto.style.transform = "scale(0.8)";
+    foto.dataset.scale = 0.8;
+
+});
+
+foto.addEventListener("dblclick", function() {
+
+    foto.style.transform = "scale(1)";
+    foto.dataset.scale = 1;
+
+});
+
+// ====================================================
+// Toetsenbord
+// +   : vergroten
+// -   : verkleinen
+// Esc : normale grootte
+// ====================================================
+
+document.addEventListener("keydown", function(e) {
+
+    let scale = parseFloat(foto.dataset.scale);
+
+    if (e.key === "+" || e.key === "=") {
+        scale *= 1.05;
+    }
+
+    if (e.key === "-") {
+        scale *= 0.95;
+    }
+
+    if (e.key === "Escape") {
+        scale = 1;
+    }
+
+    scale = Math.max(0.5, Math.min(2.0, scale));
+
+    foto.style.transform = `scale(${scale})`;
+    foto.dataset.scale = scale;
+
+});
+
+</script>
 </body>
 </html>
