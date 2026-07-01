@@ -52,19 +52,26 @@ h1 {
 
 /* Afbeelding */
 
-.img-container { text-align: center; margin: 10px 20px 10px 10px; }
-
-.img-img {
+#foto {
     width: 100%;
-    max-width: 1000px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.25s ease;
-    cursor: zoom-in;
+    display: block;
+    margin: auto;
+    transform: scale(1);
+    transition: transform 0.05s linear;
+    cursor: grab;
+    user-select: none;
 }
 
-.img-img:hover { transform: scale(1.02); }
+#foto.dragging { cursor: grabbing; }
 
+.hint { 
+  font-size: 16px; 
+  color: #666; 
+  font-style: italic; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
 
 .video {
     display: table;
@@ -119,6 +126,10 @@ h1 {
    📖 Boek van Marc Wackenier
 </a>
 
+<h1> Genetica avant la lettre <br>
+Erfelijkheidsleer, 100 jaar geleden reeds toegepast door de agrarische sector van de Westhoek
+</h1>
+
 <div class="video-container">
     <iframe
         src="https://www.youtube.com/embed/SE6VYK-I3FI"
@@ -127,8 +138,85 @@ h1 {
         allowfullscreen>
     </iframe>
 </div>
+<div class="hint"> 🔍 Zoomen met muiswiel of +/-  • Dubbelklik of Esc = terug naar normale grootte </div>
+<img id="foto" src="images/roodmz.jpg" alt="Hoeve MZ">
 
+<hr>
+<script>
 
+const foto = document.getElementById("foto");
+
+// Beginwaarde
+foto.dataset.scale = 1;
+
+// ====================================================
+// Muiswiel : in- en uitzoomen
+// ====================================================
+
+foto.addEventListener("wheel", function(e) {
+
+    e.preventDefault();
+
+    let scale = parseFloat(foto.dataset.scale);
+
+    scale *= (e.deltaY < 0) ? 1.05 : 0.95;
+    scale = Math.max(0.5, Math.min(2.0, scale));
+
+    foto.style.transform = `scale(${scale})`;
+    foto.dataset.scale = scale;
+
+}, { passive:false });
+
+// ====================================================
+// Dubbelklik : normale grootte
+// Eén klik : verklein naar 80%
+// ====================================================
+
+foto.addEventListener("click", function() {
+
+    foto.style.transform = "scale(0.95)";
+    foto.dataset.scale = 0.95;
+
+});
+
+foto.addEventListener("dblclick", function() {
+
+    foto.style.transform = "scale(1)";
+    foto.dataset.scale = 1;
+
+});
+
+// ====================================================
+// Toetsenbord
+// +   : vergroten
+// -   : verkleinen
+// Esc : normale grootte
+// ====================================================
+
+document.addEventListener("keydown", function(e) {
+
+    let scale = parseFloat(foto.dataset.scale);
+
+    if (e.key === "+" || e.key === "=") {
+        scale *= 1.05;
+    }
+
+    if (e.key === "-") {
+        scale *= 0.95;
+    }
+
+    if (e.key === "Escape") {
+        scale = 1;
+    }
+
+    scale = Math.max(0.5, Math.min(2.0, scale));
+
+    foto.style.transform = `scale(${scale})`;
+    foto.dataset.scale = scale;
+
+});
+
+</script>
 
 
 </body>
