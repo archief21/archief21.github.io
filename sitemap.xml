@@ -2,19 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url><loc>https://archief21.github.io/</loc></url>
-  <url><loc>https://archief21.github.io/boeken.html</loc></url>
-  <url><loc>https://archief21.github.io/disclaim.html</loc></url>
-  <url><loc>https://archief21.github.io/googlefcd6ecd9359cb2ff.html</loc></url>
+  <url><loc>https://archief21.github.io/index.html</loc></url>
   <url><loc>https://archief21.github.io/hector.html</loc></url>
   <url><loc>https://archief21.github.io/hector2.html</loc></url>
-  <url><loc>https://archief21.github.io/his1500.html</loc></url>
-  <url><loc>https://archief21.github.io/index.html</loc></url>
-  <url><loc>https://archief21.github.io/kapoen.html</loc></url>
-  <url><loc>https://archief21.github.io/leeftijd.html</loc></url>
+  <url><loc>https://archief21.github.io/veurnehistoriek.html</loc></url>
   <url><loc>https://archief21.github.io/onteigeningalv.html</loc></url>
   <url><loc>https://archief21.github.io/verkavelingspoging.html</loc></url>
-  <url><loc>https://archief21.github.io/veurnehistoriek.html</loc></url>
-  <url><loc>https://archief21.github.io/viewtpl.html</loc></url>
 
   <!-- PDF-bestanden mogen ook in sitemap -->
   <url><loc>https://archief21.github.io/watertoets.pdf</loc></url>
