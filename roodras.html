@@ -51,7 +51,8 @@ h1 {
 /* Afbeelding */
 
 #foto { 
-  width: 80%; 
+  width: 100%;
+  max-width: 1200px;
   display: block; 
   margin: auto; 
   transform: scale(1); 
@@ -142,8 +143,6 @@ Deze kunstmatige selectie was de eerste vorm van doelgerichte genetische sturing
     </iframe>
 </div>
 
-<div class="hint"> 🔍 Zoomen met muiswiel of +/-  • Dubbelklik of Esc = terug naar normale grootte </div>
-
 <img id="foto" src="images/roodmz.jpg" alt="Hoeve MZ">
 
 <hr>
@@ -165,7 +164,7 @@ foto.addEventListener("wheel", function(e) {
     let scale = parseFloat(foto.dataset.scale);
 
     scale *= (e.deltaY < 0) ? 1.05 : 0.95;
-    scale = Math.max(0.5, Math.min(2.0, scale));
+    scale = Math.max(0.85, Math.min(2.0, scale));
 
     foto.style.transform = `scale(${scale})`;
     foto.dataset.scale = scale;
@@ -207,14 +206,14 @@ document.addEventListener("keydown", function(e) {
     }
 
     if (e.key === "-") {
-        scale *= 0.95;
+        scale *= 0.85;
     }
 
     if (e.key === "Escape") {
         scale = 1;
     }
 
-    scale = Math.max(0.5, Math.min(2.0, scale));
+    scale = Math.max(0.85, Math.min(2.0, scale));
 
     foto.style.transform = `scale(${scale})`;
     foto.dataset.scale = scale;
