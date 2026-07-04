@@ -31,7 +31,8 @@ body {
   font-size: 16px;
   color: #002850; 
   
-  padding: 0px 10px 0px 20px;           /* Clockwise: top (0), right (10px), bottom (0), left (20px) */
+  /* Clockwise: top (0), right (10px), bottom (0), left (20px) */
+  padding: 0px 10px 0px 20px;           
   line-height: 1.5;
   
   background-image: url('images/wzbakste.jpg');
@@ -47,22 +48,17 @@ h1 {
   color: #2563eb; 
   text-align:center; }
 
-.auto-style1 {text-align: center;}
-.auto-style2 {text-align: justify;}
-
 /* Afbeelding */
 
-#foto {
-    width: 100%;
-    display: block;
-    margin: auto;
-    transform: scale(1);
-    transition: transform 0.05s linear;
-    cursor: grab;
-    user-select: none;
-}
-
-#foto.dragging { cursor: grabbing; }
+#foto { 
+  width: 80%; 
+  display: block; 
+  margin: auto; 
+  transform: scale(1); 
+  transition: transform 0.05s linear; 
+  cursor: zoom-in;
+  user-select: none; 
+} 
 
 .hint { 
   font-size: 16px; 
@@ -90,26 +86,23 @@ h1 {
     transition: background-color .2s;
 }
 
-.video:hover {
-    background-color: #003f7d;
-}
+/* Embedded video */
 
-.video:active {
-    transform: translateY(1px);
-}
+.video-container { max-width: 800px; margin: 20px auto; }
+.video-container iframe { width: 100%; aspect-ratio: 16 / 9; height: auto; display: block; }
+.video:hover { background-color: #003f7d; }
+.video:active { transform: translateY(1px); }
 
-.video-container {
-    max-width: 800px;
-    margin: 20px auto;
+.highlight {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+	color: #800040;
+    background: #eef5fb;
+    padding: 2px 10px 2px 10px;  
+    border-left: 5px solid #3b82f6;
+    margin: 2px 10px 1px 10px;
 }
-
-.video-container iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    display: block;
-}
-
 
 </style>
 
@@ -126,9 +119,19 @@ h1 {
    📖 Boek van Marc Wackenier
 </a>
 
-<h1> Genetica avant la lettre <br>
-Erfelijkheidsleer, 100 jaar geleden reeds toegepast door de agrarische sector van de Westhoek
-</h1>
+<div class="highlight">
+
+<p>Gedurende meer dan een eeuw pasten fokkers van het Rood Ras van West-Vlaanderen, zonder het zo te benoemen, de basisprincipes van de genetica toe. Door systematisch enkel de beste stieren en koeien met gewenste eigenschappen – meer melk, betere vleesaanzet, een rustig karakter of een mooie bil – met elkaar te laten voortplanten, veranderde geleidelijk de genetische samenstelling van de populatie. 
+
+Deze kunstmatige selectie was de eerste vorm van doelgerichte genetische sturing: men wijzigde niet rechtstreeks de genen maar beïnvloedde wel welke genen aan volgende generaties werden doorgegeven. 
+
+<p>De moderne genetische technieken, zoals embryotransplantatie, IVF, genomische selectie en uiteindelijk genbewerking, bouwen voort op hetzelfde principe: gewenste erfelijke eigenschappen sneller en nauwkeuriger doorgeven. 
+
+<p>Het fundamentele verschil is dat de klassieke fokkerij werkte via selectie over vele generaties terwijl de hedendaagse genetica het erfelijk materiaal rechtstreeks kan analyseren, selecteren en in sommige gevallen zelfs aanpassen. Zo vormt de traditionele rasveredeling de historische voorloper van de moderne genetische manipulatie.
+</p>
+
+
+</div>
 
 <div class="video-container">
     <iframe
@@ -138,7 +141,9 @@ Erfelijkheidsleer, 100 jaar geleden reeds toegepast door de agrarische sector va
         allowfullscreen>
     </iframe>
 </div>
+
 <div class="hint"> 🔍 Zoomen met muiswiel of +/-  • Dubbelklik of Esc = terug naar normale grootte </div>
+
 <img id="foto" src="images/roodmz.jpg" alt="Hoeve MZ">
 
 <hr>
