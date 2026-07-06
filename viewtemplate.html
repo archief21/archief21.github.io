@@ -7,10 +7,10 @@
 
 <meta property="og:locale" content="nl_BE">
 <meta property="og:title" content="Beelden">
-<meta property="og:description" content="Viewer versie 2026 07 02">
+<meta property="og:description" content="Viewer versie 2026 07 06">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://archief21.github.io/viewtemplate.htm">
-<meta property="og:image" content="https://archief21.github.io/images/viewtemplate.jpg">
+<meta property="og:url" content="https://archief21.github.io/viewtemplate.html">
+<meta property="og:image" content="https://archief21.github.io/images/veurne1600.jpg">
 <meta property="og:image:type" content="image/jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -31,15 +31,11 @@ body { margin: 0;  font-family: Arial, sans-serif; background: #C0C0C0; color: w
   flex-wrap: wrap; }
 
 .slider-container { width: 100%; }
-.slider {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    overflow: auto;      /* scrollbars indien nodig */
-}
+.slider { position: relative; width: 100%; height: 90vh; overflow: auto; }
+.slider:hover .caption { opacity: 1; }
+
 .slide { display: none; position: absolute; width: 100%;  height: 100%; }
 .slide img { width: 100%; height: 100%; object-fit: contain; cursor: zoom-in; transition: transform 0.1s ease; }
-.slider:hover .caption { opacity: 1; }
 
 .thumbnails {
   position: absolute;
@@ -156,7 +152,7 @@ body { margin: 0;  font-family: Arial, sans-serif; background: #C0C0C0; color: w
   <button id="thumbButton" onclick="toggleThumbnails()"> Miniaturen aan </button>
   <button id="exitFsBtn" onclick="document.exitFullscreen()" style="display:none;"> Fullscreen verlaten </button>	
 
-  <a href="https://youtu.be/HFg2ra9vxh4?si=1gekBjI69yHqXBhG" target="_blank" id="videoButton"> ▶ Video </a>
+  <a href="https://youtu.be/NCFi5xgOYIU?si=9Njkj3s8ZMECLKh3" target="_blank" id="videoButton"> ▶ Video </a>
 
 </div>
 
@@ -169,8 +165,13 @@ body { margin: 0;  font-family: Arial, sans-serif; background: #C0C0C0; color: w
 <!-- SLIDES -->
 
     <div class="slide">
-      <img src="images/rug26.jpg">
-      <div class="caption">Rugpijn</div>
+      <img src="images/veurne1600.jpg">
+      <div class="caption">West-Vlaams stadje</div>
+    </div>
+
+    <div class="slide">
+      <img src="images/depanne1200.jpg">
+      <div class="caption">Bachten de Kupe</div>
     </div>
 
     <div class="slide">
