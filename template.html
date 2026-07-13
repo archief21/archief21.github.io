@@ -27,11 +27,7 @@ body {
   font-size: 16px;
   color: #002850; 
 
-  margin-top: 0px;
-  margin-right: 10px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  
+  margin-top: 0px 10px 0px 10px;       /* Clockwise: top (0), right (10px), bottom (0), left (20px) */
   padding: 0px 10px 0px 20px;           /* Clockwise: top (0), right (10px), bottom (0), left (20px) */
   line-height: 1.5;
   
@@ -42,19 +38,26 @@ body {
  }
 
 h1 { margin: 0; font-size: 16px; font-weight: 400; color: #2563eb; text-align:center; }
+p.zonderruimte {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; /* of een waarde die jij mooi vindt */
+}
 
 /* Afbeelding */
 
-#foto {
-    width: 100%;
-    display: block;
-    margin: auto;
-    transform: scale(1);
-    transition: transform 0.05s linear;
-    cursor: zoom-in;    
-}
-.fotokader { text-align:center; margin-top:2px; }
-.hint { margin-top:1px; font-size:14px; color:#666;  font-style:italic; }
+#foto { 
+  width: 100%;
+  max-width: 1200px;
+  display: block; 
+  margin: auto; 
+  transform: scale(1); 
+  transition: transform 0.05s linear; 
+  cursor: zoom-in; /* Standaard: vergrootglas met plus (+) */
+  user-select: none; 
+} 
+
+.hint { margin-top:1px; font-size:14px; color:#666;  font-style:italic;  text-align: center;}
 
 /* Knop naar link */
 
@@ -83,13 +86,42 @@ h1 { margin: 0; font-size: 16px; font-weight: 400; color: #2563eb; text-align:ce
 /* Embedded video */
 
 .video-container { max-width: 800px; margin: 20px auto; }
-.video-container iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    display: block;
+.video-container iframe { width: 100%; aspect-ratio: 16 / 9; height: auto; display: block; }
+.video:hover { background-color: #003f7d; }
+.video:active { transform: translateY(1px); }
+
+.highlight {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+	color: #008000;
+    background: #eef5fb;
+    padding: 12px;
+    border-left: 5px solid #3b82f6;
+    margin: 10px 20px 10px 10px;
 }
 
+	.kleuren-lijst p {
+		margin: 0;
+		padding: 2px 0;
+		font-family: monospace; /* Maakt kleurcodes makkelijker leesbaar */
+		font-size: 16px;
+	}
+
+	.box {
+		width: 80%;                		   /* laat de box exact 80% van de breedte innemen */
+		margin: 0 auto;            	/* centreert de box netjes in het midden van de pagina */
+		
+		border: 2px solid #008080;  /* Maakt een ononderbroken rand van 2 pixels dik */
+		border-radius: 5px;        		/* Maakt de hoeken van de box mooi rond */
+		
+		padding: 15px;                   /* Zorgt voor ademruimte tussen de tekst en de rand */
+		box-sizing: border-box;    /* voorkomt dat padding de box breder maakt dan 80% */
+
+		text-align: center;          /* Verander naar 'right' voor rechts uitlijnen */		
+		color: #333333; 
+	    background-color: #f9f9f9; 
+	}
 
 </style>
 
@@ -98,6 +130,29 @@ h1 { margin: 0; font-size: 16px; font-weight: 400; color: #2563eb; text-align:ce
 <body>
 
 <h1> Template</h1>
+
+<hr color="#008000">
+
+<div class="kleuren-lijst">
+<p style="color: #008000;">1. groen: 008000 & #005000</p>
+<p style="color: #008080;">2. blauwgroen: 008080 & #005050
+<p style="color: #0080FF;">3. bleek blauw: 0080FF
+<p style="color: #0080C0;">4. lichtblauw: 0080C0
+<p style="color: #004080;">5. blauw: 004080 & #002850
+<p style="color: #800040;">6. roodbruin: 800040
+<p style="color: #804040;">7. bruin: 804040 & #502828
+<p style="color: #808080;">8. grijs: 808080
+<p style="color: #FF8080;">9. roze: FF8080
+</div>
+
+<hr color="#002850">
+
+<!-- Dit is het HTML-element -->
+<div class="box">
+    Hier kun je nu je tekst of kleurcodes in schrijven.
+</div>
+
+<div class="highlight"> <strong>Highlight</strong><br>Tekst in box</div>
 
 <a class="knop"
    href="https://sle.be/wat-doen-we/publicaties/het-rood-ras-van-west-vlaanderen"
@@ -113,12 +168,14 @@ h1 { margin: 0; font-size: 16px; font-weight: 400; color: #2563eb; text-align:ce
     </iframe>
 </div>
 
-<div class="fotokader"><img id="foto" src="images/veurne1600.jpg" alt=""></div>
 <div class="hint"> 🔍 Muiswiel = zoomen • Dubbelklik of Esc = normale grootte • + / - = zoomen </div>
+<img id="foto" src="images/veurne1600.jpg" alt="historisch stadje">
+
 
 </div>
 
 <script>
+
 const foto = document.getElementById("foto");
 
 // Beginwaarde
@@ -142,12 +199,8 @@ foto.addEventListener("wheel", function(e) {
 
 }, { passive:false });
 
-
 // ====================================================
 // Dubbelklik : normale grootte
-// ====================================================
-
-// ====================================================
 // Eén klik : verklein naar 80%
 // ====================================================
 
@@ -164,7 +217,6 @@ foto.addEventListener("dblclick", function() {
     foto.dataset.scale = 1;
 
 });
-
 
 // ====================================================
 // Toetsenbord
