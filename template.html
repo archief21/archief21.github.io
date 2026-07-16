@@ -46,24 +46,31 @@ p.zonderruimte {
 
 /* Afbeelding */
 
-#foto { 
-  width: 100%;
+.foto {
+  width: 90%;
   max-width: 1200px;
-  display: block; 
-  margin: auto; 
-  transform: scale(1); 
-  transition: transform 0.05s linear; 
-  cursor: zoom-in; /* Standaard: vergrootglas met plus (+) */
-  user-select: none; 
-} 
+  display: block;
+  margin: 0 auto 25px auto;
+  transform: scale(1);
+  transition: transform 0.05s linear;
+  cursor: zoom-in;
+  user-select: none;
+}
+
+.fotokader { margin: 25px 0; }
+.foto.actief {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+    box-shadow: 0 0 12px rgba(37,99,235,0.35);
+}
 
 .hint { margin-top:1px; font-size:14px; color:#666;  font-style:italic;  text-align: center;}
 
 /* Knop naar link */
 
 .knop {
-    display: table;
-    margin: 25px auto;
+	display: inline-block;
+	margin: 25px 10px;
 
     padding: 8px 18px;
     background-color: #0055a4;
@@ -77,7 +84,7 @@ p.zonderruimte {
 
     transition: background-color .2s;
 }
-
+.knoppen { text-align: center; }
 .knop:hover { background-color: #a0c260; }
 .knop:active { transform: translateY(1px); }
 
@@ -149,15 +156,20 @@ p.zonderruimte {
 
 <!-- Dit is het HTML-element -->
 <div class="box">
-    Hier kun je nu je tekst of kleurcodes in schrijven.
+    Hier kun tekst worden ingeschreven.
 </div>
 
 <div class="highlight"> <strong>Highlight</strong><br>Tekst in box</div>
 
-<a class="knop"
-   href="https://sle.be/wat-doen-we/publicaties/het-rood-ras-van-west-vlaanderen"
-   target="_blank"
-   rel="noopener noreferrer"> Knop </a>
+<div class="knoppen">
+    <a class="knop"
+       href="https://sle.be/wat-doen-we/publicaties/het-rood-ras-van-west-vlaanderen"
+       target="_blank">Knop</a>
+
+    <a class="knop"
+       href="images/hectorheem.pdf"
+       target="_blank">Hector</a>
+</div>
 
 <div class="video-container">
     <iframe
@@ -169,82 +181,113 @@ p.zonderruimte {
 </div>
 
 <div class="hint"> 🔍 Muiswiel = zoomen • Dubbelklik of Esc = normale grootte • + / - = zoomen </div>
-<img id="foto" src="images/veurne1600.jpg" alt="historisch stadje">
+
+<div class="fotokader"><img class="foto" src="images/kunstdz1.jpg"></div>
+<div class="fotokader"><img class="foto" src="images/kunstdz2.jpg"></div>
 
 
 </div>
 
 <script>
 
-const foto = document.getElementById("foto");
+const fotos = document.querySelectorAll(".foto");
 
-// Beginwaarde
-foto.dataset.scale = 1;
-
-// ====================================================
-// Muiswiel : in- en uitzoomen
-// ====================================================
-
-foto.addEventListener("wheel", function(e) {
-
-    e.preventDefault();
-
-    let scale = parseFloat(foto.dataset.scale);
-
-    scale *= (e.deltaY < 0) ? 1.05 : 0.95;
-    scale = Math.max(0.5, Math.min(2.0, scale));
-
-    foto.style.transform = `scale(${scale})`;
-    foto.dataset.scale = scale;
-
-}, { passive:false });
+let actieveFoto = null;
 
 // ====================================================
-// Dubbelklik : normale grootte
-// Eén klik : verklein naar 80%
+// Elke foto initialiseren
 // ====================================================
 
-foto.addEventListener("click", function() {
+fotos.forEach(foto => {
 
-    foto.style.transform = "scale(0.8)";
-    foto.dataset.scale = 0.8;
-
-});
-
-foto.addEventListener("dblclick", function() {
-
-    foto.style.transform = "scale(1)";
     foto.dataset.scale = 1;
 
+    // ------------------------------------------------
+    // Klik = actieve foto
+    // ------------------------------------------------
+
+    foto.addEventListener("click", function () {
+
+        // vorige actieve foto deselecteren
+        if (actieveFoto && actieveFoto !== foto) {
+            actieveFoto.classList.remove("actief");
+        }
+
+        actieveFoto = foto;
+        actieveFoto.classList.add("actief");
+
+    });
+
+    // ------------------------------------------------
+    // Dubbelklik = normale grootte
+    // ------------------------------------------------
+
+    foto.addEventListener("dblclick", function () {
+
+        foto.dataset.scale = 1;
+        foto.style.transform = "scale(1)";
+
+    });
+
+    // ------------------------------------------------
+    // Muiswiel = zoomen (alleen actieve foto)
+    // ------------------------------------------------
+
+    foto.addEventListener("wheel", function (e) {
+
+        if (actieveFoto !== foto)
+            return;
+
+        e.preventDefault();
+
+        let scale = parseFloat(foto.dataset.scale);
+
+        if (e.deltaY < 0)
+            scale *= 1.05;
+        else
+            scale *= 0.95;
+
+        scale = Math.max(0.5, Math.min(2.0, scale));
+
+        foto.dataset.scale = scale;
+        foto.style.transform = `scale(${scale})`;
+
+    }, { passive:false });
+
 });
+
 
 // ====================================================
 // Toetsenbord
-// +   : vergroten
-// -   : verkleinen
-// Esc : normale grootte
 // ====================================================
 
 document.addEventListener("keydown", function(e) {
 
-    let scale = parseFloat(foto.dataset.scale);
+    if (!actieveFoto)
+        return;
 
-    if (e.key === "+" || e.key === "=") {
+    let scale = parseFloat(actieveFoto.dataset.scale);
+
+    if (e.key == "+" || e.key == "=" || e.code == "NumpadAdd")
         scale *= 1.05;
-    }
 
-    if (e.key === "-") {
+    if (e.key == "-" || e.code == "NumpadSubtract")
         scale *= 0.95;
-    }
 
     if (e.key === "Escape") {
-        scale = 1;
+
+        actieveFoto.dataset.scale = 1;
+        actieveFoto.style.transform = "scale(1)";
+        actieveFoto.classList.remove("actief");
+        actieveFoto = null;
+
+        return;
     }
 
     scale = Math.max(0.5, Math.min(2.0, scale));
 
-    foto.style.transform = `scale(${scale})`;
-    foto.dataset.scale = scale;
+    actieveFoto.dataset.scale = scale;
+    actieveFoto.style.transform = `scale(${scale})`;
 
 });
 
