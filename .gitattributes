@@ -1,1 +1,3 @@
+# Forceer correcte XML‑MIME‑type voor sitemap
+sitemap.xml linguist-language=XML
 *.xml text xml
