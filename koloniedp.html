@@ -17,6 +17,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpg">
 
+<script src="https://cdn.counter.dev/script.js" data-id="8f51b0a9-adeb-4959-a544-4934fd74a073" data-utcoffset="2"></script>
+
 <title>De Panne: een badplaats met een koloniaal verleden</title>
 
 <style>
@@ -124,7 +126,7 @@ li{ margin:3px 0; }
 	}
 
 	.box {
-		width: 80%;                		   /* laat de box exact 80% van de breedte innemen */
+		width: 100%;                		   /* laat de box exact 80% van de breedte innemen */
 		margin: 0 auto;            	/* centreert de box netjes in het midden van de pagina */
 		
 		border: 2px solid #008080;  /* Maakt een ononderbroken rand van 2 pixels dik */
@@ -139,6 +141,38 @@ li{ margin:3px 0; }
 	}
 
 .anchor{ scroll-margin-top:80px; }
+
+.fotointro{
+    width:100%;
+    height:340px;      /* probeer 320, 340 of 360 */
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    border-radius:4px;
+}
+
+.intro{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:20px;
+    margin:20px 0;
+}
+
+
+.intro-links{
+    flex:0.8;
+}
+
+
+
+.intro-midden{
+    flex:2.3;
+}
+
+.intro-rechts{
+    flex:0.8;
+}
 
 </style>
 
@@ -155,28 +189,19 @@ De geschiedenis wordt meestal geschreven door de machthebbers.<br>
 Ook die van De Panne.
 </div>
 
-
-
-
-<!-- ===================================================== -->
-<!-- FOTO (later toe te voegen)                            -->
-<!-- ===================================================== -->
-
-<div class="fotokader">
-
-<!--
-<img src="images/depanne1900.jpg" class="foto"
-alt="Oude postkaart van De Panne">
-<p class="hint">De Panne omstreeks 1900.</p>
--->
-
-</div>
-
 <!-- ===================================================== -->
 <!-- INHOUDSOPGAVE                                         -->
 <!-- ===================================================== -->
 
-<div class="box">
+<div class="intro">
+
+    <div class="intro-links">
+        <img src="images/nike.jpg" class="fotointro">
+    </div>
+
+    <div class="intro-midden">
+
+        <div class="box">
 
 <h3 class="auto-style1">Inhoud</h3>
 
@@ -207,8 +232,14 @@ Waarom draagt de bibliotheek zijn naam?
 <a class="link" href="#epiloog">Epiloog</a></p>
 
 </div>
+</div>
 
-<hr>
+    <div class="intro-rechts">
+        <img src="images/bib.jpg" class="fotointro">
+    </div>
+
+</div>
+
 
 <h3 id="gehucht" class="anchor">
 Van gehucht tot badplaats
