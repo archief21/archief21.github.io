@@ -2,22 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://archief21.github.io/</loc>
-    <lastmod>2026-07-08</lastmod>
-  </url>
-
-  <url>
     <loc>https://archief21.github.io/index.html</loc>
     <lastmod>2026-07-08</lastmod>
   </url>
 
   <url>
     <loc>https://archief21.github.io/hector.html</loc>
-    <lastmod>2026-07-08</lastmod>
-  </url>
-
-  <url>
-    <loc>https://archief21.github.io/hector2.html</loc>
     <lastmod>2026-07-08</lastmod>
   </url>
 
@@ -41,9 +31,10 @@
     <lastmod>2026-07-18</lastmod>
   </url>  
 
-      <changefreq>monthly</changefreq>
-
-      <priority>0.8</priority>
+    <url>
+    <loc>https://archief21.github.io/koloniedp.html</loc>
+    <lastmod>2026-08-01</lastmod>
+  </url>  
   
 </urlset>
 
