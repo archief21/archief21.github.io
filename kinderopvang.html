@@ -186,6 +186,35 @@ p { margin: 0px 20px 20px 10px; }
 .footer { text-align: center; font-size: 12px; color: var(--muted); padding: 6px 0 12px; }
 .footer a { color: #2563eb; text-decoration: none; }
 
+.popup{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    z-index:9999;
+}
+
+.popup-content{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+	color: #808080;
+    text-align: justify;
+    background:#fff;
+    width:800px;
+    max-width:90%;
+    padding: 5px 10px 5px 20px; 
+    margin-top: 80px; margin-bottom: 80px; margin-left: auto; margin-right: auto;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+.close{ float:right; font-size:28px; cursor:pointer; font-weight:bold; }
+.close:hover{ color:red; }
+
+
 </style>
 
 </head>
@@ -421,11 +450,55 @@ De RMW legt aan een overnemer de verplichting op om:
 <hr>
 
 <div class="footer">
-<a href="mailto:xyz21@skynet.be">E-postadres</a> |
-<a href="disclaim.html">Disclaimer</a>
+    <a href="mailto:xyz21@skynet.be">E-postadres</a> |
+    <a href="disclaim.html">Disclaimer</a> |
+    <a href="#" onclick="openAI(); return false;">AI-info</a>
 </div>
 
+<div id="aiPopup" class="popup">
+    <div class="popup-content">
+
+        <span class="close" onclick="closeAI()">&times;</span>
+
+        <p>Gebruik van AI</p>
+
+<p>
+Deze website werd ontwikkeld met behulp van artificiële intelligentie (AI).<br>
+AI werd gebruikt als hulpmiddel bij het programmeren, de vormgeving, het ontwerpen en verbeteren van afbeeldingen en het opstellen van teksten.
+</p>
+<p>De inhoud en eindverantwoordelijkheid berusten volledig bij de auteur.<p>
+
+</div>
+</div>
+
+</body>
+
 <script>
+
+function openAI() {
+    document.getElementById("aiPopup").style.display = "block";
+}
+
+function closeAI() {
+    document.getElementById("aiPopup").style.display = "none";
+}
+
+// Sluiten met Esc
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeAI();
+    }
+});
+
+// Sluiten door buiten de popup te klikken
+window.addEventListener("click", function(event) {
+    const popup = document.getElementById("aiPopup");
+
+    if (event.target === popup) {
+        closeAI();
+    }
+});
+
 
 const fotos = document.querySelectorAll(".foto");
 

@@ -12,7 +12,7 @@
 <meta property="og:description" content="Template txt, image, video, knoppen">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://archief21.github.io/template.html">
-<meta property="og:image" content="https://archief21.github.io/images/template1200.jpg">
+<meta property="og:image" content="https://archief21.github.io/images/kunstdz1.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpg">
@@ -37,12 +37,21 @@ body {
   text-align: justify;
  }
 
-h1 { margin: 0; font-size: 16px; font-weight: 400; color: #2563eb; text-align:center; }
-p.zonderruimte {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2; /* of een waarde die jij mooi vindt */
-}
+h1 { margin: 5; font-size: 18px; font-weight: 400; color: #2563eb;  text-align:center; }
+h2 { margin: 5; font-size: 18px; font-weight: 400; color: #2563eb;  text-align:center; }
+h3 { margin: 5; font-size: 16px; font-weight: 500; color: #808080;  text-align:left; }
+h4{ color:#502828; font-size:15px; font-weight:600; margin:18px 0 8px; }
+
+p{ margin:8px 0; line-height:1.45; }
+
+ul{ margin:4px 0 12px 22px; }
+li{ margin:3px 0; }
+
+.auto-style1 {text-align: center;}
+.auto-style2 {text-align: justify;}
+
+.footer { text-align: center; font-size: 12px; color: var(--muted); padding: 6px 0 12px; }
+.footer a { color: #2563eb; text-decoration: none; }
 
 /* Afbeelding */
 
@@ -97,6 +106,8 @@ p.zonderruimte {
 .video:hover { background-color: #003f7d; }
 .video:active { transform: translateY(1px); }
 
+/* Highlight */
+
 .highlight {
     font-family: Arial, sans-serif;
     font-size: 15px;
@@ -130,6 +141,36 @@ p.zonderruimte {
 	    background-color: #f9f9f9; 
 	}
 
+.anchor{ scroll-margin-top:80px; }
+
+.popup{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    z-index:9999;
+}
+
+.popup-content{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+	color: #808080;
+    text-align: justify;
+    background:#fff;
+    width:800px;
+    max-width:90%;
+    padding: 5px 10px 5px 20px; 
+    margin-top: 80px; margin-bottom: 80px; margin-left: auto; margin-right: auto;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+.close{ float:right; font-size:28px; cursor:pointer; font-weight:bold; }
+.close:hover{ color:red; }
+
 </style>
 
 </head>
@@ -149,15 +190,23 @@ p.zonderruimte {
 <p style="color: #800040;">6. roodbruin: 800040
 <p style="color: #804040;">7. bruin: 804040 & #502828
 <p style="color: #808080;">8. grijs: 808080
-<p style="color: #FF8080;">9. roze: FF8080
+<p style="color: #FF8080;">9. roze: FF8080</p>
 </div>
 
 <hr color="#002850">
 
-<!-- Dit is het HTML-element -->
+<a href="https://www." target="_blank" rel="noopener noreferrer">link naar url</a><br>
+<a href="https://example.com" class="link">Dit is een aangepaste link door de class</a><br>
+<a class="knop" href="images/hectorheem.pdf" target="_blank">link vanuit knop</a>
+
+<p id="test"> link naar anker: url/template.html#test </p>
+<h1 id="conclusie" class="anchor">id met class anchor</h1>
+
 <div class="box">
-    Hier kun tekst worden ingeschreven.
+    Hier kan tekst worden ingeschreven.
 </div>
+
+<span style="color: #008000;">tekst andere kleur</span>
 
 <div class="highlight"> <strong>Highlight</strong><br>Tekst in box</div>
 
@@ -166,9 +215,8 @@ p.zonderruimte {
        href="https://sle.be/wat-doen-we/publicaties/het-rood-ras-van-west-vlaanderen"
        target="_blank">Knop</a>
 
-    <a class="knop"
-       href="images/hectorheem.pdf"
-       target="_blank">Hector</a>
+    <a class="knop" href="images/hectorheem.pdf" target="_blank">Hector</a>
+	
 </div>
 
 <div class="video-container">
@@ -185,30 +233,75 @@ p.zonderruimte {
 <div class="fotokader"><img class="foto" src="images/kunstdz1.jpg"></div>
 <div class="fotokader"><img class="foto" src="images/kunstdz2.jpg"></div>
 
+</div>
+
+<voet style="text-align:center; font-size:0.9em; color:#666;">
+<p> Voet style - Voetnota </p>
+</voet>
+
+<div class="footer">
+    <a href="mailto:xyz21@skynet.be">E-postadres</a> |
+    <a href="disclaim.html">Disclaimer</a> |
+    <a href="#" onclick="openAI(); return false;">AI-info</a>
+</div>
+
+<div id="aiPopup" class="popup">
+    <div class="popup-content">
+
+        <span class="close" onclick="closeAI()">&times;</span>
+
+        <p>Gebruik van AI</p>
+
+<p>
+Deze website werd ontwikkeld met behulp van artificiële intelligentie (AI).<br>
+AI werd gebruikt als hulpmiddel bij het programmeren, de vormgeving, het ontwerpen en verbeteren van afbeeldingen en het opstellen van teksten.
+</p>
+<p>De inhoud en eindverantwoordelijkheid berusten volledig bij de auteur.<p>
 
 </div>
+</div>
+
+</body>
 
 <script>
 
+function openAI() {
+    document.getElementById("aiPopup").style.display = "block";
+}
+
+function closeAI() {
+    document.getElementById("aiPopup").style.display = "none";
+}
+
+// Sluiten met Esc
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeAI();
+    }
+});
+
+// Sluiten door buiten de popup te klikken
+window.addEventListener("click", function(event) {
+    const popup = document.getElementById("aiPopup");
+
+    if (event.target === popup) {
+        closeAI();
+    }
+});
+
+// ====================================================
+// Foto's
+// ====================================================
+
 const fotos = document.querySelectorAll(".foto");
-
 let actieveFoto = null;
-
-// ====================================================
-// Elke foto initialiseren
-// ====================================================
 
 fotos.forEach(foto => {
 
     foto.dataset.scale = 1;
 
-    // ------------------------------------------------
-    // Klik = actieve foto
-    // ------------------------------------------------
-
     foto.addEventListener("click", function () {
 
-        // vorige actieve foto deselecteren
         if (actieveFoto && actieveFoto !== foto) {
             actieveFoto.classList.remove("actief");
         }
@@ -216,22 +309,15 @@ fotos.forEach(foto => {
         actieveFoto = foto;
         actieveFoto.classList.add("actief");
 
-    });
-
-    // ------------------------------------------------
-    // Dubbelklik = normale grootte
-    // ------------------------------------------------
+      });
 
     foto.addEventListener("dblclick", function () {
 
         foto.dataset.scale = 1;
         foto.style.transform = "scale(1)";
 
-    });
+      });
 
-    // ------------------------------------------------
-    // Muiswiel = zoomen (alleen actieve foto)
-    // ------------------------------------------------
 
     foto.addEventListener("wheel", function (e) {
 
