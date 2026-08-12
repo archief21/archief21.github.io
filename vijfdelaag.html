@@ -289,6 +289,16 @@ document.addEventListener("keydown", function(e) {
 
 });
 
+/* open html in nieuw tab */
+
+document.querySelectorAll("a").forEach(link => {
+  const href = link.getAttribute("href");
+  if (!href) return;
+
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
+});
+
 </script>
 </body>
 </html>

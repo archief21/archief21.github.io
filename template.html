@@ -265,6 +265,10 @@ AI werd gebruikt als hulpmiddel bij het programmeren, de vormgeving, het ontwerp
 
 <script>
 
+// ====================================================
+// Popup
+// ====================================================
+
 function openAI() {
     document.getElementById("aiPopup").style.display = "block";
 }
@@ -375,6 +379,16 @@ document.addEventListener("keydown", function(e) {
     actieveFoto.dataset.scale = scale;
     actieveFoto.style.transform = `scale(${scale})`;
 
+});
+
+/* open html in nieuw tab */
+
+document.querySelectorAll("a").forEach(link => {
+  const href = link.getAttribute("href");
+  if (!href) return;
+
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
 });
 
 </script>
