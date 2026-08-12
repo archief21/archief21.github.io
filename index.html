@@ -7,7 +7,7 @@
 
 <meta property="og:locale" content="nl_BE">
 <meta property="og:title" content="Histories Archief">
-<meta property="og:description" content="WZ">
+<meta name="description" content="Archief 21 Web verzamelt historische informatie, documenten en dossiers over persoonlijke ervaring ; geschiedenis en actuele onderwerpen.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://archief21.github.io/index.html">
 <meta property="og:image" content="https://archief21.github.io/images/kunstdz2.jpg">
@@ -267,7 +267,7 @@ body {
 <div class="card">
 <a class="link" href="hector.html"><span class="icon">☘️</span>Geschiedenis van Hector Winnock</a>
 <a class="link" href="veurnehistoriek.html"><span class="icon">🏛</span>Geschiedenis van Veurne-Ambacht</a>
-<a class="link" href="koloniedp.html"><span class="icon"> 💔 </span>De Panne en zijn koloniaal verleden en heden</a>
+
 </div>
 
 <div class="card">
@@ -281,7 +281,7 @@ body {
 <!-- ===================== -->
 
 <div class="section bruin">
-<div class="section-title">🧠 Sector 3</div>
+<div class="section-title">🧠 Cultuur </div>
 <div class="grid">
 
 <div class="card">
@@ -291,7 +291,7 @@ body {
 
 <div class="card">
 <a class="link" href="leeftijd.html"><span class="icon"> ⏱️ </span>Leeftijd berekenen</a>
-
+<a class="link" href="viewexpo.html"><span class="icon"> ✨ </span>Expo 2026 | Koksijde | Veurne</a>
 </div>
 
 </div>
@@ -300,18 +300,19 @@ body {
 <!-- ===================== -->
 
 <div class="section grauw">
-<div class="section-title">֎ Faits Divers</div>
+<div class="section-title">֎ Adinkerke / De Panne</div>
 
 <div class="grid">
 
 <div class="card">
-<a class="link" href="kinderopvang.html"><span class="icon">😵</span>Stopzetting kinderopvang De Panne</a>
-<a class="link" href=""><span class="icon">🧪</span></a>
+<a class="link" href="welzijn.html"><span class="icon">👪</span>Welzijnsbeleid De Panne</a>
+<a class="link" href="kinderopvang.html#doremi"><span class="icon">👪</span>Kinderopvang Adinkerke / De Panne</a>
 </div>
 
 <div class="card">
-<a class="link" href="viewexpo.html"><span class="icon"> ✨ </span>Expo 2026 | Koksijde | Veurne</a>
-<a class="link" href=""><span class="icon">✏️</span></span></a>
+<a class="link" href="koloniedp.html"><span class="icon"> 🗝️ </span>De Panne en zijn koloniaal verleden en heden</a>
+<a class="link" href="koloniedp.html#calmeyn"><span class="icon"> 🥺 </span>Misplaatste naam bibliotheek Maurice C.</a>
+<a class="link" href="vijfdelaag.html"><span class="icon">✏️ </span>De belle époque mentaliteit van De Panne-Bad</a>
 </div>
 
 </div>
@@ -327,16 +328,9 @@ body {
 
 <div id="aiPopup" class="popup">
     <div class="popup-content">
-
         <span class="close" onclick="closeAI()">&times;</span>
-
         <p>Gebruik van AI</p>
-
-<p>
-Deze website werd ontwikkeld met behulp van artificiële intelligentie (AI).<br>
-AI werd gebruikt als hulpmiddel bij het programmeren, de vormgeving, het ontwerpen en verbeteren van afbeeldingen en het opstellen van teksten.
-</p>
-<p>De inhoud en eindverantwoordelijkheid berusten volledig bij de auteur.<p>
+		<p>Deze website werd ontwikkeld met behulp van artificiële intelligentie (AI).<br>AI werd gebruikt als hulpmiddel bij het programmeren, de vormgeving, het ontwerpen en verbeteren van afbeeldingen en het bewerken van teksten.</p>
 
 </div>
 </div>
@@ -388,10 +382,8 @@ document.querySelectorAll("a").forEach(link => {
   const href = link.getAttribute("href");
   if (!href) return;
 
-  if (href.endsWith(".htm") || href.endsWith(".html")) {
-    link.setAttribute("target", "_blank");
-    link.setAttribute("rel", "noopener noreferrer");
-  }
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
 });
 
 </script>
