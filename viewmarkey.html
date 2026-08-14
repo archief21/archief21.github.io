@@ -10,14 +10,14 @@
 <meta name="orientation" content="landscape">
 
 <meta property="og:locale" content="nl_BE">
-<meta property="og:title" content="Beelden Markey zandput in Adinkerke">
-<meta property="og:description" content="Adinkerke de Markey putten staan droog alle vissen en kamsalamanders dood ?">
+<meta property="og:title" content="Beelden">
+<meta property="og:description" content="Viewer versie 2026 07 06">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://archief21.github.io/viewmarkey.html">
 <meta property="og:image" content="https://archief21.github.io/images/m10.jpg">
 <meta property="og:image:type" content="image/jpg">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="675">
+<meta property="og:image:height" content="630">
 
 
 <title>Markey Zandputten Beeldkijker</title>
@@ -140,29 +140,45 @@ body { margin: 0;  font-family: Arial, sans-serif; background: #C0C0C0; color: w
 .prev { left: 15px; }
 .next { right: 15px; }
 
-@media (orientation: landscape) and (min-width: 700px) {
+
+/* =========================================================
+   TABLET / FACEBOOK PORTRAIT FALLBACK
+   ========================================================= */
+@media (orientation: portrait) and (min-width: 700px) {
   html, body {
     width: 100%;
-    min-width: 100%;
     height: 100%;
     overflow: hidden;
   }
 
-  .controls {
-    padding: 6px 10px;
-    gap: 10px;
+  body.fb-portrait-landscape {
+    overflow: hidden;
   }
 
-  .slider { height: calc(100vh - 58px); }
-}
-
-@media (orientation: portrait) and (min-width: 700px) {
-  .slider {
-    height: calc(100vh - 100px);
+  body.fb-portrait-landscape > * {
+    /* JS supplies the exact transform and dimensions. */
   }
 
-  .slide img {
-    object-fit: contain;
+  body.fb-portrait-landscape .controls {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    box-sizing: border-box;
+  }
+
+  body.fb-portrait-landscape .slider-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+  }
+
+  body.fb-portrait-landscape .slider {
+    width: 100%;
+    height: calc(100vw - 58px);
   }
 }
 
@@ -222,17 +238,12 @@ body { margin: 0;  font-family: Arial, sans-serif; background: #C0C0C0; color: w
       <img src="adink/m24.jpg">
       <div class="caption">Garzebekeveld Adinkerke</div>
     </div>
-	
     <div class="slide">
       <img src="adink/m26.jpg">
       <div class="caption">Garzebekeveld Adinkerke</div>
     </div>
 	
-	<div class="slide">
-      <img src="adink/m30.jpg">
-      <div class="caption">Artistieke impressie - Markey Put - 15/08/2026</div>
-    </div>
-	
+
 
 <!-- NAV -->
 
@@ -245,26 +256,74 @@ body { margin: 0;  font-family: Arial, sans-serif; background: #C0C0C0; color: w
 </div>
 
 <script>
-/* Tablet landscape-orientatie (progressive enhancement).
-   screen.orientation.lock() werkt alleen in browsers/webviews die dit toestaan,
-   meestal vanuit fullscreen. Daarom wordt het niet automatisch geforceerd. */
-async function requestLandscapeOrientation() {
-  try {
-    if (screen.orientation && screen.orientation.lock && document.fullscreenElement) {
-      await screen.orientation.lock("landscape");
-    }
-  } catch (e) {
-    // Facebook/webview kan orientation.lock blokkeren; niets doen.
-  }
-}
 
-document.addEventListener("fullscreenchange", () => {
-  if (document.fullscreenElement) {
-    requestLandscapeOrientation();
-  } else if (screen.orientation && screen.orientation.unlock) {
-    try { screen.orientation.unlock(); } catch (e) {}
+/* =========================================================
+   FACEBOOK / TABLET LANDSCAPE FALLBACK
+   ========================================================= */
+(function () {
+  let fbPortraitMode = false;
+
+  function isTabletPortrait() {
+    return window.innerWidth < window.innerHeight &&
+           Math.min(window.innerWidth, window.innerHeight) >= 700;
   }
-});
+
+  function applyTabletLandscapeFallback() {
+    const tabletPortrait = isTabletPortrait();
+    const body = document.body;
+
+    if (!tabletPortrait) {
+      if (fbPortraitMode) {
+        document.querySelectorAll('body > *').forEach(el => {
+          el.style.transform = '';
+          el.style.transformOrigin = '';
+          el.style.position = '';
+          el.style.width = '';
+          el.style.height = '';
+          el.style.left = '';
+          el.style.top = '';
+        });
+        body.classList.remove('fb-portrait-landscape');
+        fbPortraitMode = false;
+      }
+      return;
+    }
+
+    /*
+      Portrait viewport: W x H.
+      The desired visual landscape canvas is H x W.
+      Rotate clockwise and translate so the canvas fills the screen.
+    */
+    const W = window.innerWidth;
+    const H = window.innerHeight;
+
+    body.classList.add('fb-portrait-landscape');
+    fbPortraitMode = true;
+
+    document.querySelectorAll('body > *').forEach(el => {
+      el.style.transformOrigin = 'top left';
+      el.style.transform = `translateX(${H}px) rotate(90deg)`;
+      el.style.position = 'absolute';
+      el.style.width = `${H}px`;
+      el.style.height = `${W}px`;
+      el.style.left = '0';
+      el.style.top = '0';
+    });
+
+    /*
+      Because the visual content is rotated, touch/pointer coordinates need
+      to be converted back into the unrotated page coordinates.
+    */
+    window.__tabletLandscape = { width: W, height: H };
+  }
+
+  window.addEventListener('resize', applyTabletLandscapeFallback);
+  window.addEventListener('orientationchange', () => {
+    setTimeout(applyTabletLandscapeFallback, 100);
+  });
+
+  document.addEventListener('DOMContentLoaded', applyTabletLandscapeFallback);
+})();
 
 let index = 0;
 let slides = document.getElementsByClassName("slide");
@@ -417,7 +476,11 @@ function toggleFullscreen() {
 
   if (!document.fullscreenElement) {
     el.requestFullscreen().then(() => {
-      requestLandscapeOrientation();
+      try {
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock("landscape").catch(() => {});
+        }
+      } catch (e) {}
     }).catch(() => {});
   } else {
     document.exitFullscreen();
