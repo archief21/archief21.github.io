@@ -67,9 +67,7 @@ li { margin: 2px 0; }
 <h3> Behoorlijk Bestuur<br>Taxonomie en Toetsingskader</h3>
 
 <div id="controls">
-    <div id="loadStatus" style="margin-bottom:10px; color:#004080;">
-        Behoorlijk.js wordt geladen...
-    </div>
+    <div id="loadStatus" style="display:none;"></div>
     <button onclick="expandAll()">➕ Alles uitklappen</button>
     <button onclick="collapseAll()">➖ Alles inklappen</button>
 </div>
@@ -328,8 +326,7 @@ async function loadDataset() {
         const treeData = buildTree(window.DATASET);
         tree.innerHTML = renderTree(treeData);
 
-        status.textContent = "behoorlijk.js geladen";
-        status.style.color = "#008000";
+        status.textContent = "";
 
         tree.scrollIntoView({
             behavior: "smooth",
@@ -339,8 +336,7 @@ async function loadDataset() {
     } catch (error) {
         console.error("Fout bij laden van behoorlijk.js:", error);
 
-        status.textContent = "Fout bij laden van behoorlijk.js";
-        status.style.color = "#AA0000";
+        status.textContent = "";
 
         tree.innerHTML =
             "<b>Het bestand behoorlijk.js kon niet automatisch worden geladen.</b>" +
