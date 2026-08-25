@@ -357,6 +357,238 @@ window.DATASET = [
 
 { terms:["Wettigheidsbeginsel"], code:"D060" },
 
-{ terms:["Zorgvuldigheidsbeginsel"], code:"D061" }
+{ terms:["Zorgvuldigheidsbeginsel"], code:"D061" },
+
+{ terms:["Verzoek tot bestuurlijk toezicht"], code:"D062" },
+{ terms:["Vraag om onderzoek door de toezichthoudende overheid"], code:"D063" },
+
+/* ==================================================
+   E = RECHTSGEVOLGEN BIJ GEBREKKIG BESTUURSOPTREDEN
+   ================================================== */
+
+{ terms:["Rechtsgevolgen bij gebrekkig bestuursoptreden"], code:"E" },
+
+{ terms:["Vaststelling van een gebrek"], code:"EA" },
+{ terms:["Gebrek"], code:"EAA" },
+{ terms:["Feitelijke tekortkoming"], code:"EAB" },
+{ terms:["Procedureel gebrek"], code:"EAC" },
+{ terms:["Inhoudelijk gebrek"], code:"EAD" },
+{ terms:["Bevoegdheidsgebrek"], code:"EAE" },
+{ terms:["Motiveringsgebrek"], code:"EAF" },
+
+{ terms:["Schending"], code:"EB" },
+{ terms:["Schending van een geschreven rechtsregel"], code:"EBA" },
+{ terms:["Schending van een algemeen rechtsbeginsel"], code:"EBB" },
+{ terms:["Schending van een beginsel van behoorlijk bestuur"], code:"EBC" },
+{ terms:["Schending van de motiveringsplicht"], code:"EBD" },
+{ terms:["Schending van de zorgvuldigheidsplicht"], code:"EBE" },
+
+{ terms:["Onwettigheid"], code:"EC" },
+{ terms:["Strijdigheid met een geschreven rechtsregel"], code:"ECA" },
+{ terms:["Strijdigheid met een algemeen rechtsbeginsel"], code:"ECB" },
+{ terms:["Strijdigheid met een beginsel van behoorlijk bestuur"], code:"ECC" },
+{ terms:["Onwettige bevoegdheidsuitoefening"], code:"ECD" },
+{ terms:["Onwettige bestuurshandeling"], code:"ECE" },
+{ terms:["Herstelbare onwettigheid"], code:"ECF" },
+
+{ terms:["Herstel"], code:"ED" },
+{ terms:["Herstel van een gebrek"], code:"EDA" },
+{ terms:["Herstelbeslissing"], code:"EDB" },
+{ terms:["Herstel van een onwettigheid"], code:"EDC" },
+{ terms:["Bestuurlijke lus"], code:"EDD" },
+{ terms:["Herstel door het bestuur"], code:"EDE" },
+
+{ terms:["Schorsing"], code:"EE" },
+{ terms:["Schorsing van een bestuurshandeling"], code:"EEA" },
+{ terms:["Schorsingsberoep"], code:"EEB" },
+{ terms:["Hoogdringendheid"], code:"EEC" },
+{ terms:["Ernstig middel"], code:"EED" },
+{ terms:["Voorlopige bescherming"], code:"EEE" },
+
+{ terms:["Vernietiging"], code:"EF" },
+{ terms:["Gehele vernietiging"], code:"EFA" },
+{ terms:["Gedeeltelijke vernietiging"], code:"EFB" },
+{ terms:["Rechterlijke vernietiging"], code:"EFC" },
+{ terms:["Vernietiging in het kader van bestuurlijk toezicht"], code:"EFD" },
+{ terms:["Gevolgen van vernietiging"], code:"EFE" },
+
+{ terms:["Intrekking"], code:"EG" },
+{ terms:["Intrekking door het bestuur"], code:"EGA" },
+{ terms:["Intrekking van een eerdere beslissing"], code:"EGB" },
+{ terms:["Rechtsgevolgen van intrekking"], code:"EGC" },
+
+{ terms:["Nieuwe beslissing"], code:"EH" },
+{ terms:["Verplichting tot nieuwe beslissing"], code:"EHA" },
+{ terms:["Nieuwe beslissing na vernietiging"], code:"EHB" },
+{ terms:["Nieuwe beslissing met inachtneming van het rechtscollege"], code:"EHC" },
+{ terms:["Gebondenheid aan de rechterlijke uitspraak"], code:"EHD" },
+
+{ terms:["Behoud van rechtsgevolgen"], code:"EI" },
+{ terms:["Behoud van rechtsgevolgen na vernietiging"], code:"EIA" },
+{ terms:["Geheel behoud van rechtsgevolgen"], code:"EIB" },
+{ terms:["Gedeeltelijk behoud van rechtsgevolgen"], code:"EIC" },
+{ terms:["Voorlopig behoud van rechtsgevolgen"], code:"EID" },
+
+{ terms:["Schadevergoeding"], code:"EJ" },
+{ terms:["Schade door onrechtmatig bestuursoptreden"], code:"EJA" },
+{ terms:["Materiële schade"], code:"EJB" },
+{ terms:["Morele schade"], code:"EJC" },
+{ terms:["Causaal verband"], code:"EJD" },
+{ terms:["Herstel van schade"], code:"EJE" },
+
+{ terms:["Bestuurlijke sanctie"], code:"EK" },
+{ terms:["Specifieke wettelijke sanctiebevoegdheid"], code:"EKA" },
+{ terms:["Bestuurlijke geldboete"], code:"EKB" },
+{ terms:["Bestuurlijke maatregel"], code:"EKC" },
+{ terms:["Herstelmaatregel"], code:"EKD" },
+{ terms:["Sanctieprocedure"], code:"EKE" },
+{ terms:["Evenredigheid van de sanctie"], code:"EKF" },
+
+{ terms:["Geen of onvoldoende rechtsgevolg"], code:"EL" },
+{ terms:["Gebrek zonder vernietiging"], code:"ELA" },
+{ terms:["Belangvereiste"], code:"ELB" },
+{ terms:["Geen voldoende belang bij vernietiging"], code:"ELC" },
+{ terms:["Gebrek zonder doorslaggevend gevolg"], code:"ELD" },
+{ terms:["Herstel vóór definitieve vernietiging"], code:"ELE" },
+
+/* ==================================================
+   F = RECHTSBESCHERMING, TOEZICHT EN INGRIJPEN
+   ================================================== */
+
+{ terms:["Rechtsbescherming, toezicht en ingrijpen"], code:"F" },
+
+
+/* ==================================================
+   FA = DE WEG NAAR RECHTSBESCHERMING OF TOEZICHT
+   ================================================== */
+
+{ terms:["De weg naar rechtsbescherming of toezicht"], code:"FA" },
+
+{ terms:["Rechtstreeks verzoek aan het bestuur"], code:"FAA" },
+{ terms:["Verzoek om onderzoek"], code:"FAB" },
+{ terms:["Verzoek tot bestuurlijk toezicht"], code:"FAC" },
+{ terms:["Melding"], code:"FAD" },
+{ terms:["Klacht"], code:"FAE" },
+{ terms:["Klacht in het kader van bestuurlijk toezicht"], code:"FAF" },
+{ terms:["Bezwaar"], code:"FAG" },
+{ terms:["Administratief beroep"], code:"FAH" },
+{ terms:["Beroep bij een bestuursrechtscollege"], code:"FAI" },
+{ terms:["Vernietigingsberoep"], code:"FAJ" },
+{ terms:["Schorsingsprocedure"], code:"FAK" },
+{ terms:["Beroep bij de Raad van State"], code:"FAL" },
+{ terms:["Beroep bij de gewone rechter"], code:"FAM" },
+{ terms:["Ombudsprocedure"], code:"FAN" },
+
+/*
+ * Opmerking:
+ * ABB gebruikt voor het toezichtkanaal de officiële benaming
+ * "klacht". Inhoudelijk kan een burger daarmee evenwel een
+ * verzoek tot onderzoek en toezicht formuleren.
+ */
+
+
+/* ==================================================
+   FB = BEVOEGDE INSTANTIE VOOR TOEZICHT,
+        BEOORDELING OF INGRIJPEN
+   ================================================== */
+
+{ terms:["Bevoegde instantie voor toezicht, beoordeling of ingrijpen"], code:"FB" },
+
+{ terms:["Het bestuur zelf"], code:"FBA" },
+{ terms:["Toezichthoudende overheid"], code:"FBB" },
+{ terms:["Provinciegouverneur"], code:"FBC" },
+{ terms:["Vlaamse Regering"], code:"FBD" },
+{ terms:["Bevoegde Vlaamse minister"], code:"FBE" },
+{ terms:["Agentschap Binnenlands Bestuur"], code:"FBF" },
+
+{ terms:["Vlaams bestuursrechtscollege"], code:"FBG" },
+{ terms:["Raad voor Vergunningsbetwistingen"], code:"FBGA" },
+{ terms:["Handhavingscollege"], code:"FBGB" },
+{ terms:["Raad voor Verkiezingsbetwistingen"], code:"FBGC" },
+{ terms:["Raad voor betwistingen inzake studievoortgangsbeslissingen"], code:"FBGD" },
+
+{ terms:["Raad van State"], code:"FBH" },
+{ terms:["Hoven en rechtbanken"], code:"FBI" },
+{ terms:["Gewone rechter"], code:"FBJ" },
+{ terms:["Vlaamse Ombudsdienst"], code:"FBK" },
+
+
+/* ==================================================
+   FC = BESTUURLIJK TOEZICHT
+   ================================================== */
+
+{ terms:["Bestuurlijk toezicht"], code:"FC" },
+
+{ terms:["Algemeen bestuurlijk toezicht"], code:"FCA" },
+{ terms:["Specifiek bestuurlijk toezicht"], code:"FCB" },
+{ terms:["Toezicht op lokale besturen"], code:"FCC" },
+{ terms:["Toezicht op provinciale besturen"], code:"FCD" },
+{ terms:["Toezicht op besluiten"], code:"FCE" },
+{ terms:["Onderzoek door de toezichthouder"], code:"FCF" },
+{ terms:["Opvragen van het besluit"], code:"FCG" },
+{ terms:["Opvragen van het standpunt van het bestuur"], code:"FCH" },
+{ terms:["Toezichtmaatregel"], code:"FCI" },
+{ terms:["Schorsing door de toezichthouder"], code:"FCJ" },
+{ terms:["Vernietiging door de toezichthouder"], code:"FCK" },
+
+
+/* ==================================================
+   FD = BESTUUR ALS EERSTE HERSTEL- OF
+        RECHTSBESCHERMINGSNIVEAU
+   ================================================== */
+
+{ terms:["Bestuur als eerste aanspreekpunt"], code:"FD" },
+
+{ terms:["Verzoek tot rechtzetting"], code:"FDA" },
+{ terms:["Verzoek tot herziening"], code:"FDB" },
+{ terms:["Verzoek tot intrekking"], code:"FDC" },
+{ terms:["Verzoek tot nieuwe beslissing"], code:"FDD" },
+{ terms:["Herstel door het bestuur"], code:"FDE" },
+
+
+/* ==================================================
+   FE = ADMINISTRATIEVE RECHTSBESCHERMING
+   ================================================== */
+
+{ terms:["Administratieve rechtsbescherming"], code:"FE" },
+
+{ terms:["Bezwaarprocedure"], code:"FEA" },
+{ terms:["Administratief beroep"], code:"FEB" },
+{ terms:["Beroep bij een administratieve instantie"], code:"FEC" },
+{ terms:["Beroepsinstantie"], code:"FED" },
+{ terms:["Beslissing in beroep"], code:"FEE" },
+
+
+/* ==================================================
+   FF = RECHTERLIJKE RECHTSBESCHERMING
+   ================================================== */
+
+{ terms:["Rechterlijke rechtsbescherming"], code:"FF" },
+
+{ terms:["Vernietigingsberoep"], code:"FFA" },
+{ terms:["Schorsingsberoep"], code:"FFB" },
+{ terms:["Beroep tot nietigverklaring"], code:"FFC" },
+{ terms:["Voorlopige maatregel"], code:"FFD" },
+{ terms:["Beroep bij de Raad van State"], code:"FFE" },
+{ terms:["Beroep bij een Vlaams bestuursrechtscollege"], code:"FFF" },
+{ terms:["Beroep bij de gewone rechter"], code:"FFG" },
+
+/* ==================================================
+   FG = MOGELIJK INGRIJPEN
+   ================================================== */
+
+{ terms:["Mogelijk ingrijpen"], code:"FG" },
+
+{ terms:["Onderzoek"], code:"FGA" },
+{ terms:["Vaststelling van een gebrek"], code:"FGB" },
+{ terms:["Vaststelling van een onwettigheid"], code:"FGC" },
+{ terms:["Schorsing"], code:"FGD" },
+{ terms:["Vernietiging"], code:"FGE" },
+{ terms:["Intrekking"], code:"FGF" },
+{ terms:["Herstel"], code:"FGG" },
+{ terms:["Nieuwe beslissing"], code:"FGH" },
+{ terms:["Bevel tot nieuwe beslissing"], code:"FGI" },
+{ terms:["Schadevergoeding"], code:"FGJ" },
+{ terms:["Bestuurlijke sanctie"], code:"FGK" }
 
 ];
