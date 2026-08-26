@@ -72,6 +72,26 @@ li { margin: 2px 0; }
 .search-item { cursor: pointer; padding: 4px; text-decoration: underline; color: #004080; font-size: 14px; }
 .search-item:hover { background-color: #e6f0ff; }
 
+/* Afbeelding */
+
+.foto {
+  width: 90%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto 25px auto;
+  transform: scale(1);
+  transition: transform 0.05s linear;
+  cursor: zoom-in;
+  user-select: none;
+}
+
+.fotokader { margin: 25px 0; }
+.foto.actief {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+    box-shadow: 0 0 12px rgba(37,99,235,0.35);
+}
+
 </style>
 </head>
 
@@ -149,8 +169,6 @@ function findParentCode(code, lookup){
 
     return null;
 }
-
-
 
 function buildTree(data) {
     const lookup = {};
@@ -373,5 +391,10 @@ function escapeHtml(value) {
 window.addEventListener("DOMContentLoaded", loadDataset);
 
 </script>
+
+<hr>
+<div class="fotokader"><img class="foto" src="images/behoorlijk.jpg"></div>
+<hr>
+
 </body>
 </html>
