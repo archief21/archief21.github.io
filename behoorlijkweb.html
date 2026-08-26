@@ -22,6 +22,7 @@
 body { font-family: Verdana, sans-serif; margin: 20px; font-size: 16px; }
 
 h3 { text-align: center; color: #004080;  font-size: 16px;  font-weight: 400;}
+.hint { margin-top:1px; font-size:14px; color:#666;  font-style:italic;  text-align: center;}
 
 #controls { text-align: center; margin-bottom: 15px; }
 #controls button { padding: 6px 14px; border: none; border-radius: 6px; cursor: pointer; margin: 4px; }
@@ -116,10 +117,7 @@ li { margin: 2px 0; }
     box-sizing: border-box;
 }
 
-.info-button:hover {
-    background: #004080;
-    color: #ffffff;
-}
+.info-button:hover { background: #004080; color: #ffffff; }
 
 #infoPopup {
     display: none;
@@ -164,15 +162,8 @@ li { margin: 2px 0; }
     font-weight: bold;
 }
 
-#infoPopup .info-paragraph {
-    margin: 0 0 11px 0;
-    white-space: pre-wrap;
-}
-
-#infoPopup .info-paragraph.spacer {
-    height: 4px;
-    margin: 0;
-}
+#infoPopup .info-paragraph { margin: 0 0 11px 0; white-space: pre-wrap; }
+#infoPopup .info-paragraph.spacer { height: 4px; margin: 0; }
 
 </style>
 </head>
@@ -544,6 +535,7 @@ window.addEventListener("DOMContentLoaded", loadDataset);
 
 <hr>
 <div class="fotokader"><img class="foto" src="images/behoorlijk.jpg"></div>
+<div class="hint"> 🔍 Algemene Beginselen Behoorlijk Bestuur (ABBB)</div>
 <hr>
 
 </body>
