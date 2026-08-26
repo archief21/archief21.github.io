@@ -21,7 +21,44 @@ window.DATASET = [
 
 /* Motivering volgens de structuur van de Uitdrukkelijke Motiveringswet */
 { terms:["Motivering en transparantie"], code:"AC" },
-{ terms:["Motiveringsbeginsel"], code:"ACA" },
+{
+    terms:["Motiveringsbeginsel"],
+    code:"ACA",
+    info: `
+De wet van 29 juli 1991
+betreffende de uitdrukkelijke motivering van de bestuurshandelingen.
+
+Omzendbrief BA 2000/08
+betreffende de toepassing van de wet van 29 juli 1991.
+
+Art. 2.
+
+De beslissing of het besluit van het bestuur moet uitdrukkelijk worden gemotiveerd.
+
+Formele motivering:
+Vermeldt het bestuur de redenen (motieven) waarom de beslissing wordt genomen?
+
+Art. 3.
+
+De opgelegde motivering moet in de akte de juridische en feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen. Zij moet afdoende zijn.
+
+1. De juridische en feitelijke overwegingen.
+
+1) Worden de juridische regels aangegeven die worden toegepast?
+
+2) Worden de precieze, concrete feitelijke gegevens aangeduid waarom de beslissing werd genomen?
+
+2. Worden of zijn de overwegingen in de akte opgenomen?
+
+3. Worden de overwegingen op afdoende wijze tot uiting gebracht?
+
+4. De materiële motivering: zijn de overwegingen afdoende?
+
+1) De inhoudelijke juistheid van de overwegingen (redenen, motieven).
+
+2) De draagkracht (verantwoording) van de overwegingen (redenen, motieven).
+`
+},
 { terms:["Formele motiveringsplicht"], code:"ACAA" },
 { terms:["Motieven uitdrukkelijk vermeld"], code:"ACAAA" },
 { terms:["Motieven opgenomen in de akte"], code:"ACAAB" },
