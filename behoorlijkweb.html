@@ -98,35 +98,42 @@ li { margin: 2px 0; }
 ============================= */
 
 .info-button {
-    display: inline-block;
-    margin-left: 6px;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    margin-left: 7px;
+    border: 1px solid #004080;
     border-radius: 50%;
-    background: #004080;
-    color: white;
+    background: #ffffff;
+    color: #004080;
     font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     cursor: pointer;
-    vertical-align: middle;
+    vertical-align: 1px;
+    box-sizing: border-box;
 }
 
 .info-button:hover {
-    background: #0080C0;
+    background: #004080;
+    color: #ffffff;
 }
 
 #infoPopup {
     display: none;
     position: fixed;
     z-index: 1000;
-    width: min(620px, calc(100vw - 40px));
-    max-height: min(560px, calc(100vh - 40px));
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(720px, calc(100vw - 50px));
+    max-height: min(620px, calc(100vh - 50px));
     overflow-y: auto;
-    padding: 18px 22px;
-    background: #fffef2;
+    box-sizing: border-box;
+    padding: 22px 26px 24px 26px;
+    background: #fffef5;
     border: 2px solid #004080;
     border-radius: 10px;
     box-shadow: 0 8px 28px rgba(0,0,0,0.25);
@@ -134,30 +141,37 @@ li { margin: 2px 0; }
     font-size: 14px;
     line-height: 1.5;
     color: #222;
-    white-space: pre-wrap;
 }
 
 #infoPopup .info-close {
-    float: right;
+    position: absolute;
+    top: 8px;
+    right: 10px;
     border: none;
     background: transparent;
     color: #004080;
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bold;
     cursor: pointer;
-    line-height: 18px;
+    line-height: 20px;
 }
 
 #infoPopup .info-title {
+    padding-right: 30px;
+    margin: 0 0 18px 0;
     color: #004080;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
-    margin: 0 28px 12px 0;
-    white-space: normal;
 }
 
-#infoPopup .info-text {
+#infoPopup .info-paragraph {
+    margin: 0 0 11px 0;
     white-space: pre-wrap;
+}
+
+#infoPopup .info-paragraph.spacer {
+    height: 4px;
+    margin: 0;
 }
 
 </style>
@@ -291,7 +305,7 @@ function renderTree(nodes) {
                 ${node.info ? `<span class="info-button"
                     title="Info"
                     onclick="event.stopPropagation(); showInfoPopup('${node.code}')">i</span>` : ""}
-             </div>
+            </div>
         `;
 
         if (hasChildren) {
@@ -411,15 +425,29 @@ function showInfoPopup(code) {
     const popup = document.getElementById("infoPopup");
     const content = document.getElementById("infoPopupContent");
 
-    content.innerHTML = `
-        <div class="info-title">${item.code} – ${item.terms[0]}</div>
-        <div class="info-text">${escapeHtml(item.info)}</div>
-    `;
+    content.innerHTML = "";
+
+    const title = document.createElement("div");
+    title.className = "info-title";
+    title.textContent = item.code + " – " + item.terms[0];
+    content.appendChild(title);
+
+    const paragraphs = Array.isArray(item.info) ? item.info : [item.info];
+
+    paragraphs.forEach(text => {
+        const p = document.createElement("div");
+
+        if (text === "") {
+            p.className = "info-paragraph spacer";
+        } else {
+            p.className = "info-paragraph";
+            p.textContent = text;
+        }
+
+        content.appendChild(p);
+    });
 
     popup.style.display = "block";
-    popup.style.left = "50%";
-    popup.style.top = "50%";
-    popup.style.transform = "translate(-50%, -50%)";
 }
 
 function closeInfoPopup() {
