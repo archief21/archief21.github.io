@@ -1,5 +1,18 @@
 window.DATASET = [
 
+
+/* ==================================================
+
+   { 
+	terms:["  "],
+    code:"  ",
+	info: ["  "]
+	},
+	
+   ================================================== */
+
+{ terms:["Taxonomie van de algemene beginselen van behoorlijk bestuur"], code:"A" },
+
 /* ==================================================
    A = TAXONOMIE
    ================================================== */
@@ -13,7 +26,13 @@ window.DATASET = [
 { terms:["Verbod van machtsafwending"], code:"AAD" },
 
 { terms:["Zorgvuldige voorbereiding"], code:"AB" },
-{ terms:["Zorgvuldigheidsbeginsel"], code:"ABA" },
+
+{ 
+	terms:["Zorgvuldigheidsbeginsel"],
+    code:"ABA",
+	info: ["Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht. België heeft geen Awb, dus dit beginsel is niet gecodificeerd maar het is bindend recht via rechtspraak"]
+},
+
 { terms:["Onderzoeksbeginsel"], code:"ABB" },
 { terms:["Correcte feitenvaststelling"], code:"ABC" },
 { terms:["Hoorbeginsel / hoorplicht"], code:"ABD" },
@@ -25,40 +44,29 @@ window.DATASET = [
     terms:["Motiveringsbeginsel"],
     code:"ACA",
     info: [
-        "De wet van 29 juli 1991",
-        "betreffende de uitdrukkelijke motivering van de bestuurshandelingen.",
-        "",
-        "Omzendbrief BA 2000/08",
-        "betreffende de toepassing van de wet van 29 juli 1991.",
-        "",
-        "Art. 2.",
-        "",
-        "De beslissing of het besluit van het bestuur moet uitdrukkelijk worden gemotiveerd.",
-        "",
-        "Formele motivering:",
-        "Vermeldt het bestuur de redenen (motieven) waarom de beslissing wordt genomen?",
-        "",
-        "Art. 3.",
-        "",
-        "De opgelegde motivering moet in de akte de juridische en feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen. Zij moet afdoende zijn.",
-        "",
-        "1. De juridische en feitelijke overwegingen.",
-        "",
-        "1) Worden de juridische regels aangegeven die worden toegepast?",
-        "",
-        "2) Worden de precieze, concrete feitelijke gegevens aangeduid waarom de beslissing werd genomen?",
-        "",
-        "2. Worden of zijn de overwegingen in de akte opgenomen?",
-        "",
-        "3. Worden de overwegingen op afdoende wijze tot uiting gebracht?",
-        "",
-        "4. De materiële motivering: zijn de overwegingen afdoende?",
-        "",
-        "1) De inhoudelijke juistheid van de overwegingen (redenen, motieven).",
-        "",
-        "2) De draagkracht (verantwoording) van de overwegingen (redenen, motieven)."
-    ]
+	    "De wet van 29 juli 1991, betreffende de uitdrukkelijke motivering van de bestuurshandelingen.",
+        "Omzendbrief BA 2000/08, betreffende de toepassing van de wet van 29 juli 1991.",
+        "Art. 2. : de beslissing of het besluit van het bestuur moet uitdrukkelijk worden gemotiveerd.",
+        "Formele motivering: vermeldt het bestuur de redenen (motieven) waarom de beslissing wordt genomen?",
+		
+"Art. 3 De opgelegde motivering moet in de akte de juridische en feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen. Zij moet afdoende zijn.",
+
+"1. De juridische en feitelijke overwegingen.",
+
+"A)	Worden de juridische regels aangegeven die worden toegepast ?",
+"B)	Worden de precieze, concrete feitelijke gegevens aangeduid waarom de beslissing werd genomen ? ",
+
+"2. Zijn de motieven (overwegingen, redenen) in de akte opgenomen ?",
+
+"3. Worden de motieven (overwegingen, redenen) op afdoende wijze tot uiting gebracht ?",
+
+"4. De materiële motivering: zijn de motieven (overwegingen, redenen) afdoende ?",
+
+"A)	De inhoudelijke juistheid van de motieven. Zijn de motieven (redenen, overwegingen) juist of gefantaseerd (waan of hallucinatie) ?",
+"B)	De draagkracht van de motieven. Zijn de motieven (redenen, overwegingen) zwaarwichtig genoeg om de beslissing (het besluit) te kunnen dragen (te verantwoorden) ?",
+]
 },
+
 { terms:["Formele motiveringsplicht"], code:"ACAA" },
 { terms:["Motieven uitdrukkelijk vermeld"], code:"ACAAA" },
 { terms:["Motieven opgenomen in de akte"], code:"ACAAB" },
@@ -202,7 +210,13 @@ window.DATASET = [
 
 /* Extra functionele tak voor de situatie waarin een feitelijke praktijk
    bestaat zonder duidelijk aanwijsbare formele beslissing */
-{ terms:["Is er een rechtsgeldige en kenbare basis voor de bestuurlijke praktijk?"], code:"BJ" },
+   
+{ 
+	terms:["Is er een rechtsgeldige en kenbare basis voor de bestuurlijke praktijk?"],
+    code:"BJ",
+info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er een besluit of beslissing bestaat die deze naam heeft vastgelegd"]
+},
+	
 { terms:["Bestaat er een formeel besluit of andere rechtsgrond?"], code:"BJA" },
 { terms:["Is het bevoegde bestuursorgaan aangewezen?"], code:"BJB" },
 { terms:["Is de bevoegdheidsuitoefening traceerbaar?"], code:"BJC" },
@@ -313,7 +327,10 @@ window.DATASET = [
 
 { terms:["Begrippen en middelen"], code:"D" },
 
-{ terms:["Afdoende motivering"], code:"D001" },
+{ terms:["Formele Beginselen - Procesregels"], code:"D100" },
+{ terms:["Materiële beginselen - Inhoudelijke regels"], code:"D200" },
+
+{ terms:["Motivering - Afdoende"], code:"D119" },
 { terms:["Algemeen belang"], code:"D002" },
 { terms:["Algemene beginselen van behoorlijk bestuur"], code:"D003" },
 { terms:["Administratief beroep"], code:"D004" },
@@ -328,15 +345,15 @@ window.DATASET = [
 { terms:["Discriminatie"], code:"D011" },
 { terms:["Discriminatieverbod"], code:"D012" },
 
-{ terms:["Evenredigheidsbeginsel"], code:"D013" },
+{ terms:["Evenredigheidsbeginsel"], code:"D210" },
 
-{ terms:["Fair-playbeginsel"], code:"D014" },
+{ terms:["Fair-playbeginsel"], code:"D102" },
 { terms:["Feitelijke grondslag"], code:"D015" },
 { terms:["Feitelijke overwegingen"], code:"D016" },
-{ terms:["Formele motivering"], code:"D017" },
+{ terms:["Motivering - formele"], code:"D114" },
 
 { terms:["Gedeeltelijke vernietiging"], code:"D018" },
-{ terms:["Gelijkheidsbeginsel"], code:"D019" },
+{ terms:["Gelijkheidsbeginsel"], code:"D220" },
 { terms:["Gelijke behandeling"], code:"D020" },
 { terms:["Gerechtvaardigd onderscheid"], code:"D021" },
 { terms:["Gewekt vertrouwen"], code:"D022" },
@@ -345,7 +362,7 @@ window.DATASET = [
 { terms:["Hoorplicht"], code:"D024" },
 
 { terms:["Informatieplicht"], code:"D025" },
-{ terms:["Inhoudelijke motivering"], code:"D026" },
+{ terms:["Motivering - inhoudelijke"], code:"D118" },
 
 { terms:["Juridische grondslag"], code:"D027" },
 { terms:["Juridische overwegingen"], code:"D028" },
@@ -353,13 +370,13 @@ window.DATASET = [
 { terms:["Kenbaarheid"], code:"D029" },
 { terms:["Kenbaarheidsbeginsel"], code:"D030" },
 
-{ terms:["Legaliteitsbeginsel"], code:"D031" },
+{ terms:["Legaliteitsbeginsel / Wettelijkheidsbeginsel"], code:"D108" },
 
-{ terms:["Materiële motivering"], code:"D032" },
+{ terms:["Motivering - materiële"], code:"D116" },
 { terms:["Machtsafwending"], code:"D033" },
 { terms:["Machtsoverschrijding"], code:"D034" },
 { terms:["Motief"], code:"D035" },
-{ terms:["Motiveringsbeginsel"], code:"D036" },
+{ terms:["Motiveringsbeginsel"], code:"D112" },
 { terms:["Motiveringsplicht"], code:"D037" },
 
 { terms:["Nietigverklaring"], code:"D038" },
@@ -375,7 +392,9 @@ window.DATASET = [
 { terms:["Redelijketermijnbeginsel"], code:"D045" },
 { terms:["Rechtsgrond"], code:"D046" },
 { terms:["Rechtsmiddel"], code:"D047" },
-{ terms:["Rechtszekerheidsbeginsel"], code:"D048" },
+{ terms:["Rechtszekerheidsbeginsel"], code:"D240" },
+{ terms:["Materiële rechtszekerheid"], code:"D244" },
+{ terms:["Formele rechtszekerheid"], code:"D242" },
 { terms:["Relevantie van de motieven"], code:"D049" },
 
 { terms:["Schorsing"], code:"D050" },
@@ -394,9 +413,14 @@ window.DATASET = [
 
 { terms:["Wettigheidsbeginsel"], code:"D060" },
 
-{ terms:["Zorgvuldigheidsbeginsel"], code:"D061" },
+{ 
+	terms:["Zorgvuldigheidsbeginsel"],
+    code:"D130",
+	info: ["Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht. België heeft geen Awb, dus dit beginsel is niet gecodificeerd maar het is bindend recht via rechtspraak"]
+},
 
 { terms:["Verzoek tot bestuurlijk toezicht"], code:"D062" },
+{ terms:["Vertrouwenbeginsel"], code:"D260" },
 { terms:["Vraag om onderzoek door de toezichthoudende overheid"], code:"D063" },
 
 /* ==================================================
