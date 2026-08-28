@@ -1,6 +1,5 @@
 window.DATASET = [
 
-
 /* ==================================================
 
    { 
@@ -10,8 +9,6 @@ window.DATASET = [
 	},
 	
    ================================================== */
-
-{ terms:["Taxonomie van de algemene beginselen van behoorlijk bestuur"], code:"A" },
 
 /* ==================================================
    A = TAXONOMIE
@@ -321,109 +318,6 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 { terms:["Actieve openbaarheid"], code:"CJF" },
 
 /* ==================================================
-   D = BEGRIPPEN EN MIDDELEN
-   Alfabetisch register
-   ================================================== */
-
-{ terms:["Begrippen en middelen"], code:"D" },
-
-{ terms:["Formele Beginselen - Procesregels"], code:"D100" },
-{ terms:["Materiële beginselen - Inhoudelijke regels"], code:"D200" },
-
-{ terms:["Motivering - Afdoende"], code:"D119" },
-{ terms:["Algemeen belang"], code:"D002" },
-{ terms:["Algemene beginselen van behoorlijk bestuur"], code:"D003" },
-{ terms:["Administratief beroep"], code:"D004" },
-{ terms:["Annulatieberoep"], code:"D005" },
-
-{ terms:["Bestuurshandeling"], code:"D006" },
-{ terms:["Bestuursbesluit"], code:"D007" },
-{ terms:["Bevoegdheid"], code:"D008" },
-{ terms:["Bevoegdheidsbeginsel"], code:"D009" },
-{ terms:["Billijkheidsbeginsel"], code:"D010" },
-
-{ terms:["Discriminatie"], code:"D011" },
-{ terms:["Discriminatieverbod"], code:"D012" },
-
-{ terms:["Evenredigheidsbeginsel"], code:"D210" },
-
-{ terms:["Fair-playbeginsel"], code:"D102" },
-{ terms:["Feitelijke grondslag"], code:"D015" },
-{ terms:["Feitelijke overwegingen"], code:"D016" },
-{ terms:["Motivering - formele"], code:"D114" },
-
-{ terms:["Gedeeltelijke vernietiging"], code:"D018" },
-{ terms:["Gelijkheidsbeginsel"], code:"D220" },
-{ terms:["Gelijke behandeling"], code:"D020" },
-{ terms:["Gerechtvaardigd onderscheid"], code:"D021" },
-{ terms:["Gewekt vertrouwen"], code:"D022" },
-
-{ terms:["Hoorbeginsel"], code:"D023" },
-{ terms:["Hoorplicht"], code:"D024" },
-
-{ terms:["Informatieplicht"], code:"D025" },
-{ terms:["Motivering - inhoudelijke"], code:"D118" },
-
-{ terms:["Juridische grondslag"], code:"D027" },
-{ terms:["Juridische overwegingen"], code:"D028" },
-
-{ terms:["Kenbaarheid"], code:"D029" },
-{ terms:["Kenbaarheidsbeginsel"], code:"D030" },
-
-{ terms:["Legaliteitsbeginsel / Wettelijkheidsbeginsel"], code:"D108" },
-
-{ terms:["Motivering - materiële"], code:"D116" },
-{ terms:["Machtsafwending"], code:"D033" },
-{ terms:["Machtsoverschrijding"], code:"D034" },
-{ terms:["Motief"], code:"D035" },
-{ terms:["Motiveringsbeginsel"], code:"D112" },
-{ terms:["Motiveringsplicht"], code:"D037" },
-
-{ terms:["Nietigverklaring"], code:"D038" },
-{ terms:["Non-discriminatiebeginsel"], code:"D039" },
-
-{ terms:["Objectiviteitsbeginsel"], code:"D040" },
-{ terms:["Onpartijdigheidsbeginsel"], code:"D041" },
-{ terms:["Onderzoeksbeginsel"], code:"D042" },
-
-{ terms:["Proportionaliteitsbeginsel"], code:"D043" },
-
-{ terms:["Redelijkheidsbeginsel"], code:"D044" },
-{ terms:["Redelijketermijnbeginsel"], code:"D045" },
-{ terms:["Rechtsgrond"], code:"D046" },
-{ terms:["Rechtsmiddel"], code:"D047" },
-{ terms:["Rechtszekerheidsbeginsel"], code:"D240" },
-{ terms:["Materiële rechtszekerheid"], code:"D244" },
-{ terms:["Formele rechtszekerheid"], code:"D242" },
-{ terms:["Relevantie van de motieven"], code:"D049" },
-
-{ terms:["Schorsing"], code:"D050" },
-{ terms:["Schorsingsberoep"], code:"D051" },
-
-{ terms:["Transparantiebeginsel"], code:"D052" },
-
-{ terms:["Uitdrukkelijke motivering"], code:"D053" },
-{ terms:["Uitdrukkelijke motiveringswet"], code:"D054" },
-
-{ terms:["Verbod van machtsafwending"], code:"D055" },
-{ terms:["Verbod van machtsoverschrijding"], code:"D056" },
-{ terms:["Verbod van willekeur"], code:"D057" },
-{ terms:["Vernietiging"], code:"D058" },
-{ terms:["Vertrouwensbeginsel"], code:"D059" },
-
-{ terms:["Wettigheidsbeginsel"], code:"D060" },
-
-{ 
-	terms:["Zorgvuldigheidsbeginsel"],
-    code:"D130",
-	info: ["Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht. België heeft geen Awb, dus dit beginsel is niet gecodificeerd maar het is bindend recht via rechtspraak"]
-},
-
-{ terms:["Verzoek tot bestuurlijk toezicht"], code:"D062" },
-{ terms:["Vertrouwenbeginsel"], code:"D260" },
-{ terms:["Vraag om onderzoek door de toezichthoudende overheid"], code:"D063" },
-
-/* ==================================================
    E = RECHTSGEVOLGEN BIJ GEBREKKIG BESTUURSOPTREDEN
    ================================================== */
 
@@ -650,6 +544,196 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 { terms:["Nieuwe beslissing"], code:"FGH" },
 { terms:["Bevel tot nieuwe beslissing"], code:"FGI" },
 { terms:["Schadevergoeding"], code:"FGJ" },
-{ terms:["Bestuurlijke sanctie"], code:"FGK" }
+{ terms:["Bestuurlijke sanctie"], code:"FGK" },
+
+/* ==================================================
+   D = BEGRIPPEN EN MIDDELEN
+   Alfabetisch register
+   ================================================== */
+/* ==================================================
+
+   { 
+	terms:["  "],
+    code:"  ",
+	info: ["  "]
+	},
+	
+   ================================================== */
+
+{ terms:["Begrippen en middelen"], code:"W" },
+
+{
+  terms: ["Bevoegdheidsbeginsel"],
+  code: "W10",
+  info: [
+    "Het bestuur mag enkel handelen binnen de bevoegdheden die het wettelijk heeft gekregen."
+  ]
+},
+{
+  terms: ["Billijkheidsbeginsel"],
+  code: "W14",
+  info: [
+    "Het bestuur moet redelijke, eerlijke en evenwichtige beslissingen nemen, zonder onnodige hardheid."
+  ]
+},
+{
+  terms: ["Evenredigheidsbeginsel / Proportionaliteitsbeginsel"],
+  code: "W18",
+  info: [
+    "Bestuurlijke maatregelen mogen niet verder gaan dan nodig is om het doel te bereiken; de nadelige gevolgen moeten in verhouding staan tot het nagestreefde belang."
+  ]
+},
+
+{
+  terms: ["Fair-playbeginsel"],
+  code: "W20",
+  info: [
+    "Het bestuur moet eerlijk, transparant en correct handelen, zonder verrassingen of procedurele valkuilen voor de burger."
+  ]
+},
+{
+  terms: ["Gelijkheidsbeginsel"],
+  code: "W22",
+  info: [
+    "Het bestuur moet gelijke gevallen gelijk behandelen en mag geen ongerechtvaardigde verschillen maken."
+  ]
+},
+{
+  terms: ["Hoorbeginsel"],
+  code: "W24",
+  info: [
+    "Een burger moet de kans krijgen om zijn standpunt te geven voordat het bestuur een beslissing neemt die hem nadelig kan treffen."
+  ]
+},
+{
+  terms: ["Informatiebeginsel"],
+  code: "W26",
+  info: [
+    "Het bestuur moet burgers correct, volledig en tijdig informeren zodat zij hun rechten kunnen uitoefenen. De informatieplicht wordt in de Belgische rechtsleer en rechtspraak erkend als een onderdeel van de algemene beginselen van behoorlijk bestuur (ABBB), maar niet als een afzonderlijk, autonoom beginsel. Ze wordt meestal gezien als een uitvloeisel van andere ABBB zoals het zorgvuldigheidsbeginsel, het motiveringsbeginsel en soms het vertrouwensbeginsel."
+  ]
+},
+{
+  terms: ["Kenbaarheidsbeginsel"],
+  code: "W28",
+  info: [
+    "Regels, beslissingen en procedures moeten duidelijk bekendgemaakt worden zodat burgers weten wat van hen verwacht wordt."
+  ]
+},
+
+{
+  terms: ["Legaliteitsbeginsel"],
+  code: "W30",
+  info: [
+    "Het bestuur moet handelen op basis van en binnen de grenzen van de wet; elke beslissing vereist een wettelijke grondslag."
+  ]
+},
+{
+  terms: ["Machtsafwendingbeginsel"],
+  code: "W32",
+  info: [
+    "Het bestuur mag zijn bevoegdheid niet gebruiken voor een ander doel dan waarvoor ze wettelijk is toegekend."
+  ]
+},
+{
+  terms: ["Machtsoverschrijdingbeginsel"],
+  code: "W34",
+  info: [
+    "Het bestuur mag niet buiten zijn bevoegdheid treden en geen maatregelen nemen die verder gaan dan wettelijk toegestaan."
+  ]
+},
+{
+  terms: ["Motiveringsbeginsel"],
+  code: "W36",
+  info: [
+    "Bestuurlijke beslissingen moeten duidelijk en begrijpelijk worden gemotiveerd zodat burgers weten waarom een beslissing is genomen.",
+	"De wet van 29 juli 1991, betreffende de uitdrukkelijke motivering van de bestuurshandelingen.",
+        "Omzendbrief BA 2000/08, betreffende de toepassing van de wet van 29 juli 1991.",
+        "Art. 2. : de beslissing of het besluit van het bestuur moet uitdrukkelijk worden gemotiveerd.",
+        "Formele motivering: vermeldt het bestuur de redenen (motieven) waarom de beslissing wordt genomen?",
+		
+"Art. 3 De opgelegde motivering moet in de akte de juridische en feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen. Zij moet afdoende zijn.",
+
+"1. De juridische en feitelijke overwegingen.",
+
+"A)	Worden de juridische regels aangegeven die worden toegepast ?",
+"B)	Worden de precieze, concrete feitelijke gegevens aangeduid waarom de beslissing werd genomen ? ",
+
+"2. Zijn de motieven (overwegingen, redenen) in de akte opgenomen ?",
+
+"3. Worden de motieven (overwegingen, redenen) op afdoende wijze tot uiting gebracht ?",
+
+"4. De materiële motivering: zijn de motieven (overwegingen, redenen) afdoende ?",
+
+"A)	De inhoudelijke juistheid van de motieven. Zijn de motieven (redenen, overwegingen) juist of gefantaseerd (waan of hallucinatie) ?",
+"B)	De draagkracht van de motieven. Zijn de motieven (redenen, overwegingen) zwaarwichtig genoeg om de beslissing (het besluit) te kunnen dragen (te verantwoorden) ?",
+]
+},
+
+{
+  terms: ["Non-discriminatiebeginsel"],
+  code: "W38",
+  info: [
+    "Het bestuur mag geen ongeoorloofd onderscheid maken tussen personen of groepen; gelijke gevallen moeten gelijk worden behandeld."
+  ]
+},
+{
+  terms: ["Objectiviteitsbeginsel"],
+  code: "W40",
+  info: [
+    "Het bestuur moet beslissen op basis van relevante feiten en objectieve criteria, zonder vooringenomenheid of willekeur."
+  ]
+},
+
+
+{
+  terms: ["Onderzoeksbeginsel"],
+  code: "W42",
+  info: [
+    "Het bestuur moet alle relevante feiten en omstandigheden onderzoeken voordat het een beslissing neemt."
+  ]
+},
+{
+  terms: ["Onpartijdigheidsbeginsel"],
+  code: "W44",
+  info: [
+    "Het bestuur moet neutraal en onbevooroordeeld handelen, zonder persoonlijke of externe belangen die de beslissing beïnvloeden."
+  ]
+},
+{
+  terms: ["Rechtszekerheidsbeginsel"],
+  code: "W48",
+  info: [
+    "Het bestuur moet duidelijke, voorspelbare en consistente regels en beslissingen hanteren zodat burgers weten waar ze aan toe zijn."
+  ]
+},
+{
+  terms: ["Redelijkheidsbeginsel"],
+  code: "W50",
+  info: [
+    "Bestuurlijke beslissingen moeten logisch, verantwoord en niet kennelijk onredelijk zijn in verhouding tot de situatie."
+  ]
+},
+{
+  terms: ["Vertrouwenbeginsel"],
+  code: "W56",
+  info: [
+    "Het bestuur moet gerechtvaardigde verwachtingen die het bij burgers heeft gewekt respecteren en niet zonder goede reden doorbreken."
+  ]
+},
+
+{
+  terms: ["Wettigheidsbeginsel / Wettelijkheidsbeginsel"],
+  code: "W60",
+  info: [
+    "Het bestuur moet handelen volgens de wet en mag geen beslissingen nemen zonder een duidelijke wettelijke basis."
+  ]
+},
+{
+  terms: ["Zorgvuldigheidsbeginsel"],
+  code: "W62",
+  info: [
+    "Het bestuur moet zorgvuldig handelen door alle relevante feiten te verzamelen, belangen af te wegen en fouten te vermijden. Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht. België heeft geen Awb, dus dit beginsel is niet gecodificeerd maar het is bindend recht via rechtspraak"
+  ]
+}
 
 ];
