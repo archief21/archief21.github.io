@@ -183,7 +183,15 @@ window.DATASET = [
 
 { terms:["Is de beslissing inhoudelijk redelijk en evenredig?"], code:"BG" },
 { terms:["Redelijkheid"], code:"BGA" },
-{ terms:["Evenredigheid / proportionaliteit"], code:"BGB" },
+
+{
+  terms: ["Evenredigheid / Proportionaliteit"],
+  code: "BGB",
+  info: [
+    "Het bestuur moet bij elke maatregel een evenredigheidstoets uitvoeren. Die bestaat uit drie stappen: (1) Geschiktheid: de maatregel moet geschikt zijn om het nagestreefde doel te bereiken. (2) Noodzakelijkheid: er mag geen minder ingrijpend alternatief bestaan dat hetzelfde doel kan bereiken. (3) Evenredigheid stricto sensu: de voordelen van de maatregel moeten opwegen tegen de nadelige gevolgen voor de burger."
+  ]
+},
+
 { terms:["Geschiktheid"], code:"BGBA" },
 { terms:["Noodzakelijkheid"], code:"BGBB" },
 { terms:["Evenredigheid stricto sensu"], code:"BGBC" },
@@ -288,7 +296,15 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 
 { terms:["7. Inhoud – de uiteindelijke beslissing"], code:"CG" },
 { terms:["Redelijkheid"], code:"CGA" },
-{ terms:["Evenredigheid / proportionaliteit"], code:"CGB" },
+
+{
+  terms: ["Evenredigheid / Proportionaliteit"],
+  code: "CGB",
+  info: [
+    "Het bestuur moet bij elke maatregel een evenredigheidstoets uitvoeren. Die bestaat uit drie stappen: (1) Geschiktheid: de maatregel moet geschikt zijn om het nagestreefde doel te bereiken. (2) Noodzakelijkheid: er mag geen minder ingrijpend alternatief bestaan dat hetzelfde doel kan bereiken. (3) Evenredigheid stricto sensu: de voordelen van de maatregel moeten opwegen tegen de nadelige gevolgen voor de burger."
+  ]
+},
+
 { terms:["Geschiktheid"], code:"CGBA" },
 { terms:["Noodzakelijkheid"], code:"CGBB" },
 { terms:["Evenredigheid stricto sensu"], code:"CGBC" },
@@ -576,11 +592,12 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
     "Het bestuur moet redelijke, eerlijke en evenwichtige beslissingen nemen, zonder onnodige hardheid."
   ]
 },
+
 {
   terms: ["Evenredigheidsbeginsel / Proportionaliteitsbeginsel"],
   code: "W18",
   info: [
-    "Bestuurlijke maatregelen mogen niet verder gaan dan nodig is om het doel te bereiken; de nadelige gevolgen moeten in verhouding staan tot het nagestreefde belang."
+    "Het bestuur moet bij elke maatregel een evenredigheidstoets uitvoeren. Die bestaat uit drie stappen: (1) Geschiktheid: de maatregel moet geschikt zijn om het nagestreefde doel te bereiken. (2) Noodzakelijkheid: er mag geen minder ingrijpend alternatief bestaan dat hetzelfde doel kan bereiken. (3) Evenredigheid stricto sensu: de voordelen van de maatregel moeten opwegen tegen de nadelige gevolgen voor de burger."
   ]
 },
 
@@ -670,12 +687,23 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
+  terms: ["Neutraliteitsbeginsel"],
+  code: "W37",
+  info: [
+    "Het bestuur moet politiek, ideologisch en religieus neutraal handelen. → Wordt vooral gebruikt in context van onderwijs, ambtenaren, symbolen, religie. → In de rechtsleer wordt het gezien als een specifieke uitwerking van onpartijdigheid, niet als een autonoom beginsel."
+  ]
+},
+
+
+
+{
   terms: ["Non-discriminatiebeginsel"],
   code: "W38",
   info: [
     "Het bestuur mag geen ongeoorloofd onderscheid maken tussen personen of groepen; gelijke gevallen moeten gelijk worden behandeld."
   ]
 },
+
 {
   terms: ["Objectiviteitsbeginsel"],
   code: "W40",
@@ -696,7 +724,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
   terms: ["Onpartijdigheidsbeginsel"],
   code: "W44",
   info: [
-    "Het bestuur moet neutraal en onbevooroordeeld handelen, zonder persoonlijke of externe belangen die de beslissing beïnvloeden."
+    "Het bestuur moet zonder vooringenomenheid beslissen. → Geen persoonlijke belangen, geen voorkeuren, geen beïnvloeding. 	Het bestuur moet neutraal en onbevooroordeeld handelen, zonder persoonlijke of externe belangen die de beslissing beïnvloeden. "
   ]
 },
 {
@@ -706,13 +734,24 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
     "Het bestuur moet duidelijke, voorspelbare en consistente regels en beslissingen hanteren zodat burgers weten waar ze aan toe zijn."
   ]
 },
+
 {
   terms: ["Redelijkheidsbeginsel"],
   code: "W50",
   info: [
-    "Bestuurlijke beslissingen moeten logisch, verantwoord en niet kennelijk onredelijk zijn in verhouding tot de situatie."
+    "Bestuurlijke beslissingen moeten logisch, verantwoord en niet kennelijk onredelijk zijn in verhouding tot de situatie. Globale toets op logica, billijkheid en afwezigheid van willekeur. Evenredigheidsbeginsel is strenger en meer juridisch afgebakend."
   ]
 },
+
+{
+  terms: ["Transparantiebeginsel"],
+  code: "W52",
+  info: [
+    "De Raad van State erkent transparantie niet als een afzonderlijk beginsel, maar als een uitvloeisel van bestaande beginselen. Transparantie = 1. correcte informatie → informatiebeginsel; 2. duidelijke bekendmaking → kenbaarheidsbeginsel; 3. eerlijk en open procederen → fair‑playbeginsel"
+  ]
+},
+
+
 {
   terms: ["Vertrouwenbeginsel"],
   code: "W56",
