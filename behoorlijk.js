@@ -622,28 +622,26 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
     "Een burger moet de kans krijgen om zijn standpunt te geven voordat het bestuur een beslissing neemt die hem nadelig kan treffen."
   ]
 },
-{
-  terms: ["Informatiebeginsel"],
-  code: "W26",
-  info: [
-    "Het bestuur moet burgers correct, volledig en tijdig informeren zodat zij hun rechten kunnen uitoefenen. De informatieplicht wordt in de Belgische rechtsleer en rechtspraak erkend als een onderdeel van de algemene beginselen van behoorlijk bestuur (ABBB), maar niet als een afzonderlijk, autonoom beginsel. Ze wordt meestal gezien als een uitvloeisel van andere ABBB zoals het zorgvuldigheidsbeginsel, het motiveringsbeginsel en soms het vertrouwensbeginsel."
-  ]
-},
+
 {
   terms: ["Kenbaarheidsbeginsel"],
   code: "W28",
   info: [
-    "Regels, beslissingen en procedures moeten duidelijk bekendgemaakt worden zodat burgers weten wat van hen verwacht wordt."
+    "Regels, beslissingen en procedures moeten duidelijk bekendgemaakt worden zodat burgers weten wat van hen verwacht wordt. Het kenbaarheidsbeginsel is een erkend ABBB‑beginsel in de Belgische rechtsleer en rechtspraak."," Het bestuur moet regels, procedures en beslissingen duidelijk bekendmaken. Burgers moeten weten wat van hen verwacht wordt."," Het is rechtstreeks verbonden met rechtszekerheid en rechtsgelijkheid. De Raad van State past het regelmatig toe als zelfstandig beginsel."," Dus:✔ Kenbaarheid = autonoom beginsel  ✘ Informatieplicht = geen autonoom beginsel"
   ]
 },
 
 {
   terms: ["Legaliteitsbeginsel"],
   code: "W30",
-  info: [
-    "Het bestuur moet handelen op basis van en binnen de grenzen van de wet; elke beslissing vereist een wettelijke grondslag."
+  info: ["Legaliteit = bestuur mag alleen handelen als de wet dat toestaat (bevoegdheid).",
+    "Het bestuur moet handelen op basis van en binnen de grenzen van de wet. Elke bestuurlijke handeling vereist een geldige wettelijke grondslag en het bestuur mag geen bevoegdheden uitoefenen die het niet uitdrukkelijk of impliciet van de wetgever heeft gekregen.",
+	"Het legaliteitsbeginsel houdt in dat het bestuur de hiërarchie van rechtsnormen moet respecteren en geen maatregelen mag nemen die strijdig zijn met hogere normen zoals de Grondwet, internationale verdragen of wetten.",
+	"Daarnaast moet het bestuur binnen de territoriale, materiële, procedurele, hiërarchische en temporele grenzen van zijn bevoegdheid blijven.",
+	"Het beginsel omvat ook het verbod op willekeur en machtsmisbruik: een bevoegdheid mag niet worden aangewend voor een ander doel dan waarvoor ze is toegekend.",
   ]
 },
+
 {
   terms: ["Machtsafwendingbeginsel"],
   code: "W32",
@@ -687,16 +685,6 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Neutraliteitsbeginsel"],
-  code: "W37",
-  info: [
-    "Het bestuur moet politiek, ideologisch en religieus neutraal handelen. → Wordt vooral gebruikt in context van onderwijs, ambtenaren, symbolen, religie. → In de rechtsleer wordt het gezien als een specifieke uitwerking van onpartijdigheid, niet als een autonoom beginsel."
-  ]
-},
-
-
-
-{
   terms: ["Non-discriminatiebeginsel"],
   code: "W38",
   info: [
@@ -711,7 +699,6 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
     "Het bestuur moet beslissen op basis van relevante feiten en objectieve criteria, zonder vooringenomenheid of willekeur."
   ]
 },
-
 
 {
   terms: ["Onderzoeksbeginsel"],
@@ -743,14 +730,6 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
   ]
 },
 
-{
-  terms: ["Transparantiebeginsel"],
-  code: "W52",
-  info: [
-    "De Raad van State erkent transparantie niet als een afzonderlijk beginsel, maar als een uitvloeisel van bestaande beginselen. Transparantie = 1. correcte informatie → informatiebeginsel; 2. duidelijke bekendmaking → kenbaarheidsbeginsel; 3. eerlijk en open procederen → fair‑playbeginsel"
-  ]
-},
-
 
 {
   terms: ["Vertrouwenbeginsel"],
@@ -764,14 +743,110 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
   terms: ["Wettigheidsbeginsel / Wettelijkheidsbeginsel"],
   code: "W60",
   info: [
-    "Het bestuur moet handelen volgens de wet en mag geen beslissingen nemen zonder een duidelijke wettelijke basis."
+    "Wettigheid = bestuur moet handelen volgens de wet (naleving) | onderscheid met legaliteit (handelen als de wet bestaat of toestaat - bevoegheid).","Het bestuur moet handelen volgens de wet en mag geen beslissingen nemen zonder een duidelijke wettelijke basis."
   ]
 },
 {
   terms: ["Zorgvuldigheidsbeginsel"],
   code: "W62",
   info: [
-    "Het bestuur moet zorgvuldig handelen door alle relevante feiten te verzamelen, belangen af te wegen en fouten te vermijden. Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht. België heeft geen Awb, dus dit beginsel is niet gecodificeerd maar het is bindend recht via rechtspraak"
+    "Het bestuur moet zorgvuldig handelen door alle relevante feiten te verzamelen, belangen af te wegen en fouten te vermijden."," Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht. België heeft geen Awb, dus dit beginsel is niet gecodificeerd maar het is bindend recht via rechtspraak"
+  ]
+},
+
+{
+  terms: ["Clusters"],
+  code: "W90",
+  info: [
+    "Overzicht van inhoudelijke clusters binnen de algemene beginselen van behoorlijk bestuur."
+  ]
+},
+
+{
+  terms: ["Legitimiteit"],
+  code: "W901",
+  info: [
+    "Deze cluster omvat beginselen die de rechtmatigheid en kwaliteit van bestuurlijke besluitvorming waarborgen: zorgvuldigheid, redelijkheid, rechtszekerheid en de materiële motiveringsplicht."
+  ]
+},
+
+{
+  terms: ["Gelijke & eerlijke behandeling"],
+  code: "W902",
+  info: [
+    "Deze cluster omvat beginselen die een gelijke, eerlijke en onbevooroordeelde behandeling van burgers verzekeren: billijkheid, gelijkheid, onpartijdigheid en de hoorplicht."
+  ]
+},
+
+{
+  terms: ["Efficiëntie & effectiviteit"],
+  code: "W903",
+  info: [
+    "Deze cluster omvat beginselen die bijdragen aan doelmatige en doeltreffende besluitvorming: zorgvuldigheid en redelijkheid."
+  ]
+},
+
+{
+  terms: ["Rechtsbescherming"],
+  code: "W904",
+  info: [
+    "Deze cluster omvat beginselen die de juridische positie van de burger beschermen: rechtszekerheid, motiveringsplicht, vertrouwensbeginsel en kenbaarheid."
+  ]
+},
+
+{
+  terms: ["Procedurele zorgvuldigheid"],
+  code: "W905",
+  info: [
+    "Deze cluster omvat beginselen die de correcte totstandkoming van beslissingen waarborgen: zorgvuldigheid, hoorbeginsel, fair-playbeginsel en onderzoeksbeginsel."
+  ]
+},
+
+{
+  terms: ["Gelijkheid & neutraliteit"],
+  code: "W906",
+  info: [
+    "Deze cluster omvat beginselen die een onbevooroordeelde en gelijke behandeling verzekeren: gelijkheidsbeginsel, non-discriminatiebeginsel, onpartijdigheidsbeginsel en objectiviteitsbeginsel."
+  ]
+},
+
+{
+  terms: ["Legaliteit & bevoegdheid"],
+  code: "W907",
+  info: [
+    "Deze cluster omvat beginselen die de wettigheid van bestuurlijk handelen garanderen: legaliteitsbeginsel, wettigheidsbeginsel, bevoegdheidsbeginsel, machtsafwending en machtsoverschrijding."
+  ]
+},
+
+{
+  terms: ["Beginselen die niet autonoom erkend zijn"],
+  code: "W91",
+  info: [
+    "Overzicht van beginselen die niet door de Raad van State als autonome beginselen worden aanzien."
+  ]
+},
+
+{
+  terms: ["Informatiebeginsel"],
+  code: "W914",
+  info: [
+    "Het bestuur moet burgers correct, volledig en tijdig informeren zodat zij hun rechten kunnen uitoefenen."," De informatieplicht wordt in de Belgische rechtsleer en rechtspraak erkend als een onderdeel van de algemene beginselen van behoorlijk bestuur (ABBB), maar niet als een afzonderlijk, autonoom beginsel. Ze wordt meestal gezien als een uitvloeisel van andere ABBB zoals het zorgvuldigheidsbeginsel, het motiveringsbeginsel en soms het vertrouwensbeginsel."
+  ]
+},
+
+{
+  terms: ["Neutraliteitsbeginsel"],
+  code: "W915",
+  info: [
+    "Het bestuur moet politiek, ideologisch en religieus neutraal handelen."," → Wordt vooral gebruikt in context van onderwijs, ambtenaren, symbolen, religie. → In de rechtsleer wordt het gezien als een specifieke uitwerking van onpartijdigheid, niet als een autonoom beginsel."
+  ]
+},
+
+{
+  terms: ["Transparantiebeginsel"],
+  code: "W916",
+  info: [
+    "De Raad van State erkent transparantie niet als een afzonderlijk beginsel, maar als een uitvloeisel van bestaande beginselen."," Transparantie = 1. correcte informatie → informatiebeginsel;"," 2. duidelijke bekendmaking → kenbaarheidsbeginsel;"," 3. eerlijk en open procederen → fair‑playbeginsel"
   ]
 }
 
