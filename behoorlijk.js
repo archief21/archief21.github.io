@@ -579,7 +579,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 { terms:["Begrippen en middelen"], code:"W" },
 
 {
-  terms: ["Bevoegdheidsbeginsel (W907)"],
+  terms: ["Bevoegdheidsbeginsel (Y02)"],
   code: "W10",
   info: [
     "Het bestuur mag enkel handelen binnen de bevoegdheden die het wettelijk heeft gekregen. Dit betekent dat elke bestuurlijke handeling moet steunen op een geldige, correct toegekende bevoegdheid, zowel materieel, territoriaal, hiërarchisch, procedureel als temporeel.","Het beginsel vereist bovendien dat het bestuur de grenzen van zijn bevoegdheid respecteert en geen beslissingen neemt die buiten het toepassingsgebied van de verleende macht vallen.","Het onderscheid met het machtsoverschrijdingsbeginsel is dat bij bevoegdheidsgebrek het bestuur helemaal geen bevoegdheid heeft, terwijl bij machtsoverschrijding het bestuur wel bevoegd is maar die bevoegdheid te ruim, te intensief of op een wijze gebruikt die verder gaat dan wat de wet toelaat.","Het bevoegdheidsbeginsel vormt zo een kerncomponent van het legaliteitsbeginsel en beschermt burgers tegen willekeur en onrechtmatig optreden van de overheid."
@@ -587,15 +587,18 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Billijkheidsbeginsel (W902)"],
+  terms: ["Billijkheidsbeginsel (Y03)"],
   code: "W14",
   info: [
     "Het bestuur moet redelijke, eerlijke en evenwichtige beslissingen nemen, zonder onnodige hardheid."
   ]
 },
 
+{ terms:["Effectiviteitsbeginsel (Y04)"], code:"W15" },
+{ terms:["Efficiëntiebeginsel (y04)"], code:"W16" },
+
 {
-  terms: ["Evenredigheidsbeginsel / Proportionaliteitsbeginsel"],
+  terms: ["Evenredigheidsbeginsel / Proportionaliteitsbeginsel (Y04)"],
   code: "W18",
   info: [
     "Het evenredigheidsbeginsel is een overkoepelend superbeginsel dat door alle andere beginselen heen werkt en elke vorm van bestuurlijk optreden begrenst. ","Het verplicht het bestuur om bij elke maatregel te beoordelen of die geschikt is om het beoogde doel te bereiken, of er geen minder ingrijpend alternatief bestaat en of de voordelen van de maatregel opwegen tegen de nadelige gevolgen voor de burger. ","De drie deeltoetsen – geschiktheid, noodzakelijkheid en evenredigheid stricto sensu – zorgen ervoor dat het bestuur nooit zwaarder ingrijpt dan nodig en dat elke beslissing proportioneel, zorgvuldig en juridisch verantwoord blijft."
@@ -603,21 +606,21 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Fair-playbeginsel  (W905)"],
+  terms: ["Fair-playbeginsel  (Y05)"],
   code: "W20",
   info: [
     "Het bestuur moet eerlijk, transparant en correct handelen, zonder verrassingen of procedurele valkuilen voor de burger."
   ]
 },
 {
-  terms: ["Gelijkheidsbeginsel (W906)  (W902)"],
+  terms: ["Gelijkheidsbeginsel (Y03)"],
   code: "W22",
   info: [
     "Het bestuur moet gelijke gevallen gelijk behandelen en mag geen ongerechtvaardigde verschillen maken.","Behoort tot de cluster W902 - Gelijke & eerlijke behandeling en  W905 – Procedurele zorgvuldigheid"
   ]
 },
 {
-  terms: ["Hoorbeginsel  (W905)  (W902)"],
+  terms: ["Hoorbeginsel  (Y05)  (Y03)"],
   code: "W24",
   info: [
     "Een burger moet de kans krijgen om zijn standpunt te geven voordat het bestuur een beslissing neemt die hem nadelig kan treffen.","Behoort tot de cluster 902 - Gelijke & eerlijke behandeling en 906 - Gelijkheid & neutraliteit"
@@ -625,7 +628,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Kenbaarheidsbeginsel (W904)"],
+  terms: ["Kenbaarheidsbeginsel (Y06)"],
   code: "W28",
   info: [
     "Regels, beslissingen en procedures moeten duidelijk bekendgemaakt worden zodat burgers weten wat van hen verwacht wordt. Het kenbaarheidsbeginsel is een erkend ABBB‑beginsel in de Belgische rechtsleer en rechtspraak."," Het bestuur moet regels, procedures en beslissingen duidelijk bekendmaken. Burgers moeten weten wat van hen verwacht wordt."," Het is rechtstreeks verbonden met rechtszekerheid en rechtsgelijkheid. De Raad van State past het regelmatig toe als zelfstandig beginsel."," Dus:✔ Kenbaarheid = autonoom beginsel  ✘ Informatieplicht = geen autonoom beginsel"
@@ -633,10 +636,9 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Legaliteitsbeginsel (W907)"],
+  terms: ["Legaliteitsbeginsel (Y02)"],
   code: "W30",
-  info: ["Legaliteit = bestuur mag alleen handelen als de wet dat toestaat (bevoegdheid).",
-    "Het bestuur moet handelen op basis van en binnen de grenzen van de wet. Elke bestuurlijke handeling vereist een geldige wettelijke grondslag en het bestuur mag geen bevoegdheden uitoefenen die het niet uitdrukkelijk of impliciet van de wetgever heeft gekregen.",
+  info: ["Legaliteit = bestuur mag alleen handelen als de wet dat toestaat. Het bestuur mag enkel en alleen bevoegdheden uitoefenen die het uitdrukkelijk of impliciet van de wetgever heeft gekregen. Het bestuur moet handelen op basis van en binnen de grenzen van een (bestaande) wet. Elke bestuurlijke handeling vereist een rechtsgeldige beslissing op basis van een wettelijke grondslag.",
 	"Het legaliteitsbeginsel houdt in dat het bestuur de hiërarchie van rechtsnormen moet respecteren en geen maatregelen mag nemen die strijdig zijn met hogere normen zoals de Grondwet, internationale verdragen of wetten.",
 	"Daarnaast moet het bestuur binnen de territoriale, materiële, procedurele, hiërarchische en temporele grenzen van zijn bevoegdheid blijven.",
 	"Het beginsel omvat ook het verbod op willekeur en machtsmisbruik: een bevoegdheid mag niet worden aangewend voor een ander doel dan waarvoor ze is toegekend.",
@@ -644,15 +646,23 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Machtsoverschrijdingsbeginsel (W907)"],
-  code: "W34",
+  terms: ["Machtsafwendingbeginsel (Y02)"],
+  code: "W32",
+  info: [
+    ""
+  ]
+},
+
+{
+  terms: ["Machtsoverschrijdingsbeginsel (Y02)"],
+  code: "W33",
   info: [
     "Het machtsoverschrijdingsbeginsel houdt in dat het bestuur wel bevoegd is om op te treden, maar die bevoegdheid op een wijze gebruikt die verder gaat dan wat de wet toelaat. Het bestuur handelt dan niet buiten zijn bevoegdheid, maar oefent ze te ruim, te intensief of op een manier uit die de grenzen van de toegekende macht overschrijdt. Machtsoverschrijding doet zich voor wanneer een maatregel te zwaar, te ingrijpend of disproportioneel is binnen een bestaande bevoegdheid, of wanneer het bestuur een interpretatie hanteert die de wettelijke draagwijdte overstijgt. ","Het beginsel beschermt burgers tegen excessief of buitensporig bestuurshandelen en vormt samen met het machtsafwendingsbeginsel een onderdeel van het verbod op misbruik van bevoegdheid. ","Het onderscheid met het bevoegdheidsbeginsel is dat bij machtsoverschrijding de bevoegdheid formeel bestaat  maar verkeerd of te ver wordt toegepast, terwijl bij bevoegdheidsgebrek het bestuur helemaal geen wettelijke basis heeft om op te treden."
   ]
 },
 
 {
-  terms: ["Materiële motiveringsbeginsel (W901)"],
+  terms: ["Materiële motiveringsbeginsel (Y06)"],
   code: "W35",
   info: [
     "Het materiële motiveringsbeginsel verplicht het bestuur om de inhoudelijke redenen voor een beslissing duidelijk, volledig en logisch uiteen te zetten. De motivering moet aantonen welke feiten zijn vastgesteld, welke belangen zijn afgewogen en waarom precies voor deze maatregel is gekozen. ","Het bestuur moet daarbij relevante gegevens correct weergeven, een redelijke en coherente argumentatie hanteren en vermijden dat de motivering louter formeel of schijnbaar is. ","Dit beginsel waarborgt dat burgers kunnen begrijpen hoe een beslissing tot stand kwam en laat toe om de redelijkheid, zorgvuldigheid en proportionaliteit van het bestuurshandelen effectief te toetsen."
@@ -660,7 +670,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Motiveringsbeginsel (W904)"],
+  terms: ["Motiveringsbeginsel (Y06)"],
   code: "W36",
   info: [
     "Bestuurlijke beslissingen moeten duidelijk en begrijpelijk worden gemotiveerd zodat burgers weten waarom een beslissing is genomen.",
@@ -688,7 +698,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Non-discriminatiebeginsel (W906)"],
+  terms: ["Non-discriminatiebeginsel (Y03)"],
   code: "W38",
   info: [
     "Het bestuur mag geen ongeoorloofd onderscheid maken tussen personen of groepen; gelijke gevallen moeten gelijk worden behandeld."
@@ -696,7 +706,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Objectiviteitsbeginsel (W906)"],
+  terms: ["Objectiviteitsbeginsel (Y03)"],
   code: "W40",
   info: [
     "Het bestuur moet beslissen op basis van relevante feiten en objectieve criteria, zonder vooringenomenheid of willekeur."
@@ -704,29 +714,35 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Onderzoeksbeginsel  (W905)"],
+  terms: ["Onderzoeksbeginsel  (Y05)"],
   code: "W42",
   info: [
     "Het bestuur moet alle relevante feiten en omstandigheden onderzoeken voordat het een beslissing neemt."
   ]
 },
 {
-  terms: ["Onpartijdigheidsbeginsel (W906)  (W902)"],
+  terms: ["Onpartijdigheidsbeginsel (Y03)"],
   code: "W44",
   info: [
     "Het bestuur moet zonder vooringenomenheid beslissen. → Geen persoonlijke belangen, geen voorkeuren, geen beïnvloeding. 	Het bestuur moet neutraal en onbevooroordeeld handelen, zonder persoonlijke of externe belangen die de beslissing beïnvloeden.","Behoort tot de cluster W902 - Gelijke & eerlijke behandeling en W906 – Gelijkheid & neutraliteit"
   ]
 },
+
 {
-  terms: ["Rechtszekerheidsbeginsel (W904) ( w901)"],
+  terms: ["Rechtszekerheidsbeginsel (Y06) / Verbod van retroactieve benadeling / Consistentiebeginsel"],
   code: "W48",
   info: [
     "Het bestuur moet duidelijke, voorspelbare en consistente regels en beslissingen hanteren zodat burgers weten waar ze aan toe zijn."
   ]
 },
 
+{ terms:["Redelijketermijn beginsel (Y05)"], 
+   code:"W49",
+  info: ["Het redelijketermijnbeginsel vereist dat het bestuur procedures en beslissingen binnen een redelijke termijn afhandelt, rekening houdend met de aard en complexiteit van de zaak. Het beschermt burgers tegen onnodige vertraging of buitensporig lange bestuurlijke procedures." ]
+},
+
 {
-  terms: ["Redelijkheidsbeginsel (W903) ( w901)"],
+  terms: ["Redelijkheidsbeginsel (Y04) / Verbod van willekeur "],
   code: "W50",
   info: [
     "Bestuurlijke beslissingen moeten logisch, verantwoord en niet kennelijk onredelijk zijn in verhouding tot de situatie. Globale toets op logica, billijkheid en afwezigheid van willekeur. Evenredigheidsbeginsel is strenger en meer juridisch afgebakend."
@@ -735,7 +751,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 
 
 {
-  terms: ["Vertrouwenbeginsel  (W904)"],
+  terms: ["Vertrouwenbeginsel  (Y06)"],
   code: "W56",
   info: [
     "Het bestuur moet gerechtvaardigde verwachtingen die het bij burgers heeft gewekt respecteren en niet zonder goede reden doorbreken."
@@ -743,101 +759,29 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Wettigheidsbeginsel / Wettelijkheidsbeginsel (W907)"],
+  terms: ["Wettigheidsbeginsel / Wettelijkheidsbeginsel (Y03)"],
   code: "W60",
   info: [
     "Wettigheid = bestuur moet handelen volgens de wet (naleving) | onderscheid met legaliteit (handelen als de wet bestaat of toestaat - bevoegheid).","Het bestuur moet handelen volgens de wet en mag geen beslissingen nemen zonder een duidelijke wettelijke basis."
   ]
 },
 {
-  terms: ["Zorgvuldigheidsbeginsel (W905) (W903) ( w901)"],
+  terms: ["Zorgvuldigheidsbeginsel (Y04) (Y05)"],
   code: "W62",
   info: [
     "Het bestuur moet zorgvuldig handelen door alle relevante feiten te verzamelen, belangen af te wegen en fouten te vermijden."," Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht. België heeft geen Awb, dus dit beginsel is niet gecodificeerd maar het is bindend recht via rechtspraak"
   ]
 },
 
+{ terms:["Algemeen-belangbeginsel (Y01)"], code:"W70" },
+{ terms:["Democratiebeginsel (Y01)"], code:"W72" },
+{ terms:["Participatiebeginsel (Y01)"], code:"W74" },
+{ terms:["Subsidiariteitsbeginsel (Y01)"], code:"W76" },
+{ terms:["Verantwoordingsbeginsel (Y01)"], code:"W78" },
+
 {
-  terms: ["Clusters"],
+  terms: ["Informatiebeginsel  / informatieplicht"],
   code: "W90",
-  info: [
-    "Overzicht van inhoudelijke clusters binnen de algemene beginselen van behoorlijk bestuur."
-  ]
-},
-
-{
-  terms: ["Legitimiteit"],
-  code: "W901",
-  info: [
-    "Deze cluster omvat beginselen die de rechtmatigheid en kwaliteit van bestuurlijke besluitvorming waarborgen. ","1. Het zorgvuldigheidsbeginsel verplicht het bestuur om alle relevante feiten en belangen volledig te onderzoeken en af te wegen voordat een beslissing wordt genomen, zodat fouten en willekeur worden vermeden. ","2. Het redelijkheidsbeginsel vereist dat het bestuur proportioneel en evenwichtig optreedt, waarbij maatregelen niet verder mogen gaan dan nodig is om het beoogde doel te bereiken. ","3. Het rechtszekerheidsbeginsel garandeert dat het bestuur duidelijk, voorspelbaar en consistent handelt, zodat burgers weten welke regels gelden en welke gevolgen hun handelingen hebben. ","4. De materiële motiveringsplicht ten slotte verplicht het bestuur om de inhoudelijke redenen voor een beslissing voldoende en begrijpelijk te verantwoorden, zodat burgers kunnen nagaan of de beslissing logisch, juridisch correct en zorgvuldig tot stand is gekomen. ","✅ Samen verzekeren deze beginselen dat bestuurlijke handelingen rechtmatig, transparant en inhoudelijk verantwoord zijn."
-  ]
-},
-
-
-{
-  terms: ["Gelijke & eerlijke behandeling"],
-  code: "W902",
-  info: [
-    "Deze cluster omvat beginselen die een gelijke, eerlijke en onbevooroordeelde behandeling van burgers verzekeren. ","1. Het billijkheidsbeginsel vereist dat het bestuur redelijk, evenwichtig en zonder onnodige hardheid optreedt, zodat beslissingen niet onrechtvaardig of disproportioneel uitvallen. ","2. Het gelijkheidsbeginsel houdt in dat gelijke gevallen gelijk moeten worden behandeld en dat afwijkingen enkel zijn toegelaten wanneer daarvoor een objectieve en redelijke verantwoording bestaat. ","3. Het onpartijdigheidsbeginsel verplicht het bestuur om zonder vooringenomenheid te handelen en beslissingen te nemen zonder persoonlijke voorkeuren, belangenvermenging of schijn van partijdigheid. ","4. De hoorplicht ten slotte garandeert dat burgers die door een beslissing worden geraakt vooraf de kans krijgen om hun standpunt kenbaar te maken, zodat het bestuur niet beslist zonder kennis van hun argumenten.","✅ Samen verzekeren deze beginselen dat het bestuur consequent, neutraal en rechtvaardig optreedt."
-  ]
-},
-
-
-{
-  terms: ["Efficiëntie & effectiviteit | Doelmatig & doeltreffend"],
-  code: "W903",
-  info: [
-    "Deze cluster omvat beginselen die bijdragen aan een doelmatige en doeltreffende besluitvorming.","1. Het zorgvuldigheidsbeginsel verplicht het bestuur om alle relevante feiten en belangen volledig en nauwkeurig te onderzoeken voordat een beslissing wordt genomen, zodat fouten, onvolledigheid en inefficiëntie worden vermeden. ","2. Het redelijkheidsbeginsel vereist dat het bestuur proportioneel, evenwichtig en met gezond oordeel optreedt, waarbij maatregelen niet verder mogen gaan dan nodig is om het beoogde doel te bereiken. ","✅ Samen zorgen deze beginselen ervoor dat het bestuur niet alleen correct en volledig handelt, maar ook efficiënt en effectief, door onnodige lasten, buitensporige maatregelen en verspilling van middelen te vermijden."
-  ]
-},
-
-
-{
-  terms: ["Rechtsbescherming"],
-  code: "W904",
-  info: [
-    "Deze cluster omvat beginselen die de juridische positie van de burger beschermen en waarborgen dat bestuurshandelingen voorspelbaar, controleerbaar en toetsbaar zijn. ","1. Het rechtszekerheidsbeginsel vereist dat het bestuur duidelijk, consistent en betrouwbaar handelt, zodat burgers weten welke regels gelden en welke gevolgen hun handelingen hebben. ","2. De motiveringsplicht verplicht het bestuur om beslissingen voldoende en begrijpelijk te verantwoorden, zodat burgers kunnen nagaan waarom een maatregel wordt genomen en of die redenering juridisch correct is. ","3. Het vertrouwensbeginsel beschermt gerechtvaardigde verwachtingen die burgers op basis van eerdere handelingen, toezeggingen of vaste gedragslijnen van het bestuur mochten koesteren, en verhindert dat het bestuur onverwacht of zonder goede reden daarvan afwijkt. ","4. Het kenbaarheidsbeginsel ten slotte vereist dat regels, procedures en beslissingen duidelijk en toegankelijk bekendgemaakt worden, zodat burgers hun rechten kunnen uitoefenen en weten wat van hen verwacht wordt. ","✅ Samen verzekeren deze beginselen dat burgers beschermd worden tegen willekeur en dat het bestuur transparant, voorspelbaar en juridisch correct optreedt."
-  ]
-},
-
-
-{
-  terms: ["Procedurele zorgvuldigheid"],
-  code: "W905",
-  info: [
-    "Deze cluster omvat vier beginselen die de correcte en zorgvuldige totstandkoming van bestuurlijke beslissingen waarborgen."," 1. Het zorgvuldigheidsbeginsel verplicht het bestuur om alle relevante feiten en belangen te onderzoeken en af te wegen voordat een beslissing wordt genomen, zodat fouten, onvolledigheid en willekeur worden vermeden. ","2. Het hoorbeginsel vereist dat burgers die door een beslissing worden geraakt vooraf de kans krijgen om hun standpunt kenbaar te maken, zodat het bestuur niet beslist zonder kennis van hun argumenten. ","3. Het fair-playbeginsel houdt in dat het bestuur eerlijk, transparant en zonder procedurele valstrikken moet handelen, waarbij burgers niet worden verrast door verborgen informatie, onduidelijke termijnen of oneerlijke procesvoering. ","4. Het onderzoeksbeginsel ten slotte verplicht het bestuur om actief en volledig de nodige gegevens te verzamelen en niet te beslissen op basis van onvolledige of onbewezen feiten. ","✅ Samen verzekeren deze vier beginselen dat het bestuur zorgvuldig, open en correct te werk gaat bij elke stap van de besluitvorming."
-  ]
-},
-
-
-{
-  terms: ["Gelijkheid & neutraliteit"],
-  code: "W906",
-  info: [
-    "Deze cluster omvat vier beginselen die een gelijke, neutrale en onbevooroordeelde behandeling van burgers verzekeren.","1. Het gelijkheidsbeginsel houdt in dat het bestuur gelijke gevallen gelijk moet behandelen en enkel onderscheid mag maken wanneer daarvoor een objectieve en redelijke verantwoording bestaat. ","2. Het non-discriminatiebeginsel verbiedt elk ongeoorloofd onderscheid dat gebaseerd is op irrelevante of verboden criteria, en vormt zo de negatieve tegenhanger van het gelijkheidsbeginsel. ","3. Het onpartijdigheidsbeginsel vereist dat het bestuur zonder vooringenomenheid optreedt en geen beslissingen neemt wanneer belangenvermenging, persoonlijke betrokkenheid of schijn van partijdigheid aanwezig is. ","4. Het objectiviteitsbeginsel ten slotte verplicht het bestuur om beslissingen te baseren op relevante, controleerbare en feitelijke gegevens, zodat willekeur en subjectieve voorkeuren worden uitgesloten. ","✅ Samen waarborgen deze vier beginselen dat het bestuur neutraal, consequent en rechtvaardig handelt."
-  ]
-},
-
-{
-  terms: ["Legaliteit & bevoegdheid"],
-  code: "W907",
-  info: [
-    "Deze cluster omvat beginselen die de wettigheid en correcte uitoefening van bestuurlijke macht waarborgen.","1. Het legaliteitsbeginsel vereist dat het bestuur enkel handelt op basis van en binnen de grenzen van de wet, met respect voor de hiërarchie van rechtsnormen. ","2. Het wettigheidsbeginsel benadrukt dat het bestuur niet alleen een wettelijke grondslag moet hebben maar ook de wet correct moet toepassen en naleven in elke stap van de besluitvorming. ","3. Het bevoegdheidsbeginsel bepaalt dat het bestuur enkel mag optreden wanneer het daartoe wettelijk bevoegd is en binnen de materiële, territoriale, procedurele, hiërarchische en temporele grenzen van die bevoegdheid moet blijven. ","4. Het machtsafwendingsbeginsel verbiedt dat een bestuur zijn bevoegdheid gebruikt voor een ander doel dan waarvoor ze is toegekend, wat neerkomt op misbruik van bevoegdheid. ","5. Het machtsoverschrijdingsbeginsel ten slotte houdt in dat het bestuur wel bevoegd is, maar die bevoegdheid te ruim, te intensief of op een wijze toepast die verder gaat dan wat de wet toelaat. ","✅ Samen vormen deze vijf beginselen een geheel dat zowel de wettelijke basis als de correcte, doelgebonden en proportionele uitoefening van bestuurlijke macht beschermt."
-  ]
-},
-
-
-{
-  terms: ["Beginselen die niet autonoom erkend zijn"],
-  code: "W91",
-  info: [
-    "Overzicht van beginselen die niet door de Raad van State als autonome beginselen worden aanzien."
-  ]
-},
-
-{
-  terms: ["Informatiebeginsel"],
-  code: "W914",
   info: [
     "Het bestuur moet burgers correct, volledig en tijdig informeren zodat zij hun rechten kunnen uitoefenen."," De informatieplicht wordt in de Belgische rechtsleer en rechtspraak erkend als een onderdeel van de algemene beginselen van behoorlijk bestuur (ABBB), maar niet als een afzonderlijk, autonoom beginsel. Ze wordt meestal gezien als een uitvloeisel van andere ABBB zoals het zorgvuldigheidsbeginsel, het motiveringsbeginsel en soms het vertrouwensbeginsel."
   ]
@@ -845,18 +789,264 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 
 {
   terms: ["Neutraliteitsbeginsel"],
-  code: "W915",
+  code: "W92",
   info: [
     "Het bestuur moet politiek, ideologisch en religieus neutraal handelen."," → Wordt vooral gebruikt in context van onderwijs, ambtenaren, symbolen, religie. → In de rechtsleer wordt het gezien als een specifieke uitwerking van onpartijdigheid, niet als een autonoom beginsel."
   ]
 },
 
+
 {
   terms: ["Transparantiebeginsel"],
-  code: "W916",
+  code: "W94",
   info: [
-    "De Raad van State erkent transparantie niet als een afzonderlijk beginsel, maar als een uitvloeisel van bestaande beginselen."," Transparantie = 1. correcte informatie → informatiebeginsel;"," 2. duidelijke bekendmaking → kenbaarheidsbeginsel;"," 3. eerlijk en open procederen → fair‑playbeginsel"
+    "De Raad van State erkent transparantie niet als een afzonderlijk beginsel, maar als een uitvloeisel van bestaande beginselen."," Transparantie = 1. correcte informatie → informatiebeginsel;"," 2. duidelijke bekendmaking → kenbaarheidsbeginsel;"," 3. eerlijk en open communiceren → fair‑playbeginsel"
   ]
+},
+
+
+
+
+/* ==================================================
+   X = Beginselen
+   ================================================== */
+
+{
+  terms:["Beginselen vermeld in de clusters"],
+  code:"X",
+  classification:["X01","X02","X03","X04","X05","X06"]
+},
+
+{
+  terms:["Legitimiteit"],
+  code:"X01",
+  classification:["X011","X012","X013","X014","X015"]
+},
+
+{ terms:["Democratiebeginsel"], code:"X011" },
+{ terms:["Algemeen-belangbeginsel"], code:"X012" },
+{ terms:["Subsidiariteitsbeginsel"], code:"X013" },
+{ terms:["Participatiebeginsel"], code:"X014" },
+{ terms:["Verantwoordingsbeginsel"], code:"X015" },
+
+{
+  terms:["Legaliteit en bevoegdheid"],
+  code:"X02",
+  classification:["X021","X022","X023","X024"]
+},
+
+{ terms:["Legaliteitsbeginsel / wettigheidsbeginsel"], code:"X021" },
+{ terms:["Bevoegdheidsbeginsel"], code:"X022" },
+{ terms:["Verbod van machtsoverschrijding"], code:"X023" },
+{ terms:["Verbod van machtsafwending"], code:"X024" },
+
+{
+  terms:["Gelijke & Eerlijke behandeling"],
+  code:"X03",
+  classification:["X031","X032","X033","X034","X035","X036"]
+},
+
+{ terms:["Gelijkheidsbeginsel"], code:"X031" },
+{ terms:["Non-discriminatiebeginsel / discriminatieverbod"], code:"X032" },
+{ terms:["Onpartijdigheidsbeginsel"], code:"X033" },
+{ terms:["Objectiviteitsbeginsel"], code:"X034" },
+{ terms:["Neutraliteitsbeginsel"], code:"X035" },
+{ terms:["Billijkheidsbeginsel"], code:"X036" },
+
+{
+  terms:["Efficiëntie & effectiviteit | Doelmatig & doeltreffend"],
+  code:"X04",
+  classification:["X041","X042","X043","X044","X045","X046","X047","X048"]
+},
+
+{ terms:["Redelijkheidsbeginsel / Verbod van willekeur"], code:"X041" },
+
+{ terms:["Evenredigheidsbeginsel / proportionaliteitsbeginsel"], code:"X042"},
+{ terms:["Geschiktheid"], code:"X0421" },
+{ terms:["Noodzakelijkheid"], code:"X0422" },
+{ terms:["Evenredigheid stricto sensu"], code:"X0423" },
+
+{ terms:["Efficiëntiebeginsel"], code:"X044" },
+{ terms:["Effectiviteitsbeginsel"], code:"X045" },
+
+
+{
+  terms:["Procedurele zorgvuldigheid"],
+  code:"X05",
+  classification:["X051","X052","X053","X054","X055","X056","X057","X058"]
+},
+
+{ terms:["Zorgvuldigheidsbeginsel"], code:"X051" },
+{ terms:["Onderzoeksbeginsel"], code:"X052" },
+{ terms:["Beginsel van correcte feitenvaststelling"], code:"X053" },
+{ terms:["Hoorbeginsel / hoorplicht"], code:"X054" },
+{ terms:["Fair-playbeginsel"], code:"X055" },
+{ terms:["Redelijketermijnbeginsel"], code:"X056" },
+{ terms:["Informatiebeginsel / informatieplicht"], code:"X057" },
+{ terms:["Transparantie in de procedure"], code:"X058" },
+
+{
+  terms:["Rechtsbescherming"],
+  code:"X06",
+  classification:["X061","X062","X063","X064","X065","X066"]
+},
+
+{ terms:["Rechtszekerheidsbeginsel / Verbod van retroactieve benadeling"], code:"X061" },
+{ terms:["Vertrouwensbeginsel"], code:"X062" },
+{ terms:["Kenbaarheidsbeginsel"], code:"X063" },
+{ terms:["Motiveringsbeginsel"], code:"X064" },
+{ terms:["Consistentiebeginsel"], code:"X065" },
+
+{
+  terms: ["Clusters"],
+  code: "Y",
+  info: [
+"Overzicht van inhoudelijke clusters binnen de algemene beginselen van behoorlijk bestuur.",
+"Y01 – Legitimiteit → Waarom en op welke grond is bestuurlijk optreden gerechtvaardigd?",
+"Y02 – Legaliteit & bevoegdheid → Mag het bestuur dit juridisch doen en blijft het binnen zijn bevoegdheid?",
+"Y03 – Gelijke & Eerlijke behandeling → Worden burgers gelijk, billijk, objectief en onpartijdig behandeld?",
+"Y04 – Efficiëntie & effectiviteit | Doelmatig & doeltreffend → Is het optreden redelijk, proportioneel, doelmatig en doeltreffend?",
+"Y05 – Procedurele zorgvuldigheid → Is de beslissing volgens een behoorlijke en eerlijke procedure tot stand gekomen?",
+"Y06 – Rechtsbescherming → Kan de burger de beslissing begrijpen, controleren, aanvechten en zich tegen het bestuur beschermen?"
+  ]
+},
+
+{
+terms: ["Legitimiteit"],
+code: "Y01",
+info: [
+"Deze cluster omvat beginselen die de democratische, maatschappelijke en inhoudelijke rechtvaardiging van bestuurlijk optreden waarborgen.",
+"1. **Het democratiebeginsel** vereist dat het bestuur handelt binnen een democratisch gelegitimeerd staatsbestel en rekening houdt met de democratische grondslagen waarop zijn bevoegdheid en optreden berusten.",
+"2. **Het algemeen-belangbeginsel** verlangt dat het bestuur zijn optreden richt op het behartigen van het algemeen belang en niet op particuliere, persoonlijke of oneigenlijke belangen.",
+"3. **Het subsidiariteitsbeginsel** houdt in dat bestuurlijk optreden slechts gerechtvaardigd is wanneer het beoogde doel niet op een minder ingrijpende of meer geschikte wijze op een lager bestuursniveau of door andere actoren kan worden bereikt.",
+"4. **Het participatiebeginsel** verlangt dat burgers en belanghebbenden, waar passend, de mogelijkheid krijgen om invloed uit te oefenen op de voorbereiding en vormgeving van bestuurlijk beleid en optreden.",
+"5. **Het verantwoordingsbeginsel** vereist dat het bestuur rekenschap kan geven van zijn keuzes, prioriteiten en handelen tegenover burgers, volksvertegenwoordiging en andere bevoegde controleorganen.",
+"✅ Samen waarborgen deze beginselen dat bestuurlijk optreden niet alleen juridisch mogelijk is, maar ook democratisch gelegitimeerd, gericht op het algemeen belang, passend georganiseerd, maatschappelijk betrokken en verantwoordbaar is."
+]
+},
+
+// Logische volgorde:
+// 1. Democratiebeginsel → de democratische grondslag van bestuurlijk optreden.
+// 2. Algemeen-belangbeginsel → het doel waarvoor het bestuur optreedt.
+// 3. Subsidiariteitsbeginsel → de vraag of optreden op dit bestuursniveau gerechtvaardigd en passend is.
+// 4. Participatiebeginsel → de betrokkenheid van burgers en belanghebbenden bij het bestuurlijk optreden.
+// 5. Verantwoordingsbeginsel → de verplichting om het bestuurlijk handelen achteraf te kunnen verantwoorden.
+//
+// De logica is daarmee:
+// democratische grondslag → doel → passende bestuurslaag → betrokkenheid → verantwoording.
+
+
+{
+terms: ["Legaliteit & bevoegdheid"],
+code: "Y02",
+info: [
+"Deze cluster omvat beginselen die waarborgen dat het bestuur uitsluitend handelt op een wettelijke grondslag, binnen de grenzen van zijn bevoegdheid en overeenkomstig de geldende rechtsnormen.",
+"1. **Het legaliteitsbeginsel** vereist dat het bestuur uitsluitend handelt op basis van een wettelijke grondslag en binnen de grenzen van de toepasselijke rechtsnormen, met eerbiediging van de hiërarchie van rechtsnormen.",
+"2. **Het bevoegdheidsbeginsel** bepaalt dat het bestuur enkel mag optreden wanneer het daartoe wettelijk bevoegd is en dat het binnen de materiële, territoriale, procedurele, hiërarchische en temporele grenzen van die bevoegdheid moet blijven.",
+"3. **Het wettigheidsbeginsel** vereist dat het bestuur niet alleen over een wettelijke grondslag en de vereiste bevoegdheid beschikt maar de toepasselijke regelgeving ook correct toepast en naleeft.",
+"4. **Het machtsafwendingsbeginsel** verbiedt het bestuur om een bevoegdheid aan te wenden voor een ander doel dan waarvoor die bevoegdheid is verleend en beschermt aldus tegen misbruik van bevoegdheid.",
+"5. **Het machtsoverschrijdingsbeginsel** verbiedt het bestuur om zijn bevoegdheid uit te oefenen op een wijze die de wettelijke grenzen overschrijdt, bijvoorbeeld door verder te gaan dan waartoe het bevoegd is.",
+"✅ Samen waarborgen deze beginselen dat het bestuur over een geldige wettelijke grondslag en bevoegdheid beschikt, de toepasselijke rechtsnormen correct naleeft en zijn bestuurlijke macht uitsluitend binnen de wettelijke grenzen en voor het toegestane doel uitoefent."
+]
+},
+
+// Logische volgorde:
+// 1. Legaliteit → is er een wettelijke grondslag en welk normenkader geldt?
+// 2. Bevoegdheid → is dit bestuur bevoegd om op te treden?
+// 3. Wettigheid → wordt de toepasselijke regelgeving correct toegepast en nageleefd?
+// 4. Machtsafwending → wordt de bevoegdheid voor het juiste doel gebruikt?
+// 5. Machtsoverschrijding → blijft de concrete uitoefening binnen de wettelijke grenzen?
+//
+// De logica is daarmee:
+// wettelijke grondslag → bevoegdheid → correcte toepassing → doelgebondenheid → begrenzing.
+
+
+{
+  terms: ["Gelijke & Eerlijke behandeling"],
+  code: "Y03",
+  info: [
+ "Deze cluster omvat beginselen die waarborgen dat het bestuur burgers gelijk, eerlijk, neutraal en objectief behandelt en bij zijn besluitvorming rekening houdt met hun gerechtvaardigde belangen en standpunten.",
+"1. **Het objectiviteitsbeginsel** verplicht het bestuur om beslissingen te baseren op relevante, controleerbare en feitelijke gegevens, zodat willekeur en subjectieve voorkeuren zoveel mogelijk worden uitgesloten.",
+"2. **Het billijkheidsbeginsel** vereist dat het bestuur redelijk, evenwichtig en zonder onnodige hardheid optreedt, zodat beslissingen niet onrechtvaardig of onevenredig uitvallen.",
+"3. **Het gelijkheidsbeginsel** houdt in dat gelijke gevallen gelijk moeten worden behandeld en dat een verschil in behandeling enkel is toegelaten wanneer daarvoor een objectieve en redelijke verantwoording bestaat.",
+"4. **Het non-discriminatiebeginsel** verbiedt ongeoorloofd onderscheid op basis van irrelevante of verboden criteria en vormt daarmee de negatieve tegenhanger van het gelijkheidsbeginsel.",
+"5. **Het onpartijdigheidsbeginsel** verplicht het bestuur om zonder vooringenomenheid te handelen en beslissingen te nemen zonder persoonlijke voorkeuren, belangenvermenging, persoonlijke betrokkenheid of schijn van partijdigheid.",
+"6. **De hoorplicht** garandeert dat burgers die door een beslissing worden geraakt, vooraf de gelegenheid krijgen om hun standpunt en argumenten kenbaar te maken, zodat het bestuur met de relevante belangen en informatie rekening kan houden alvorens te beslissen.",
+
+"✅ Samen waarborgen deze zes beginselen dat het bestuur burgers gelijk en niet-discriminerend behandelt, billijk en onpartijdig optreedt, beslissingen op objectieve gronden neemt en betrokkenen een reële mogelijkheid geeft hun standpunt naar voren te brengen.",
+
+//"Gelijkheid → non-discriminatie → billijkheid → onpartijdigheid → objectiviteit → horen. Dat geeft een inhoudelijke opbouw van gelijke behandeling, via verboden onderscheid, naar rechtvaardige toepassing; vervolgens de houding van het bestuur, de feitelijke grondslag van de beslissing en ten slotte de inbreng van de burger vóór de beslissing.",
+
+  ]
+},
+
+{
+terms: ["Efficiëntie & effectiviteit | Doelmatig & doeltreffend"],
+code: "Y04",
+info: [
+"Deze cluster omvat beginselen die waarborgen dat het bestuur zijn optreden zorgvuldig voorbereidt, redelijk en proportioneel afweegt en zijn middelen doelmatig inzet om de beoogde doelstellingen daadwerkelijk te bereiken.",
+"1. Het effectiviteitsbeginsel verlangt dat het bestuurlijk optreden daadwerkelijk en doeltreffend bijdraagt aan het bereiken van het beoogde en rechtmatige doel.",
+"2. Het efficiëntiebeginsel verlangt dat het bestuur tijd, middelen en procedures doelmatig inzet en onnodige kosten, vertragingen, administratieve lasten en verspilling vermijdt.",
+"3. Het redelijkheidsbeginsel vereist dat het bestuur bij zijn besluitvorming een redelijke en evenwichtige afweging maakt en niet tot een beslissing komt die kennelijk onredelijk is.",
+"4. Het proportionaliteitsbeginsel verlangt dat de bestuurlijke maatregel geschikt en noodzakelijk is om het beoogde doel te bereiken en niet verder gaat dan wat daarvoor redelijkerwijs vereist is.",
+"5. Het zorgvuldigheidsbeginsel verplicht het bestuur om alle relevante feiten en belangen volledig en nauwkeurig te onderzoeken en af te wegen voordat een beslissing wordt genomen, zodat fouten, onvolledigheid en onnodige lasten worden vermeden.",
+"✅ Samen verzekeren deze beginselen dat het bestuur zorgvuldig voorbereidt, redelijk en proportioneel beslist, zijn middelen doelmatig inzet en daadwerkelijk resultaat bereikt."
+]
+},
+
+// Logische volgorde:
+// 1. Zorgvuldigheid → eerst voldoende feiten en belangen verzamelen en onderzoeken.
+// 2. Redelijkheid → vervolgens een redelijke en evenwichtige afweging maken.
+// 3. Proportionaliteit → daarna beoordelen of de gekozen maatregel geschikt en niet verdergaand dan nodig is.
+// 4. Efficiëntie → vervolgens middelen, tijd en procedures doelmatig inzetten.
+// 5. Effectiviteit → ten slotte nagaan of het optreden het beoogde doel daadwerkelijk bereikt.
+
+
+
+{
+terms: ["Procedurele zorgvuldigheid"],
+code: "Y05",
+info: [
+"Deze cluster omvat beginselen die waarborgen dat bestuurlijke beslissingen volgens een correcte, zorgvuldige, eerlijke en transparante procedure tot stand komen.",
+"1. Het zorgvuldigheidsbeginsel vereist dat het bestuur de besluitvorming op een behoorlijke en ordelijke wijze voorbereidt en daarbij de procedurele rechten en belangen van de betrokkenen respecteert.",
+"2. Het onderzoeksbeginsel verplicht het bestuur om binnen de procedure actief de nodige gegevens en informatie te verzamelen en zich ervan te vergewissen dat de beslissing op voldoende betrouwbare en relevante feiten berust.",
+"3. Het hoorbeginsel vereist dat burgers die door een beslissing worden geraakt, vooraf de gelegenheid krijgen om hun standpunt, argumenten en eventuele bezwaren kenbaar te maken, zodat het bestuur deze bij zijn besluitvorming kan betrekken.",
+"4. Het fair-playbeginsel verlangt dat het bestuur de procedure eerlijk, transparant en loyaal voert en zich onthoudt van procedurele handelwijzen die de burger onredelijk benadelen, misleiden of voor verrassingen plaatsen.",
+"5. Redelijke termijn beginsel. Het redelijketermijnbeginsel vereist dat het bestuur procedures en beslissingen binnen een redelijke termijn afhandelt, rekening houdend met de aard en complexiteit van de zaak. Het beschermt burgers tegen onnodige vertraging of buitensporig lange bestuurlijke procedures.",
+"✅ Samen waarborgen deze beginselen dat bestuurlijke beslissingen op een behoorlijke, geïnformeerde, eerlijke en transparante wijze tot stand komen, met respect voor de procedurele rechten van de betrokkenen."
+]
+},
+
+// Logische volgorde:
+// 1. Zorgvuldigheid → de procedure wordt behoorlijk en ordelijk voorbereid.
+// 2. Onderzoek → de nodige feiten en gegevens worden verzameld en gecontroleerd.
+// 3. Horen → de betrokken burger krijgt gelegenheid om zijn standpunt kenbaar te maken.
+// 4. Fair play → het bestuur voert de volledige procedure eerlijk, transparant en loyaal.
+//
+// De volgorde volgt daarmee het procedurele verloop:
+// voorbereiding → onderzoek → inspraak → eerlijke procesvoering.
+
+{
+terms: ["Rechtsbescherming"],
+code: "Y06",
+info: [
+"Deze cluster omvat beginselen die de juridische positie van de burger tegenover het bestuur beschermen en waarborgen dat bestuurlijk optreden kenbaar, voorspelbaar, controleerbaar en toetsbaar is.",
+"1. **Het vertrouwensbeginsel** beschermt gerechtvaardigde verwachtingen die burgers op basis van concrete toezeggingen, gedragingen of een vaste gedragslijn van het bestuur mochten koesteren en verlangt dat het bestuur daarmee rekening houdt wanneer het daarvan wil afwijken.",
+"2. **Het kenbaarheidsbeginsel** vereist dat regels, procedures en bestuurlijke beslissingen op een duidelijke en toegankelijke wijze bekendgemaakt worden, zodat burgers tijdig kennis kunnen nemen van wat van hen wordt verwacht en hun rechten daadwerkelijk kunnen uitoefenen.",
+"3. **De motiveringsplicht** verplicht het bestuur om beslissingen voldoende, begrijpelijk en concreet te motiveren, zodat burgers kunnen begrijpen waarom een beslissing is genomen en de rechtmatigheid en redelijkheid ervan kunnen laten controleren.",
+"4. **Het rechtszekerheidsbeginsel** vereist dat het bestuur duidelijk, voorspelbaar, consistent en betrouwbaar handelt, zodat burgers kunnen weten welke regels gelden, welke rechten en verplichtingen zij hebben en welke gevolgen hun handelen kan hebben.",
+
+"✅ Samen waarborgen deze beginselen dat burgers weten wat van hen wordt verwacht, kunnen begrijpen en controleren waarom het bestuur beslist zoals het beslist en worden beschermd tegen onverwachte of ongerechtvaardigde wijzigingen in hun rechtspositie."
+]
 }
+
+// Logische volgorde:
+// 1. Rechtszekerheid → de burger moet kunnen vertrouwen op duidelijke en voorspelbare regels.
+// 2. Kenbaarheid → regels, procedures en beslissingen moeten daadwerkelijk toegankelijk en bekend zijn.
+// 3. Motivering → de burger moet kunnen begrijpen waarom het bestuur een beslissing neemt.
+// 4. Vertrouwen → gerechtvaardigde verwachtingen van de burger moeten worden gerespecteerd.
+//
+// De logica is daarmee:
+// voorspelbaarheid → kenbaarheid → controleerbaarheid → bescherming van vertrouwen.
 
 ];
