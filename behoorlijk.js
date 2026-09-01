@@ -563,7 +563,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 { terms:["Bestuurlijke sanctie"], code:"FGK" },
 
 /* ==================================================
-   D = BEGRIPPEN EN MIDDELEN
+   W = BEGRIPPEN EN MIDDELEN
    Alfabetisch register
    ================================================== */
 /* ==================================================
@@ -638,10 +638,10 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 {
   terms: ["Legaliteitsbeginsel (Y02)"],
   code: "W30",
-  info: ["Legaliteit = bestuur mag alleen handelen als de wet dat toestaat. Het bestuur mag enkel en alleen bevoegdheden uitoefenen die het uitdrukkelijk of impliciet van de wetgever heeft gekregen. Het bestuur moet handelen op basis van en binnen de grenzen van een (bestaande) wet. Elke bestuurlijke handeling vereist een rechtsgeldige beslissing op basis van een wettelijke grondslag.",
+  info: ["Legaliteit = bestuur mag alleen handelen als de wet dat toestaat. Er moet dus een wettelijke grondslag zijn voor het optreden van de overheid (optreden op grond van het recht).","Het bestuur mag enkel en alleen bevoegdheden uitoefenen die het uitdrukkelijk of impliciet van de wetgever heeft gekregen. Het bestuur moet handelen op basis van en binnen de grenzen van een (bestaande) wet. Elke bestuurlijke handeling vereist een rechtsgeldige beslissing op basis van een wettelijke grondslag.",
 	"Het legaliteitsbeginsel houdt in dat het bestuur de hiërarchie van rechtsnormen moet respecteren en geen maatregelen mag nemen die strijdig zijn met hogere normen zoals de Grondwet, internationale verdragen of wetten.",
 	"Daarnaast moet het bestuur binnen de territoriale, materiële, procedurele, hiërarchische en temporele grenzen van zijn bevoegdheid blijven.",
-	"Het beginsel omvat ook het verbod op willekeur en machtsmisbruik: een bevoegdheid mag niet worden aangewend voor een ander doel dan waarvoor ze is toegekend.",
+	"Het beginsel omvat ook het verbod op willekeur en machtsmisbruik: een bevoegdheid mag niet worden aangewend voor een ander doel dan waarvoor ze is toegekend.","Dit alles vloeit voort uit artikel 159 van de Grondwet."
   ]
 },
 
@@ -649,7 +649,7 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
   terms: ["Machtsafwendingbeginsel (Y02)"],
   code: "W32",
   info: [
-    ""
+    "Het machtsafwendingsbeginsel verbiedt het bestuur om een bevoegdheid aan te wenden voor een ander doel dan waarvoor die bevoegdheid is verleend en beschermt aldus tegen misbruik van bevoegdheid."
   ]
 },
 
@@ -680,18 +680,12 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
         "Formele motivering: vermeldt het bestuur de redenen (motieven) waarom de beslissing wordt genomen?",
 		
 "Art. 3 De opgelegde motivering moet in de akte de juridische en feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen. Zij moet afdoende zijn.",
-
 "1. De juridische en feitelijke overwegingen.",
-
 "A)	Worden de juridische regels aangegeven die worden toegepast ?",
 "B)	Worden de precieze, concrete feitelijke gegevens aangeduid waarom de beslissing werd genomen ? ",
-
 "2. Zijn de motieven (overwegingen, redenen) in de akte opgenomen ?",
-
 "3. Worden de motieven (overwegingen, redenen) op afdoende wijze tot uiting gebracht ?",
-
 "4. De materiële motivering: zijn de motieven (overwegingen, redenen) afdoende ?",
-
 "A)	De inhoudelijke juistheid van de motieven. Zijn de motieven (redenen, overwegingen) juist of gefantaseerd (waan of hallucinatie) ?",
 "B)	De draagkracht van de motieven. Zijn de motieven (redenen, overwegingen) zwaarwichtig genoeg om de beslissing (het besluit) te kunnen dragen (te verantwoorden) ?",
 ]
@@ -721,10 +715,10 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
   ]
 },
 {
-  terms: ["Onpartijdigheidsbeginsel (Y03)"],
+  terms: ["Onpartijdigheidsbeginsel (Y03) / Neutraliteitsbeginsel"],
   code: "W44",
   info: [
-    "Het bestuur moet zonder vooringenomenheid beslissen. → Geen persoonlijke belangen, geen voorkeuren, geen beïnvloeding. 	Het bestuur moet neutraal en onbevooroordeeld handelen, zonder persoonlijke of externe belangen die de beslissing beïnvloeden.","Behoort tot de cluster W902 - Gelijke & eerlijke behandeling en W906 – Gelijkheid & neutraliteit"
+    "Het bestuur moet zonder vooringenomenheid beslissen. → Geen persoonlijke belangen, geen voorkeuren, geen beïnvloeding. 	Het bestuur moet neutraal en onbevooroordeeld handelen, zonder persoonlijke of externe belangen die de beslissing beïnvloeden.","Het bestuur moet politiek, ideologisch en religieus neutraal handelen."," → Wordt vooral gebruikt in context van onderwijs, ambtenaren, symbolen, religie."," → In de rechtsleer wordt het gezien als een specifieke uitwerking van onpartijdigheid, niet als een autonoom beginsel."
   ]
 },
 
@@ -749,7 +743,6 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
   ]
 },
 
-
 {
   terms: ["Vertrouwenbeginsel  (Y06)"],
   code: "W56",
@@ -762,21 +755,20 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
   terms: ["Wettigheidsbeginsel / Wettelijkheidsbeginsel (Y03)"],
   code: "W60",
   info: [
-    "Wettigheid = bestuur moet handelen volgens de wet (naleving) | onderscheid met legaliteit (handelen als de wet bestaat of toestaat - bevoegheid).","Het bestuur moet handelen volgens de wet en mag geen beslissingen nemen zonder een duidelijke wettelijke basis."
+    "Wettigheid = bestuur moet handelen volgens de wet (naleving) | onderscheid met legaliteit (handelen als de wet bestaat of toestaat - bevoegheid).","Het optreden moet in overeenstemming zijn met het recht in het algemeen (optreden binnen de grenzen van het recht)."
   ]
 },
 {
   terms: ["Zorgvuldigheidsbeginsel (Y04) (Y05)"],
   code: "W62",
   info: [
-    "Het bestuur moet zorgvuldig handelen door alle relevante feiten te verzamelen, belangen af te wegen en fouten te vermijden."," Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht. België heeft geen Awb, dus dit beginsel is niet gecodificeerd maar het is bindend recht via rechtspraak"
+    "Het bestuur moet zorgvuldig handelen door alle relevante feiten te verzamelen, belangen af te wegen en fouten te vermijden."," Het zorgvuldigheidsbeginsel in België is een algemeen beginsel van behoorlijk bestuur dat door de Raad van State is ontwikkeld. Het verplicht elk bestuur — lokaal, Vlaams, federaal — om een beslissing pas te nemen nadat alle relevante feiten en belangen volledig en correct zijn onderzocht."
   ]
 },
 
 { terms:["Algemeen-belangbeginsel (Y01)"], code:"W70" },
 { terms:["Democratiebeginsel (Y01)"], code:"W72" },
 { terms:["Participatiebeginsel (Y01)"], code:"W74" },
-{ terms:["Subsidiariteitsbeginsel (Y01)"], code:"W76" },
 { terms:["Verantwoordingsbeginsel (Y01)"], code:"W78" },
 
 {
@@ -788,24 +780,12 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 },
 
 {
-  terms: ["Neutraliteitsbeginsel"],
-  code: "W92",
-  info: [
-    "Het bestuur moet politiek, ideologisch en religieus neutraal handelen."," → Wordt vooral gebruikt in context van onderwijs, ambtenaren, symbolen, religie. → In de rechtsleer wordt het gezien als een specifieke uitwerking van onpartijdigheid, niet als een autonoom beginsel."
-  ]
-},
-
-
-{
   terms: ["Transparantiebeginsel"],
   code: "W94",
   info: [
-    "De Raad van State erkent transparantie niet als een afzonderlijk beginsel, maar als een uitvloeisel van bestaande beginselen."," Transparantie = 1. correcte informatie → informatiebeginsel;"," 2. duidelijke bekendmaking → kenbaarheidsbeginsel;"," 3. eerlijk en open communiceren → fair‑playbeginsel"
+    "De Raad van State erkent transparantie niet als een afzonderlijk beginsel, maar als een uitvloeisel van bestaande beginselen."," Transparantie ="," 1. correcte informatie → informatiebeginsel;"," 2. duidelijke bekendmaking → kenbaarheidsbeginsel;"," 3. eerlijk en open communiceren → fair‑playbeginsel"
   ]
 },
-
-
-
 
 /* ==================================================
    X = Beginselen
@@ -918,10 +898,9 @@ info: [
 "Deze cluster omvat beginselen die de democratische, maatschappelijke en inhoudelijke rechtvaardiging van bestuurlijk optreden waarborgen.",
 "1. **Het democratiebeginsel** vereist dat het bestuur handelt binnen een democratisch gelegitimeerd staatsbestel en rekening houdt met de democratische grondslagen waarop zijn bevoegdheid en optreden berusten.",
 "2. **Het algemeen-belangbeginsel** verlangt dat het bestuur zijn optreden richt op het behartigen van het algemeen belang en niet op particuliere, persoonlijke of oneigenlijke belangen.",
-"3. **Het subsidiariteitsbeginsel** houdt in dat bestuurlijk optreden slechts gerechtvaardigd is wanneer het beoogde doel niet op een minder ingrijpende of meer geschikte wijze op een lager bestuursniveau of door andere actoren kan worden bereikt.",
-"4. **Het participatiebeginsel** verlangt dat burgers en belanghebbenden, waar passend, de mogelijkheid krijgen om invloed uit te oefenen op de voorbereiding en vormgeving van bestuurlijk beleid en optreden.",
-"5. **Het verantwoordingsbeginsel** vereist dat het bestuur rekenschap kan geven van zijn keuzes, prioriteiten en handelen tegenover burgers, volksvertegenwoordiging en andere bevoegde controleorganen.",
-"✅ Samen waarborgen deze beginselen dat bestuurlijk optreden niet alleen juridisch mogelijk is, maar ook democratisch gelegitimeerd, gericht op het algemeen belang, passend georganiseerd, maatschappelijk betrokken en verantwoordbaar is."
+"3. **Het participatiebeginsel** verlangt dat burgers en belanghebbenden, waar passend, de mogelijkheid krijgen om invloed uit te oefenen op de voorbereiding en vormgeving van bestuurlijk beleid en optreden.",
+"4. **Het verantwoordingsbeginsel** vereist dat het bestuur rekenschap kan geven van zijn keuzes, prioriteiten en handelen tegenover burgers, volksvertegenwoordiging en andere bevoegde controleorganen.",
+"✅ Samen waarborgen deze beginselen dat bestuurlijk optreden niet alleen juridisch mogelijk is maar ook democratisch gelegitimeerd, gericht op het algemeen belang, passend georganiseerd, maatschappelijk betrokken en verantwoordbaar is."
 ]
 },
 
@@ -970,7 +949,7 @@ info: [
 "2. **Het billijkheidsbeginsel** vereist dat het bestuur redelijk, evenwichtig en zonder onnodige hardheid optreedt, zodat beslissingen niet onrechtvaardig of onevenredig uitvallen.",
 "3. **Het gelijkheidsbeginsel** houdt in dat gelijke gevallen gelijk moeten worden behandeld en dat een verschil in behandeling enkel is toegelaten wanneer daarvoor een objectieve en redelijke verantwoording bestaat.",
 "4. **Het non-discriminatiebeginsel** verbiedt ongeoorloofd onderscheid op basis van irrelevante of verboden criteria en vormt daarmee de negatieve tegenhanger van het gelijkheidsbeginsel.",
-"5. **Het onpartijdigheidsbeginsel** verplicht het bestuur om zonder vooringenomenheid te handelen en beslissingen te nemen zonder persoonlijke voorkeuren, belangenvermenging, persoonlijke betrokkenheid of schijn van partijdigheid.",
+"5. ** Het onpartijdigheidsbeginsel / neutraliteitsbeginsel ** verplicht het bestuur om zonder vooringenomenheid te handelen en beslissingen te nemen zonder persoonlijke voorkeuren, belangenvermenging, persoonlijke betrokkenheid of schijn van partijdigheid.",
 "6. **De hoorplicht** garandeert dat burgers die door een beslissing worden geraakt, vooraf de gelegenheid krijgen om hun standpunt en argumenten kenbaar te maken, zodat het bestuur met de relevante belangen en informatie rekening kan houden alvorens te beslissen.",
 
 "✅ Samen waarborgen deze zes beginselen dat het bestuur burgers gelijk en niet-discriminerend behandelt, billijk en onpartijdig optreedt, beslissingen op objectieve gronden neemt en betrokkenen een reële mogelijkheid geeft hun standpunt naar voren te brengen.",
@@ -1038,7 +1017,7 @@ info: [
 
 "✅ Samen waarborgen deze beginselen dat burgers weten wat van hen wordt verwacht, kunnen begrijpen en controleren waarom het bestuur beslist zoals het beslist en worden beschermd tegen onverwachte of ongerechtvaardigde wijzigingen in hun rechtspositie."
 ]
-}
+},
 
 // Logische volgorde:
 // 1. Rechtszekerheid → de burger moet kunnen vertrouwen op duidelijke en voorspelbare regels.
@@ -1048,5 +1027,25 @@ info: [
 //
 // De logica is daarmee:
 // voorspelbaarheid → kenbaarheid → controleerbaarheid → bescherming van vertrouwen.
+
+{
+  terms: ["De motiveringswet"],
+  code: "Y10",
+  info: [
+"Bestuurlijke beslissingen moeten duidelijk en begrijpelijk worden gemotiveerd zodat burgers weten waarom een beslissing is genomen.",
+"De wet van 29 juli 1991, betreffende de uitdrukkelijke motivering van de bestuurshandelingen. Omzendbrief BA 2000/08, betreffende de toepassing van de wet van 29 juli 1991.",
+"Art. 2. : de beslissing of het besluit van het bestuur moet uitdrukkelijk worden gemotiveerd.",
+ "Formele motivering: vermeldt het bestuur de redenen (motieven) waarom de beslissing wordt genomen?",
+"Art. 3 De opgelegde motivering moet in de akte de juridische en feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen. Zij moet afdoende zijn.",
+"1. Zijn de motieven (overwegingen, redenen) in de akte opgenomen ?",
+"2. De juridische en feitelijke overwegingen.",
+"A) Worden de juridische regels vermeld, die worden toegepast ?",
+"B) Worden de precieze, concrete feitelijke gegevens aangeduid waarom de beslissing werd genomen ? ",
+"3. Worden de motieven (overwegingen, redenen) op afdoende wijze tot uiting gebracht ?",
+"4. Zijn de motieven (overwegingen, redenen) afdoende (Materiële motivering) ?",
+"A) De inhoudelijke juistheid van de motieven. Zijn de motieven (redenen, overwegingen) juist en correct of zijn ze gefantaseerd (waan of hallucinatie) ?",
+"B) De draagkracht van de motieven. Zijn de motieven (redenen, overwegingen) zwaarwichtig genoeg om de beslissing (het besluit) te kunnen dragen (te verantwoorden) ?",
+]
+},
 
 ];
