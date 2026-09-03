@@ -1032,19 +1032,31 @@ info: [
   terms: ["De motiveringswet"],
   code: "Y10",
   info: [
-"Bestuurlijke beslissingen moeten duidelijk en begrijpelijk worden gemotiveerd zodat burgers weten waarom een beslissing is genomen.",
-"De wet van 29 juli 1991, betreffende de uitdrukkelijke motivering van de bestuurshandelingen. Omzendbrief BA 2000/08, betreffende de toepassing van de wet van 29 juli 1991.",
-"Art. 2. : de beslissing of het besluit van het bestuur moet uitdrukkelijk worden gemotiveerd.",
- "Formele motivering: vermeldt het bestuur de redenen (motieven) waarom de beslissing wordt genomen?",
-"Art. 3 De opgelegde motivering moet in de akte de juridische en feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen. Zij moet afdoende zijn.",
-"1. Zijn de motieven (overwegingen, redenen) in de akte opgenomen ?",
-"2. De juridische en feitelijke overwegingen.",
-"A) Worden de juridische regels vermeld, die worden toegepast ?",
-"B) Worden de precieze, concrete feitelijke gegevens aangeduid waarom de beslissing werd genomen ? ",
-"3. Worden de motieven (overwegingen, redenen) op afdoende wijze tot uiting gebracht ?",
-"4. Zijn de motieven (overwegingen, redenen) afdoende (Materiële motivering) ?",
-"A) De inhoudelijke juistheid van de motieven. Zijn de motieven (redenen, overwegingen) juist en correct of zijn ze gefantaseerd (waan of hallucinatie) ?",
-"B) De draagkracht van de motieven. Zijn de motieven (redenen, overwegingen) zwaarwichtig genoeg om de beslissing (het besluit) te kunnen dragen (te verantwoorden) ?",
+"De wet van 29 juli 1991 betreffende de uitdrukkelijke motivering van de bestuurshandelingen. Omzendbrief BA 2000/08 van 17 november 2000, betreffende de toepassing van de wet van 29 juli 1991.",
+
+"Art. 2. - De bestuurshandeling moet uitdrukkelijk worden gemotiveerd.",
+
+"Formele motivering: vermeldt het bestuur uitdrukkelijk de redenen (motieven) waarom de beslissing wordt genomen ? Neen de redenen worden niet uitdrukkelijk vermeld. Met moeite kan men die vinden in de tekst. De motivering staat dus niet behoorlijk in de beslissing (het besluit).",
+
+"Art. 3. - De opgelegde motivering moet in de akte de juridische en feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen. Zij moet afdoende zijn.",
+
+"1. Worden de overwegingen (redenen, motieven) in de akte vermeld ? In de akte (het document xxx) kan men met moeite enkele overwegingen terugvinden.",
+
+"2. De juridische en feitelijke overwegingen moeten worden vermeld",
+
+"1) De aanduiding van de juridische overwegingen betekent dat de motivering de juridische regels aangeeft die worden toegepast. -> De motivering geeft de juridische regels niet aan die worden toegepast.",
+
+"2) De aanduiding van de feitelijke overwegingen houdt in dat de precieze, concrete feitelijke gegevens worden aangeduid waarom de beslissing werd genomen. Worden in de feitelijke overwegingen geen of onvoldoende precieze, concrete feitelijke gegevens aangeduid waarom de beslissing werd genomen.",
+
+"3. De opgelegde motivering moet afdoende zijn.",
+
+"1) Wordt de motivering op afdoende wijze tot uiting gebracht ? Neen",
+
+"2) Is de opgelegde motivering (de amteriële motivering) afdoende ? Is de motivering sluitend of vertoont ze zwakke plekken.",
+
+"A. De inhoudelijke juistheid van de motieven. Zijn de precieze, concrete motieven (redenen, overwegingen) feitelijk en juridisch juist. Of zijn ze gefantaseerd (waan of hallucinatie) ?",
+
+"B. De draagkracht van de motieven. Zijn de vermelde motieven (redenen, overwegingen) juist en zwaarwichtig genoeg om de beslissing te kunnen dragen (te verantwoorden) ? Wordt in de beslissing zelf op uitdrukkelijke wijze verantwoord waarom zo en niet anders werd beslist.",
 ]
 },
 
