@@ -467,7 +467,6 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 
 { terms:["Het bestuur zelf"], code:"FBA" },
 { terms:["Toezichthoudende overheid"], code:"FBB" },
-{ terms:["Provinciegouverneur"], code:"FBC" },
 { terms:["Vlaamse Regering"], code:"FBD" },
 { terms:["Bevoegde Vlaamse minister"], code:"FBE" },
 { terms:["Agentschap Binnenlands Bestuur"], code:"FBF" },
@@ -794,11 +793,11 @@ info: ["Bijvoorbeeld: naam van een openbare instelling gebruiken zonder dat er e
 "Overzicht van inhoudelijke clusters binnen de algemene beginselen van behoorlijk bestuur.",
 "Y01 – Legitimiteit → Waarom en op welke grond is bestuurlijk optreden gerechtvaardigd?",
 "Y02 – Legaliteit & bevoegdheid → Mag het bestuur dit juridisch doen en blijft het binnen zijn bevoegdheid?",
-"Y03 – Gelijke & Eerlijke behandeling → Worden burgers gelijk, billijk, objectief en onpartijdig behandeld?",
-"Y04 – Procedurele zorgvuldigheid → Is de beslissing volgens een behoorlijke en eerlijke procedure (stappenplan) tot stand gekomen?",
-"Y05 – Effectiviteit & Efficiëntie | Doelmatig & doeltreffend → Is het optreden redelijk, proportioneel, doelmatig en doeltreffend?",
+"Y03 – Procedurele zorgvuldigheid → Is de beslissing volgens een behoorlijke en eerlijke procedure (stappenplan) tot stand gekomen?",
+"Y04 – Gelijke & Eerlijke behandeling → Worden burgers gelijk, billijk, objectief en onpartijdig behandeld?",
+"Y05 – Redelijk en Proportioneel | Effectiviteit & Efficiëntie → Is het optreden redelijk, proportioneel, doelmatig en doeltreffend?",
 "Y06 – Rechtsbescherming → Kan de burger de beslissing begrijpen, controleren, aanvechten en zich tegen het bestuur beschermen?"
-  ]
+]
 },
 
 {
@@ -824,7 +823,6 @@ info: [
 // De logica is daarmee:
 // democratische grondslag → doel → passende bestuurslaag → betrokkenheid → verantwoording.
 
-
 {
 terms: ["Legaliteit & bevoegdheid"],
 code: "Y02",
@@ -849,29 +847,8 @@ info: [
 // wettelijke grondslag → bevoegdheid → correcte toepassing → doelgebondenheid → begrenzing.
 
 {
-  terms: ["Gelijke & Eerlijke behandeling"],
-  code: "Y03",
-  info: [
- "Deze cluster omvat beginselen die waarborgen dat het bestuur burgers gelijk, eerlijk, neutraal en objectief behandelt en bij zijn besluitvorming rekening houdt met hun gerechtvaardigde belangen en standpunten.",
-"1. **Het objectiviteitsbeginsel** verplicht het bestuur om beslissingen te baseren op relevante, controleerbare en feitelijke gegevens, zodat willekeur en subjectieve voorkeuren zoveel mogelijk worden uitgesloten.",
-"2. **Het billijkheidsbeginsel** vereist dat het bestuur redelijk, evenwichtig en zonder onnodige hardheid optreedt, zodat beslissingen niet onrechtvaardig of onevenredig uitvallen.",
-"3. **Het gelijkheidsbeginsel** houdt in dat gelijke gevallen gelijk moeten worden behandeld en dat een verschil in behandeling enkel is toegelaten wanneer daarvoor een objectieve en redelijke verantwoording bestaat.",
-"4. **Het non-discriminatiebeginsel** verbiedt ongeoorloofd onderscheid op basis van irrelevante of verboden criteria en vormt daarmee de negatieve tegenhanger van het gelijkheidsbeginsel.",
-"5. ** Het onpartijdigheidsbeginsel / neutraliteitsbeginsel ** verplicht het bestuur om zonder vooringenomenheid te handelen en beslissingen te nemen zonder persoonlijke voorkeuren, belangenvermenging, persoonlijke betrokkenheid of schijn van partijdigheid.",
-"6. **De hoorplicht** garandeert dat burgers die door een beslissing worden geraakt, vooraf de gelegenheid krijgen om hun standpunt en argumenten kenbaar te maken, zodat het bestuur met de relevante belangen en informatie rekening kan houden alvorens te beslissen.",
-
-"✅ Samen waarborgen deze zes beginselen dat het bestuur burgers gelijk en niet-discriminerend behandelt, billijk en onpartijdig optreedt, beslissingen op objectieve gronden neemt en betrokkenen een reële mogelijkheid geeft hun standpunt naar voren te brengen.",
-
-//"Gelijkheid → non-discriminatie → billijkheid → onpartijdigheid → objectiviteit → horen.
-//Dat geeft een inhoudelijke opbouw van gelijke behandeling, via verboden onderscheid, naar rechtvaardige toepassing; 
-//vervolgens de houding van het bestuur, de feitelijke grondslag van de beslissing en ten slotte de inbreng van de burger vóór de beslissing.",
-
-  ]
-},
-
-{
 terms: ["Procedurele zorgvuldigheid"],
-code: "Y04",
+code: "Y03",
 info: [
 "procedure = stappenplan. Zorgvuldig voorbereiden en doorlopen van het stappenplan (de procedure)",
 "Deze cluster omvat beginselen die waarborgen dat bestuurlijke beslissingen volgens een correcte, zorgvuldige, eerlijke en transparante procedure tot stand komen.",
@@ -892,6 +869,27 @@ info: [
 // 5. Redelijke termijn
 // De volgorde volgt daarmee het procedurele verloop:
 // voorbereiding → onderzoek → inspraak → eerlijke procesvoering.
+
+{
+  terms: ["Gelijke & Eerlijke behandeling"],
+  code: "Y04",
+  info: [
+ "Deze cluster omvat beginselen die waarborgen dat het bestuur burgers gelijk, eerlijk, neutraal en objectief behandelt en bij zijn besluitvorming rekening houdt met hun gerechtvaardigde belangen en standpunten.",
+"1. **Het objectiviteitsbeginsel** verplicht het bestuur om beslissingen te baseren op relevante, controleerbare en feitelijke gegevens, zodat willekeur en subjectieve voorkeuren zoveel mogelijk worden uitgesloten.",
+"2. **Het billijkheidsbeginsel** vereist dat het bestuur redelijk, evenwichtig en zonder onnodige hardheid optreedt, zodat beslissingen niet onrechtvaardig of onevenredig uitvallen.",
+"3. **Het gelijkheidsbeginsel** houdt in dat gelijke gevallen gelijk moeten worden behandeld en dat een verschil in behandeling enkel is toegelaten wanneer daarvoor een objectieve en redelijke verantwoording bestaat.",
+"4. **Het non-discriminatiebeginsel** verbiedt ongeoorloofd onderscheid op basis van irrelevante of verboden criteria en vormt daarmee de negatieve tegenhanger van het gelijkheidsbeginsel.",
+"5. ** Het onpartijdigheidsbeginsel / neutraliteitsbeginsel ** verplicht het bestuur om zonder vooringenomenheid te handelen en beslissingen te nemen zonder persoonlijke voorkeuren, belangenvermenging, persoonlijke betrokkenheid of schijn van partijdigheid.",
+"6. **De hoorplicht** garandeert dat burgers die door een beslissing worden geraakt, vooraf de gelegenheid krijgen om hun standpunt en argumenten kenbaar te maken, zodat het bestuur met de relevante belangen en informatie rekening kan houden alvorens te beslissen.",
+
+"✅ Samen waarborgen deze zes beginselen dat het bestuur burgers gelijk en niet-discriminerend behandelt, billijk en onpartijdig optreedt, beslissingen op objectieve gronden neemt en betrokkenen een reële mogelijkheid geeft hun standpunt naar voren te brengen.",
+
+//"Gelijkheid → non-discriminatie → billijkheid → onpartijdigheid → objectiviteit → horen.
+//Dat geeft een inhoudelijke opbouw van gelijke behandeling, via verboden onderscheid, naar rechtvaardige toepassing; 
+//vervolgens de houding van het bestuur, de feitelijke grondslag van de beslissing en ten slotte de inbreng van de burger vóór de beslissing.",
+
+  ]
+},
 
 {
 terms: ["Redelijk en Proportioneel | Effectiviteit & Efficiëntie"],
