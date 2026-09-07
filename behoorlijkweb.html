@@ -98,20 +98,48 @@ ol { padding-left: 20px; margin: 0; }
   width: 90%;
   max-width: 1200px;
   display: block;
-  margin: 0 auto 25px auto;
+  margin: 0 auto 10px auto;
   transform: scale(1);
   transition: transform 0.05s linear;
   cursor: zoom-in;
   user-select: none;
 }
 
-.fotokader { margin: 25px 0; }
+.fotokader { margin: 0px 0; }
 .foto.actief {
     outline: 3px solid #2563eb;
     outline-offset: 3px;
     box-shadow: 0 0 12px rgba(37,99,235,0.35);
 }
 
+/* Embedded video */
+
+.video-container { max-width: 800px; margin: 20px auto; }
+.video-container iframe { width: 100%; aspect-ratio: 16 / 9; height: auto; display: block; }
+.video:hover { background-color: #003f7d; }
+.video:active { transform: translateY(1px); }
+
+/* Knop naar link */
+
+.knop {
+	display: inline-block;
+	margin: 10px 10px;
+    padding: 5px 30px;
+    background-color: #0055a4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: background-color .2s;
+}
+
+.knoppen { text-align: center; }
+.knop:hover { background-color: #a0c260; }
+.knop:active { transform: translateY(1px); }
 
 /* =============================
    INFO-POPUP
@@ -560,6 +588,14 @@ window.addEventListener("DOMContentLoaded", loadDataset);
 </script>
 
 <hr>
+
+<div class="knoppen">
+    <a class="knop"
+       href="https://youtu.be/-4Cpk1FZHzo?si=Myn2GMRwXKVudWoo"
+       target="_blank">Video</a>
+
+</div>
+
 <div class="fotokader"><img class="foto" src="images/behoorlijk.jpg"></div>
 <div class="hint"> 🔍 Algemene Beginselen Behoorlijk Bestuur (ABBB)</div>
 <hr>
