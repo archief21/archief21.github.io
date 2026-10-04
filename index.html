@@ -164,8 +164,8 @@ body {
 
 /* ===== FOOTER ===== */
 
-.footer { text-align: center; font-size: 12px; color: var(--muted); padding: 6px 0 12px; }
-.footer a { color: #2563eb; text-decoration: none; }
+.footer { text-align: center; font-size: 12px; color: # 808080; padding: 6px 0 12px; }
+.footer a { color: #2563eb; text-decoration-style: dashed; text-decoration-thickness: 1px; }
 
 /* ===== DARK MODE ===== */
 
@@ -212,7 +212,7 @@ body {
 </style>
 
 <script src="https://cdn.counter.dev/script.js" data-id="8f51b0a9-adeb-4959-a544-4934fd74a073" data-utcoffset="2"></script>
-<link rel="canonical" href="https://archief21.github.io/map/" />
+<link rel="canonical" href="https://archief21.github.io" />
 
 </head>
 
@@ -240,7 +240,7 @@ body {
 <!-- ===================== -->
 
 <div class="section rood">
-<div class="section-title">📚 Juridisch</div>
+<div class="section-title">📚 Wetenschappelijk</div>
 
 <div class="grid">
 
@@ -251,7 +251,7 @@ body {
 
 <div class="card">
 <a class="link" href="behoorlijkweb.html"><span class="icon"> ⚖️ </span>Algemene Beginselen Behoorlijk Bestuur (ABBB)</a>
-
+<a class="link" href="https://medsoftwz.github.io/index.html"><span class="icon"> ⚕️ </span>Medische Informatiekunde</a>
 </div>
 
 </div>
@@ -322,18 +322,20 @@ body {
 
 <!-- ===================== -->
 
+<hr color="#800040">
+
 <div class="footer">
     <a href="mailto:xyz21@skynet.be">E-postadres</a> |
     <a href="disclaim.html">Disclaimer</a> |
-    <a href="#" onclick="openAI(); return false;">AI-info</a>
+    <a href="#" onclick="openPopup('ai'); return false;">AI-info</a>
 </div>
 
-<div id="aiPopup" class="popup">
-    <div class="popup-content">
-        <span class="close" onclick="closeAI()">&times;</span>
-        <p>Gebruik van AI</p>
-		<p>Deze website werd ontwikkeld met behulp van artificiële intelligentie (AI).<br>AI werd gebruikt als hulpmiddel bij het programmeren, de vormgeving, het ontwerpen en verbeteren van afbeeldingen en het bewerken van teksten.</p>
+<hr color="#800040">
 
+<div id="universalPopup" class="popup">
+<div class="popup-content">
+<span class="close" onclick="closePopup()">&times;</span>
+<div id="popupText"></div>
 </div>
 </div>
 
@@ -341,30 +343,53 @@ body {
 
 <script>
 
-function openAI() {
-    document.getElementById("aiPopup").style.display = "block";
+// ====================================================
+// Popup
+// ====================================================
+const popupContent = {
+    ai: `
+        <div class="popup-title">Gebruik van AI</div>
+        <p>
+            Deze website werd ontwikkeld met behulp van artificiële intelligentie (AI).<br>
+            AI werd gebruikt als hulpmiddel bij het programmeren, de vormgeving,
+            het ontwerpen en verbeteren van afbeeldingen en het opstellen van teksten.
+        </p>
+    `
+};
+
+function openPopup(type) {
+    const popup = document.getElementById("universalPopup");
+    const content = document.getElementById("popupText");
+
+    if (!popup || !content || !popupContent[type]) return;
+
+    content.innerHTML = popupContent[type];
+    popup.style.display = "block";
 }
 
-function closeAI() {
-    document.getElementById("aiPopup").style.display = "none";
+function closePopup() {
+    const popup = document.getElementById("universalPopup");
+
+    if (popup) {
+        popup.style.display = "none";
+    }
 }
 
 // Sluiten met Esc
 document.addEventListener("keydown", function(event) {
     if (event.key === "Escape") {
-        closeAI();
+        closePopup();
     }
 });
 
 // Sluiten door buiten de popup te klikken
 window.addEventListener("click", function(event) {
-    const popup = document.getElementById("aiPopup");
+    const popup = document.getElementById("universalPopup");
 
     if (event.target === popup) {
-        closeAI();
+        closePopup();
     }
 });
-
 /* ===== MINI SEARCH FILTER ===== */
 
 const search = document.getElementById("search");
