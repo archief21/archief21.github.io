@@ -47,19 +47,29 @@ h1 {
   font-weight: 400;
   color: #2563eb; 
   text-align:center; }
+  
+a { color: #2563eb; text-decoration: underline; }
+a:hover { color: #FF0000; text-decoration: underline; }
+a:active { color: red; }  
 
 /* Afbeelding */
 
-#foto { 
-  width: 100%;
+.foto {
+  width: 90%;
   max-width: 1200px;
-  display: block; 
-  margin: auto; 
-  transform: scale(1); 
-  transition: transform 0.05s linear; 
+  display: block;
+  margin: 0 auto 25px auto;
+  transform: scale(1);
+  transition: transform 0.05s linear;
   cursor: zoom-in;
-  user-select: none; 
-} 
+  user-select: none;
+}
+.fotokader { margin: 25px 0; }
+.foto.actief {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+    box-shadow: 0 0 12px rgba(37,99,235,0.35);
+}
 
 .hint { 
   font-size: 16px; 
@@ -122,7 +132,8 @@ h1 {
 
 <div class="highlight">
 
-<p>Gedurende meer dan een eeuw pasten fokkers van het Rood Ras van West-Vlaanderen, zonder het zo te benoemen, de basisprincipes van de genetica toe. Door systematisch enkel de beste stieren en koeien met gewenste eigenschappen – meer melk, betere vleesaanzet, een rustig karakter of een mooie bil – met elkaar te laten voortplanten, veranderde geleidelijk de genetische samenstelling van de populatie. 
+<p>Gedurende meer dan een eeuw pasten fokkers van het Rood Ras van West-Vlaanderen, zonder het zo te benoemen, de basisprincipes van de 
+<a href="https://medsoftwz.github.io/genetica.html" rel="noopener noreferrer">genetica</a> toe. Door systematisch enkel de beste stieren en koeien met gewenste eigenschappen – meer melk, betere vleesaanzet, een rustig karakter of een mooie bil – met elkaar te laten voortplanten, veranderde geleidelijk de genetische samenstelling van de populatie. 
 
 Deze kunstmatige selectie was de eerste vorm van doelgerichte genetische sturing: men wijzigde niet rechtstreeks de genen maar beïnvloedde wel welke genen aan volgende generaties werden doorgegeven. 
 
@@ -143,83 +154,92 @@ Deze kunstmatige selectie was de eerste vorm van doelgerichte genetische sturing
     </iframe>
 </div>
 
-<img id="foto" src="images/roodmz.jpg" alt="Hoeve MZ">
+<div class="fotokader"><img class="foto" src="images/roodmz.jpg" alt="Hoeve Marcel Zoete"></div>
 
 <hr>
 <script>
 
-const foto = document.getElementById("foto");
-
-// Beginwaarde
-foto.dataset.scale = 1;
-
 // ====================================================
-// Muiswiel : in- en uitzoomen
+// Foto's
 // ====================================================
 
-foto.addEventListener("wheel", function(e) {
+const fotos = document.querySelectorAll(".foto");
+let actieveFoto = null;
 
-    e.preventDefault();
-
-    let scale = parseFloat(foto.dataset.scale);
-
-    scale *= (e.deltaY < 0) ? 1.05 : 0.95;
-    scale = Math.max(0.85, Math.min(2.0, scale));
-
-    foto.style.transform = `scale(${scale})`;
-    foto.dataset.scale = scale;
-
-}, { passive:false });
-
-// ====================================================
-// Dubbelklik : normale grootte
-// Eén klik : verklein naar 80%
-// ====================================================
-
-foto.addEventListener("click", function() {
-
-    foto.style.transform = "scale(0.95)";
-    foto.dataset.scale = 0.95;
-
-});
-
-foto.addEventListener("dblclick", function() {
-
-    foto.style.transform = "scale(1)";
+fotos.forEach(foto => {
     foto.dataset.scale = 1;
+    
+	foto.addEventListener("click", function () {
+        if (actieveFoto && actieveFoto !== foto) {
+            actieveFoto.classList.remove("actief");
+        }
+        actieveFoto = foto;
+        actieveFoto.classList.add("actief");
+      });
 
+    foto.addEventListener("dblclick", function () {
+        foto.dataset.scale = 1;
+        foto.style.transform = "scale(1)";
+      });
+
+    foto.addEventListener("wheel", function (e) {
+        if (actieveFoto !== foto)
+            return;
+        e.preventDefault();
+        let scale = parseFloat(foto.dataset.scale);
+        if (e.deltaY < 0)
+            scale *= 1.05;
+        else
+            scale *= 0.95;
+        scale = Math.max(0.5, Math.min(2.0, scale));
+        foto.dataset.scale = scale;
+        foto.style.transform = `scale(${scale})`;
+    }, { passive:false });
 });
 
 // ====================================================
 // Toetsenbord
-// +   : vergroten
-// -   : verkleinen
-// Esc : normale grootte
 // ====================================================
 
 document.addEventListener("keydown", function(e) {
 
-    let scale = parseFloat(foto.dataset.scale);
+    if (!actieveFoto)
+        return;
 
-    if (e.key === "+" || e.key === "=") {
+    let scale = parseFloat(actieveFoto.dataset.scale);
+
+    if (e.key == "+" || e.key == "=" || e.code == "NumpadAdd")
         scale *= 1.05;
-    }
 
-    if (e.key === "-") {
-        scale *= 0.85;
-    }
+    if (e.key == "-" || e.code == "NumpadSubtract")
+        scale *= 0.95;
 
     if (e.key === "Escape") {
-        scale = 1;
+
+        actieveFoto.dataset.scale = 1;
+        actieveFoto.style.transform = "scale(1)";
+        actieveFoto.classList.remove("actief");
+        actieveFoto = null;
+
+        return;
     }
 
-    scale = Math.max(0.85, Math.min(2.0, scale));
+    scale = Math.max(0.5, Math.min(2.0, scale));
 
-    foto.style.transform = `scale(${scale})`;
-    foto.dataset.scale = scale;
+    actieveFoto.dataset.scale = scale;
+    actieveFoto.style.transform = `scale(${scale})`;
 
 });
 
+/* open html in nieuw tab */
+
+document.querySelectorAll("a").forEach(link => {
+  const href = link.getAttribute("href");
+  if (!href) return;
+
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
+});
 </script>
 
 
